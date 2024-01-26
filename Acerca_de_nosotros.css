@@ -1,0 +1,44 @@
+#Separador{
+    background-color:gold;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+   padding: 1%;}
+
+.container{
+    background-color:beige;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+   padding: 1%;}
+
+.Imagenes{
+    width: 620;
+    height: 300;
+    padding: 3%;
+    margin: 10;
+    
+}
+
+.Valores{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+   padding: 1%;}
+
+.Valores-texto{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+   padding: 1%;}
+.Impacto {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+   padding: 1%;
+}
+#PiePagina{
+    background-color: gold;
+}
+
+    
