@@ -1,0 +1,30 @@
+
+#NavBar-style{
+background-color: whitesmoke;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-icon {
+    display: flex;
+    gap: 10px; /* Ajusta según sea necesario */
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 10px; /* Ajusta según sea necesario */
+}
+
+.nav-list li {
+    margin: 0; /* Elimina los márgenes por defecto de la lista */
+}
+
+.contenedor-icon svg {
+    width: 30px;  /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción original */
+}
