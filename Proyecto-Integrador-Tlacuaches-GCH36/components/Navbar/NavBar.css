@@ -5,13 +5,12 @@ background-color: whitesmoke;
 
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: left;
 }
 
 .contenedor-icon {
     display: flex;
-    gap: 10px; /* Ajusta según sea necesario */
+    gap: 15px; /* Ajusta según sea necesario */
 }
 
 .nav-list {
