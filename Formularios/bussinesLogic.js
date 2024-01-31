@@ -12,5 +12,6 @@ function addUsertoSystem(pnombre, papellidopaterno, papellidomaterno, pusername,
         password : ppassword,
 
     };
+    console.log(newUser)
     listaUsuarios.push(newUser);
 }
