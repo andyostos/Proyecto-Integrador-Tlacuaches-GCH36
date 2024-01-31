@@ -30,6 +30,12 @@ form {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(83, 76, 76, 0.034);
+    list-style-type: none;
+}
+
+ul {
+    list-style: none ;
+
 }
 
 
