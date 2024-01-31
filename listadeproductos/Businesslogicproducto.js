@@ -1,6 +1,6 @@
 var catalogo = [];
 
-function addProduct(pnombre, pcategoria, pprecio, pdescripcion, pvendedor){
+function addProductToSystem(pnombre, pcategoria, pprecio, pdescripcion, pvendedor){
     var nuevoProducto = {
         
         nombre : pnombre,
@@ -13,7 +13,7 @@ function addProduct(pnombre, pcategoria, pprecio, pdescripcion, pvendedor){
 
         vendedor : pvendedor,
     };
-
+    console.log(catalogo);
     catalogo.push(nuevoProducto);
 
 }
