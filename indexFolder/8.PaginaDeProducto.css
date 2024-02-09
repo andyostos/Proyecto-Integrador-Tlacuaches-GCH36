@@ -1,0 +1,16 @@
+#imageProduct_Space{
+  size: 600px;
+
+}
+
+.product_image{
+    size: 600px;
+}
+
+.container-image-product{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+
+}

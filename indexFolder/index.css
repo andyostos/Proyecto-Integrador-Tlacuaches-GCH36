@@ -1,0 +1,118 @@
+.class{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-1 {
+
+    /* background-color: #231F20; */
+}
+
+.container-2 {
+
+    /* background-color:aquamarine */
+}
+
+.container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color:brown; */
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+.container-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.container-4 {
+
+    /* background-color:chartreuse */
+}
+
+.container-5 {
+
+    /* background-color: darkgreen; */
+}
+
+.container-6 {
+/* 
+    background-color:coral; */
+}
+
+.container-7 {
+
+    /* background-color:cyan; */
+}
+
+.container-8 {
+
+    /* background-color: crimson; */
+}
+
+.btn-container{
+align-self:start;
+   margin-left: 100px;
+   margin-right: 1000px;
+}
+
+.container-bottoms{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: row;
+}
+
+.Info-artist-card{
+    margin-left: 20px;
+}
+
+.card{
+    border-radius: 30px;
+    background-color: #FFDD03;
+    width: 50%; /* Porcentaje */
+    max-width: 500px; /* Máximo ancho */
+}
+
+.card-body{
+    
+    background-color: #FFDD03; 
+}
+
+.container-tarjetas{
+    flex-wrap: wrap;
+}
+
+.margen-tarjetas{
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+.responsive-img {
+    max-width: 100%; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.btn-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+
+.btn-black{
+    background-color: #231F20;
+    color: #FFDD03;
+}
