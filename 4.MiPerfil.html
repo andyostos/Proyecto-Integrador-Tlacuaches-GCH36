@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/MiPerfil.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script async defer src="./components/Navbar/Navbar.js"></script> 
     <script async defer src="./components/Endpage/Endpage.js"></script> 
@@ -11,8 +12,323 @@
 </head>
 <body>
     <div id="navbar-container-dom"></div>
+
+
+<div class="total-container-perfil"> 
+    <div class="contenedor-banner">
+        <img src="Imagenes/kb_banner.jpg" alt="imagen de un banner con una cantante al centro" width="100%" height="350px">
+        </div>
+    
+        <div class="contenedor-perfil">
+            <div class="row">
+                <div class="col-sm-4">
+                  <div class="perfil-foto">
+                  <img src="./Imagenes/perfil_muestra.jpg" alt="foto de perfil muestra" >
+                </div>
+                  <form id = "datos-generales" action="" method="get">
+                    <div class="col-sm-4"> 
+                        <label for="inputNombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="inputNombre" placeholder="Karla Díaz">
+    
+                    </div>
+                    <div class="col-sm-4"> 
+                        <label for="inputContrasena" class="form-label">Contraseña</label>
+                        <input type="text" class="form-control" id="inputContrasena" placeholder="******">
+    
+                    </div>
+                  
+                    <div class ="col-sm-4">
+                        <button type="submit" class="btn-edicion">Editar</button>
+                        <button type="submit" class="btn-guardar">Guardar</button>
+                    </div>
+                  
+                </form>
+    
+                </div>
+    
+    
+    
+    
+                <div class="col-sm-8">
+                    <h1>Tus Datos</h1>
+                    <div class="col-sm-8">
+                        <label for="inputTelefono" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control" id="inputTelefono" placeholder="3456087890">
+                    </div>
+    
+                     <div class="col-sm-8">
+                        <label for="inputCorreo" class="form-label">Correo electrónico</label>
+                        <input type="text" class="form-control" id="inputCorreo" placeholder="karladiaz@gmail.com ">
+                     </div>
+                     
+                     <div class="col-sm-8">
+                        <label for="inputDireccion" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="inputDireccion" placeholder="1234 Main St">
+                     </div>
+
+                     <div class ="col-sm-4">
+                        <div class="icons">
+                        <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
+                          </svg>
+                        </div>
+
+                        <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-credit-card-fill" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1"/>
+                          </svg>
+                        </div>
+                      </div>
+                       </div>
+
+                    <div class ="col-sm-4">
+                     <button type="submit" class="btn-edicion">Editar</button>
+                     <button type="submit" class="btn-guardar">Guardar</button>
+                    </div>
+    
+                </div>
+                
+              
+    
+            </div>
+    
+    
+        </div>
+        <div class = "separador"></div>
+         <div class = "titulo"> Carrito de compra</div>
+    
+       
+
+
+         <div class="container-t">
+          <div class="row align-items-center">
+            <div class="col-sm">
+  
+              <div class="card" style="width: 18rem;">
+                  <img src="./Media/Logos/tarjetascarrito/pintura.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                          <div class="row">
+                    <div class ="col-sm-4">
+                        <div class="perfil-art">
+                          <img src="./Media/Logos/tarjetascarrito/Andrea-Paz.png" alt="" width="50px" height="50px" >
+                        </div>
+                    </div>
+                    <div class ="col-sm-8">
+                        <div class="perfil-art">
+                          <h5 class="card-title">Andrea Paz</h5>
+                          <p class="card-text">Óleo de naturaleza muerta </p>
+                        </div>
+                    </div>
+                            </div> <!--row-->
+              </div>
+  
+            </div>
+            <div class="col-sm">
+  
+              <div class="card" style="width: 18rem;">
+                  <img src="./Media/Logos/tarjetascarrito/esculturamarmol.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class ="col-sm-4">
+                        <div class="perfil-art">
+                          <img src="./Media/Logos/tarjetascarrito/Diogenes-Lopez.png" alt="" width="50px" height="50px" >
+                        </div>
+                    </div>
+                    <div class ="col-sm-8">
+                        <div class="perfil-art">
+                          <h5 class="card-title">Diogenes Lopez</h5>
+                          <p class="card-text">Escultura clásica de mármol</p>
+                          </div>
+                        </div>
+                     </div>
+              </div>
+  
+              
+            </div>
+            <div class="col-sm">
+              
+  
+              <div class="card" style="width: 18rem;">
+                  <img src="./Media/Logos/tarjetascarrito/libroroyal.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class ="col-sm-4">
+                        <div class="perfil-art">
+                          <img src="./Media/Logos/tarjetascarrito/Ignacio-Robles.png" alt="" width="50px" height="50px" >
+                        </div>
+                    </div>
+                    <div class ="col-sm-8">
+                        <div class="perfil-art">
+                          <h5 class="card-title">Ignacio Robles</h5>
+                          <p class="card-text">Libro azul de royal tomo II</p>
+                               </div>
+                           </div>
+                          </div>
+              </div>
+  
+            </div>
+  
+            <div class="col-sm">
+              
+  
+              <div class="card" style="width: 18rem;">
+                  <img src="./Media/Logos/tarjetascarrito/libroroyal.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class ="col-sm-4">
+                        <div class="perfil-art">
+                          <img src="./Media/Logos/tarjetascarrito/Ignacio-Robles.png" alt="" width="50px" height="50px" >
+                        </div>
+                    </div>
+                    <div class ="col-sm-8">
+                        <div class="perfil-art">
+                          <h5 class="card-title">Ignacio Robles</h5>
+                           <p class="card-text">Libro azul de royal tomo I</p>
+                          </div>
+                        </div>
+                       </div>
+           </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+  
+
+
+         
+            <button type="submit" class="btn-terminar-compra"> Terminar compra</button>
+    
+        </div>
+    
+      
+      
+      
+      
+        <div class ="productos-mis-favoritos">
+    
+            <h3>Mis Favoritos</h3>
+
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="carouselExample" class="carousel carousel-dark slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+  
+  
+              <div class="row">
+                  <div class="col-sm-3 mb-4 mb-sm-0">
+                    <div class="card">
+                      <img src="./Media/Logos/tarjetascarrito/discometal.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Garath</h5>
+                        <p class="card-text">Disco de Black Metal autografiado</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card">
+                      <img src="./Media/Logos/tarjetascarrito/pinturanatural.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Andrea Paz</h5>
+                        <p class="card-text">Naturaleza muerta abstracta</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                      <div class="card">
+                        <img src="./Media/Logos/tarjetascarrito/esculturamoderna.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Diogenes Lopez</h5>
+                          <p class="card-text">Esculturas vanguardistas</p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                </div>
+               
+  
+  
+  
+              
+            </div>
+            <div class="carousel-item">
+  
+              <div class="row">
+                  <div class="col-sm-3 mb-4 mb-sm-0">
+                 
+                      <div class="card">
+                        <img src="./Media/Logos/tarjetascarrito/librohead.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ignacio Robles</h5>
+                          <p class="card-text">Libro de filosofía Head</p>
+                         
+                        </div>
+                      </div>
+                    
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <img src="./Media/Logos/tarjetascarrito/pinturanatural.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Andrea Paz</h5>
+                      <p class="card-text">Naturaleza muerta abstracta</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <img src="./Media/Logos/tarjetascarrito/discometal.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Garath</h5>
+                      <p class="card-text">Disco de Black Metal autografiado</p>
+                     
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+  
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+
+
+
+        
+
+
+
    
-    <h1>Mi Perfil</h1>
+</div> <!--divcontainertotal-->
 
     <div id="end-container-dom"></div>
    
