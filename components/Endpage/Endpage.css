@@ -1,6 +1,8 @@
 #endpage-style{
     background-color: gold;
     width: 100vw;
-    position: fixed;
-    bottom: 0;
+    align-items: end;
+   
+    bottom: 0px;
+    padding-bottom: 50px;
 }
