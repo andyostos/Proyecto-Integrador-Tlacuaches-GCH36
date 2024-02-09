@@ -1,0 +1,58 @@
+
+.contenedor-filtro {
+    background-color: #f0f0f0; /* Color de fondo del contenedor */
+    border: 1px solid #ccc; /* Borde del contenedor */
+    padding: 20px; /* Espacio interior del contenedor */
+    width: 250px; /* Ancho del contenedor */
+  }
+  
+  .filtro {
+    margin-bottom: 15px; 
+  }
+  
+  .categorias, .orden, .genero, .precios, .buscador {
+    margin-bottom: 10px; 
+  }
+  
+  .categorias ul, .genero ul {
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  .categorias li, .genero li {
+    margin-bottom: 5px; 
+  }
+  
+  .buscador input {
+    width: 150px; 
+  }
+  
+  .buscador button {
+    margin-left: 5px;
+    background-color: yellow; 
+  }
+  
+  
+  .contenedor {
+    display: flex; 
+  }
+  
+  .filtro {
+    width: 200px; 
+  }
+
+  .card-img-top {
+    width: auto; 
+    height: 200px;  
+    object-fit: cover;  
+}
+
+.card-body {
+  border-radius: 100px;
+}
+
+
+.buscador input[type="text"],
+.buscador button {
+  border-radius: 10px;
+}

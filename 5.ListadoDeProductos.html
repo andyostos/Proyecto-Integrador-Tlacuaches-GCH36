@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frame4</title>
+    <title>Lista de Producto</title>
+    <link rel="stylesheet" href="5.ListadoDeProducto.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script async defer src="./components/Navbar/Navbar.js"></script> 
     <script async defer src="./components/Endpage/Endpage.js"></script> 
@@ -11,9 +12,362 @@
 </head>
 <body>
     <div id="navbar-container-dom"></div>
-   
-    <h1>Hoja de Producto</h1>
 
+    <div class="container">
+  
+
+      <div class="row">
+        <div class="col-lg-2 col-sm-2">
+          <div class="filtro">
+            <h4 class="filtrar">Filtrar ( )</h4>
+            <div class="categorias">
+              <h5 class="categoria">Categoría</h5>
+              <ul>
+                <li><input type="checkbox" id="musica" name="categoria" value="musica"><label for="musica">Música</label></li>
+                <li><input type="checkbox" id="escritura" name="categoria" value="escritura"><label for="escritura">Escritura</label></li>
+                <li><input type="checkbox" id="pintura" name="categoria" value="pintura"><label for="pintura">Pintura</label></li>
+                <li><input type="checkbox" id="fotografia" name="categoria" value="fotografia"><label for="fotografia">Fotografía</label></li>
+                <li><input type="checkbox" id="diseno" name="categoria" value="diseno"><label for="diseno">Diseño</label></li>
+                <li><input type="checkbox" id="cultura" name="categoria" value="cultura"><label for="cultura">Cultura</label></li>
+                <li><input type="checkbox" id="arte-digital" name="categoria" value="arte-digital"><label for="arte-digital">Arte Digital</label></li>
+              </ul>
+            </div>
+            <div class="orden">
+              <h5 class="ordenar-por">Ordenar por</h5>
+              <select>
+                <option value="a-z">A-Z</option>
+                <option value="0-9">0-9</option>
+                <option value="todos">Todos</option>
+              </select>
+            </div>
+            <div class="genero">
+              <h5 class="genero">Género</h5>
+              <ul>
+                <li><input type="checkbox" id="mujer" name="genero" value="mujer"><label for="mujer">Mujer</label></li>
+                <li><input type="checkbox" id="hombre" name="genero" value="hombre"><label for="hombre">Hombre</label></li>
+                <li><input type="checkbox" id="ambos" name="genero" value="ambos"><label for="ambos">Ambos</label></li>
+              </ul>
+            </div>
+            <div class="precios">
+              <h5 class="precios">Precios</h5>
+              <select>
+                <option value="artistas">Artistas</option>
+              </select>
+            </div>
+            <div class="buscador">
+              <input type="text" placeholder="Buscar">
+              <button type="button">Buscar</button>
+              <button type="button">Borrar</button>
+            </div>
+          </div> 
+        </div>
+  
+  
+         <div class= "col-lg-10 col-sm-10"> 
+  
+          <div class="row">
+  
+            <div class="col-sm-3 mb-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/musica1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/pexels-stefan-stefancik-91227.jpg" width="50px" height="50px"  class="rounded-circle"/> Stefan Stefancik</h5>
+                  <p class="card-text">Musico</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class= "col-sm-3 mb-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/musica2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/pexels-simon-robben-614810.jpg" width="50px" height="50px"  class="rounded-circle"/> Simon Robben</h5>
+                  <p class="card-text">Musico</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3 mb-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/musica3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/pexels-daniel-xavier-1239288.jpg" width="50px" height="50px"  class="rounded-circle"/> Danielle Xavier</h5>
+                  <p class="card-text">Musico</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3 mb-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/musica4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/pexels-george-dolgikh-1310474.jpg" width="50px" height="50px"  class="rounded-circle"/> Lexi Delfin</h5>
+                  <p class="card-text"> Musico</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+      
+          </div>
+  
+          <div class="row">
+  
+            <div class="col-sm-3 mb-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/pintura2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/pexels-italo-melo-2379004.jpg" width="50px" height="50px"  class="rounded-circle"/> Albert Turner</h5>
+                  <p class="card-text">Pintor/a</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3 mb-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/pintura1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/pexels-kampus-production-6481907.jpg" width="50px" height="50px"  class="rounded-circle"/>Diego Costa</h5>
+                  <p class="card-text">Pintor/a</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3 mb-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/pintura3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/pexels-daniel-xavier-1102341.jpg" width="50px" height="50px"  class="rounded-circle"/> Fernanda Rui</h5>
+                  <p class="card-text">Pintor/a</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/pintura4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/pexels-george-dolgikh-1310474.jpg" width="50px" height="50px"  class="rounded-circle"/> Luisa Teja</h5>
+                  <p class="card-text">Pintor/a</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+      
+          </div>
+  
+          <div class="row">
+  
+            <div class="col-sm-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/cultura1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/pexels-simon-robben-614810.jpg" width="50px" height="50px"  class="rounded-circle"/> Smelak Cooper</h5>
+                  <p class="card-text">Escultor/a</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/cultura2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/pexels-linkedin-sales-navigator-2182970.jpg" width="50px" height="50px"  class="rounded-circle"/> Serg Masso</h5>
+                  <p class="card-text">Escultor/a</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3" >
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/cultura3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/beard-1845166_640.jpg" width="50px" height="50px"  class="rounded-circle"/> Drago Vita</h5>
+                  <p class="card-text">Escritor/a</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/cultura4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/girl-4394578_640.jpg" width="50px" height="50px"  class="rounded-circle"/> Ivanka Lukke</h5>
+                  <p class="card-text">Escritor/a</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+      
+          </div>
+  
+          <div class="row">
+  
+            <div class="col-sm-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/58 Portrait Photos - The Absolute Best Photographers Of 2020.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/pexels-simon-robben-614810.jpg" width="50px" height="50px"  class="rounded-circle"/> Cristopher Urich</h5>
+                  <p class="card-text">Fotografo/a</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/15 Increíbles fotografías que solo personas muy ingeniosas tomarían.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/girl-4394578_640.jpg" width="50px" height="50px"  class="rounded-circle"/> Maria Angela</h5>
+                  <p class="card-text">Fotografo/a</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/Lake Tahoe's Least Crowded and Most Photogenic Campsite.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/pexels-kampus-production-6481907.jpg" width="50px" height="50px"  class="rounded-circle"/> Robert Yaris</h5>
+                  <p class="card-text">Fotografo/a</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/c8e20d24-15b6-40fe-b427-7b9bb561fbf2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/pexels-stefan-stefancik-91227.jpg" width="50px" height="50px"  class="rounded-circle"/> Ivan Rich</h5>
+                  <p class="card-text">Fotografo/a</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+      
+          </div>
+  
+          <div class="row">
+  
+            <div class="col-sm-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/diseño1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/girl-4394578_640.jpg" width="50px" height="50px"  class="rounded-circle"/> Lucia Mayorga</h5>
+                  <p class="card-text">Diseñador/a</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/diseño2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/pexels-andrea-piacquadio-762020.jpg" width="50px" height="50px"  class="rounded-circle"/> Svetlana Jenssen</h5>
+                  <p class="card-text">Diseñador/a</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/diseño3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/pexels-stefan-stefancik-91227.jpg" width="50px" height="50px"  class="rounded-circle"/> Jair Mello</h5>
+                  <p class="card-text">Diseñador/a</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/diseño4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Imagenes/beard-1845166_640.jpg" width="50px" height="50px"  class="rounded-circle"/> Joao Jesus</h5>
+                  <p class="card-text">Diseñador/a</p>
+                  <a href="#" class="btn btn-light">Ver perfil</a>
+                </div>
+              </div>
+      
+            </div>
+      
+          </div>
+  
+          <div class="row">
+  
+            <div class="col-sm-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/pintura3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pintura</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Ver mas</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/58 Portrait Photos - The Absolute Best Photographers Of 2020.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Fotografía</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Ver mas</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3">
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/musica2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> Musica </h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Ver mas</a>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-sm-3"> 
+              <div class="card text bg-warning" style="width: 18rem;">
+                <img src="./Imagenes/cultura4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> Escritura </h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Ver mas</a>
+                </div>
+              </div>
+      
+            </div>
+      
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+   
+
+  
+
+    <!-- Esto no borrar -->
     <div id="end-container-dom"></div>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
