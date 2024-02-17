@@ -10,3 +10,16 @@ align-content: center;
 margin: 100px;
 
 }
+
+.contenedor-texto p{
+    
+    font-family: 'Montserrat'  !important;
+ }
+
+ .contenedor-texto h3, h2{
+    
+    font-family: 'Rubik'  !important;
+ }
+    
+    
+

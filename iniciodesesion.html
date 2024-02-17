@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script async defer src="./components/Navbar/Navbar.js"></script> 
+    <script async defer src="./components/Endpage/Endpage.js"></script> 
+    <link rel="stylesheet" href="./css/iniciodesesion.css">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<body>
+    <div id="navbar-container-dom"></div>
+
+
+<div class="contenedor-t-inicio-s">
+
+
+<div class="row-cols-1 logo-central">
+<img src="./Media/Logos/Indieteca_logoWeb_01.png" class="img-fluid"  alt="logo de Indieteca">
+
+</div>
+
+<div class="iniciar-sesion col-sm-6">
+    <h2>Iniciar sesión</h2>
+    <form action="" method="get">
+        <div class="col-sm-6 mb3">
+          <label for="Email" class="form-label">Correo electrónico o nombre de usuario</label>
+          <input type="email" class="form-control rounded-pill" id="Email" >
+        </div>
+        <div class=" col-sm-6 mb-3">
+          <label for="Contrasena" class="form-label">Contraseña</label>
+          <input type="password" class="form-control rounded-pill" id="Contrasena">
+        </div>
+        <div class="col-sm-12 mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="Recordar" aria-describedby="olvido">
+          <label class="form-check-label" for="Recordar">Recordar</label>
+            <p class="txt-olvido"> ¿Olvidaste tu contraseña?</p>
+
+          <div id="olvido" class="form-text">Al hacer click en iniciar sesiona ceptas las condiciones de uso</div>
+        </div>
+        <div class="btn-inicio">
+        <button type="submit" class="btn bt-warning btn-inicio-s">Iniciar sesión</button>
+        </div>
+      </form>
+
+      <div class="separador-form" >
+        <hr style="color: #FFDD03; width: 30%;" class="border-4 opacity-100">
+         <p class="txt-nuevo">¿Nuevo en Indieteca?</p> 
+         <hr style="color: #FFDD03; width: 30%; height: 3px;" class="border-4 opacity-100">
+      </div>
+
+      
+
+     <div class="btn-registrate">
+        
+        <button type="submit" class="btn bt-warning btn-registro">Registrate</button>
+        </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div> <!--cerrado de contenedor total-->
+
+     
+    <div id="end-container-dom"></div>
+   
+    <script src="Iniciodesesion/uilogicainsesion.js"></script>
+    <script src="Iniciodesesion/bsiniciosesion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
