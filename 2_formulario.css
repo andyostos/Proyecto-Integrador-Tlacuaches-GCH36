@@ -1,0 +1,30 @@
+
+.container-form{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    display:flex;
+    align-items: center;
+    flex-direction: column;;
+   align-items: center;
+}
+.container-marco{
+    
+    border-color: #ffdd03;
+    border-width: 50px;
+    
+}
+
+#formulario-titulo{
+    color:#000000;
+}
+
+*{
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+
+
+
+

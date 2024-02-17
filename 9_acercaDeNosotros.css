@@ -1,0 +1,108 @@
+.container{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+   padding: 1%;
+   /*Contenedor general, no meterle color de fondo*/
+}
+
+.container-MV{
+    background-color:#FFDD03;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#000000;
+    border-radius: 1cm;
+
+    /*Modificadores de los botones de misión y visión*/
+}
+
+#Separador{
+    background-color:#000000;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+#Separador-2{
+    background-color:#FFDD03;
+    color:#000000;
+    border-radius: 1cm;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Separador-3{
+    background-color:#FFDD03;
+    color:#000000;
+    border-radius: 1cm;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Imagenes{
+    width: auto;
+    height: auto;
+    padding: 3%;
+    margin: 0%;
+    border-radius: 10%;
+    
+}
+
+.Valores{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+   padding: 1%;}
+
+.Valores-texto{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+   padding: 1%;}
+.Impacto {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+   padding: 1%;
+}
+
+.imagenesDesarrolladores{
+    border-radius: 10%;
+    margin: 0%;
+}
+
+.container-1{
+    background-color: #FFDD03;
+    color:#000000;
+    border-radius: 1cm;
+    width:auto;
+
+}
+
+.container-2{
+    background-color: black;
+    color:#FFFFFF;
+    border-radius: 1cm;
+    size-adjust: ;
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,235 @@
+
+#Separador{
+    background-color:#000000;
+    color: #000000;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+   padding: 1%;}
+
+.container{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+   padding: 1%;
+   align-items: center;
+}
+
+.imagenesArtistas{
+width: 550px;
+height: 620px;
+border-radius: 2cm;
+/*Imagenes de los artistas A y B*/
+}
+
+
+
+.container_venta{
+    background-color:#ffdd03;
+    border-radius: 1cm;
+    height: 480px;
+    /*
+    Contenedor de Genera ingresos y Gestiona tu marketplace
+    */
+}
+
+.container-lala{
+    background-color:#FFFFEF;
+    height: 60px;
+    color: #FFFFEF;
+    /*Botones de Click*/
+}
+
+.btn-default{
+    background-color:#000000;
+    color: #ffdd03;
+    width: 350px;
+    height: 77px;
+    border-radius:1cm;
+    border-color: #ffdd03;
+    border-width: 5px;
+}
+
+.btn-default-2{
+    background-color:#000000;
+    color: #ffdd03;
+    width: 80px;
+    height: 80px;
+    border-radius:1cm;
+    border-color: #ffdd03;
+    border-width: 5px;
+}
+
+
+.texto_venta{
+    text-align:center;
+    color:#000000;
+    font-size: large;
+    padding-top: 20%;
+    height: 4.178cm;
+}
+
+.texto_venta_2{
+    text-align:center;
+    color:#000000;
+    font-size: large;
+    padding: 10%;
+    height: 4.178cm;
+}
+
+.texto_venta_3{
+    text-align:center;
+    color:#000000;
+    font-size: large;
+    padding: 0%;
+    height: 4.178cm;
+}
+
+#plataforma_como_funciona{
+    background-color:black;
+    color: blanchedalmond;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+   padding: 2%;
+   width: 100%;
+    height: 100%;
+    margin: 0%;
+    border-radius: 1cm;
+}
+
+#intruccion_1{
+    background-color:#ffdd03;
+    color:#000000;
+    display: box;
+    justify-content: center;
+    align-items:center;
+    width: 273px;
+    height: 301px;
+    margin: 5%;
+    border-radius: 1cm;
+    
+}
+
+.container_boton{
+    background-color: black;
+    color: white;
+    border-radius: 1.5cm;
+    width: 80px;
+    height: 80px;
+    
+}
+#boton_1{
+    text-align: center;
+}
+
+#colaboradores{
+    background-color:g;
+    color: white;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    padding: 0%;
+    width: auto;
+    height: auto;
+    margin: 2%;
+    border-radius: 1cm;
+    /*Boton para concocer más del artista*/
+}
+
+#colaboradores_1{
+    background-color:#ffdd03;
+    color: black;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    padding: 0%;
+    width: auto;
+    height: auto;
+    margin: 2%;
+    border-radius: 1cm;
+    /*Boton del nombre del artista*/
+}
+#colaboradores_2{
+    color:#FFFFEF;
+    text-align: center;
+    width: 570px;
+    height: 570px;
+    padding: 2%;
+    margin: 2%;+
+    /*interior de las imagenes*/
+}
+#ImagenArtista_1A{
+    width: 580px;
+    height: AUTO;
+    padding: 3%;
+    border-radius: 2CM;
+}
+
+.itemCarrusel{
+    height: 800px;
+    position: relative;
+    text-align: center;
+    /*esto tambien modifica el contenedor*/
+}
+
+.flechasCarrusel{
+    height: 100%;
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+#tarjetaCarrusel_1{
+    background-color:#FFFFEF;
+    color:#000000;
+    height: 800px;
+    width: auto;
+    display:box;
+    /*Tarjeta MUSICOS*/
+}
+#tarjetaCarrusel_2{
+    background-color:#FFFFEF;
+    color: #000000;
+    height: 800px;
+    width: auto;
+    display:box;
+    /*Tarjeta PINTORES*/
+
+}
+#tarjetaCarrusel_3{
+    background-color:#FFFFEF;
+    color:#000000;
+    height: 800px;
+    width: auto;
+    display:box;
+    /*Tarjeta ESCULTORES*/
+
+}
+
+#conteItemsCarrusel{
+    height: 800px;
+
+    align-items: center;
+    overflow: hidden;
+    /* esto modifica el tamaño de afuera del contenedor*/
+}
+
+
+
+.Impacto {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+   padding: 1%;
+}
+
+
+
+
