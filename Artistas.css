@@ -1,8 +1,8 @@
-/* Estilos generales */
+/* Estilos generales 
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Color de fondo */
+    background-color: #f8f9fa; /* Color de fondo 
 }
 
 .container {
@@ -10,7 +10,7 @@ body {
 }
 
 .sidebar {
-    background-color: #fff; /* Color de fondo de la barra lateral */
+    background-color: #fff; /* Color de fondo de la barra lateral 
     padding: 20px;
     border-radius: 10px;
 }
@@ -33,11 +33,11 @@ body {
     margin-bottom: 10px;
 }
 
-.card {
-    border: none; /* Quita los bordes de las tarjetas */
-    background-color: #fff; /* Color de fondo de las tarjetas */
-    border-radius: 10px; /* Borde redondeado */
-    margin-bottom: 20px; /* Espacio entre las tarjetas */
+.card 
+    border: none; /* Quita los bordes de las tarjetas 
+    background-color: #fff; /* Color de fondo de las tarjetas 
+    border-radius: 10px; /* Borde redondeado 
+    margin-bottom: 20px; /* Espacio entre las tarjetas 
 }
 
 .card-img-top {
@@ -46,7 +46,7 @@ body {
 }
 
 .card-body {
-    padding: 10px; /* Espaciado interno */
+    padding: 10px; /* Espaciado interno 
 }
 
 .card-text {
@@ -54,9 +54,9 @@ body {
 }
 
 .category-images .card {
-    margin-bottom: 20px; /* Espacio entre las tarjetas */
-    border-radius: 10px; /* Borde redondeado */
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Sombra suave */
+    margin-bottom: 20px; /* Espacio entre las tarjetas 
+    border-radius: 10px; /* Borde redondeado 
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Sombra suave 
 }
 
 .category-images .card-img-top {
@@ -66,11 +66,11 @@ body {
 
 .category-images .card-text {
     font-size: 14px;
-    text-align: center; /* Centra el texto */
+    text-align: center; /* Centra el texto 
 }
 
 
-/* Estilos específicos para el diseño responsivo */
+/* Estilos específicos para el diseño responsivo 
 
 @media (min-width: 768px) {
     .sidebar {
@@ -92,7 +92,69 @@ body {
     }
 
     .col-2 {
-        flex-basis: calc(20% - 10px); /* 20% con un margen de 10px entre las columnas */
+        flex-basis: calc(20% - 10px); /* 20% con un margen de 10px entre las columnas 
     }
+}
+*/
+
+.contenedor-filtro {
+    background-color: #f0f0f0; /* Color de fondo del contenedor */
+    border: 1px solid #ccc; /* Borde del contenedor */
+    padding: 20px; /* Espacio interior del contenedor */
+    width: 250px; /* Ancho del contenedor */
+  }
+  
+  .filtro {
+    margin-bottom: 15px; 
+  }
+  
+  .categorias, .orden, .genero, .precios, .buscador {
+    margin-bottom: 10px; 
+  }
+  
+  .categorias ul, .genero ul {
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  .categorias li, .genero li {
+    margin-bottom: 5px; 
+  }
+  
+  .buscador input {
+    width: 150px; 
+  }
+  
+  .buscador button {
+    margin-left: 5px;
+    background-color: yellow; 
+  }
+  
+  
+  .contenedor {
+    display: flex; 
+  }
+  
+  .filtro {
+    width: 200px; 
+  }
+
+  .card-img-top {
+    width: auto; 
+    height: 200px;  
+    object-fit: cover;  
+}
+
+.card-body {
+  border-radius: 100px;
+}
+
+
+.buscador input[type="text"],
+.buscador button {
+  border-radius: 10px;
+}
+.btn-container {
+  text-align: right; /* Alinea el contenido a la derecha */
 }
 
