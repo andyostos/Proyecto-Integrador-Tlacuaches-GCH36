@@ -20,7 +20,8 @@
     /* background-color:brown; */
     flex-direction: column;
     justify-content: space-around;
-    margin-bottom: 0;
+
+    margin-bottom: 0 !important;
 }
 
 .container-tarjetas{
@@ -28,13 +29,18 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .container-4 {
 
-    /* background-color:chartreuse */
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color:brown; */
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 5em;
 }
 
 .container-5 {
