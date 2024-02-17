@@ -13,11 +13,10 @@
 <body>
     <div id="navbar-container-dom"></div>
 
-    <div class="container">
+    <div class="contenedor-principal">
   
-
       <div class="row">
-        <div class="col-lg-2 col-sm-2">
+       <div class="col-md-2">
           <div class="filtro">
             <h4 class="filtrar">Filtrar ( )</h4>
             <div class="categorias">
@@ -40,331 +39,399 @@
                 <option value="todos">Todos</option>
               </select>
             </div>
-            <div class="genero">
-              <h5 class="genero">Género</h5>
-              <ul>
-                <li><input type="checkbox" id="mujer" name="genero" value="mujer"><label for="mujer">Mujer</label></li>
-                <li><input type="checkbox" id="hombre" name="genero" value="hombre"><label for="hombre">Hombre</label></li>
-                <li><input type="checkbox" id="ambos" name="genero" value="ambos"><label for="ambos">Ambos</label></li>
-              </ul>
-            </div>
             <div class="precios">
               <h5 class="precios">Precios</h5>
-              <select>
-                <option value="artistas">Artistas</option>
+              <select id="rangoPrecios">
+                <option value="1000-2000">1000 - 2000</option>
+                    <option value="2000-3000">2000 - 3000</option>
+                    <option value="3000-4000">3000 - 4000</option>
+                    <option value="4000-5000">4000 - 5000</option>
               </select>
             </div>
             <div class="buscador">
               <input type="text" placeholder="Buscar">
-              <button type="button">Buscar</button>
-              <button type="button">Borrar</button>
+              <button type="button" class="amarillo-btn">Buscar</button>
+              <button type="button" class="amarillo-btn">Borrar</button>
             </div>
           </div> 
         </div>
+         
+         <div class="col-md-10"> 
   
-  
-         <div class= "col-lg-10 col-sm-10"> 
-  
-          <div class="row">
-  
-            <div class="col-sm-3 mb-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <a href="8.PaginaDeProducto.html">
-                  <img src="./Imagenes/musica1.jpg" class="card-img-top" alt="...">
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/pexels-stefan-stefancik-91227.jpg" width="50px" height="50px"  class="rounded-circle"/> Stefan Stefancik</h5>
-                  <p class="card-text">Musico</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
+     <!--  <div class= "margen-tarjetas">-->
+      <div class="slider-container">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./Media/Assets/Indieteca_BannersWeb01.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class= "col-sm-3 mb-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/musica2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/pexels-simon-robben-614810.jpg" width="50px" height="50px"  class="rounded-circle"/> Simon Robben</h5>
-                  <p class="card-text">Musico</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
+            <div class="carousel-item">
+              <img src="./Media/Assets/Indieteca_BannersWeb02.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="col-sm-3 mb-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/musica3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/pexels-daniel-xavier-1239288.jpg" width="50px" height="50px"  class="rounded-circle"/> Danielle Xavier</h5>
-                  <p class="card-text">Musico</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
+            <div class="carousel-item">
+              <img src="./Media/Assets/Indieteca_BannersWeb03.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="col-sm-3 mb-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/musica4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/pexels-george-dolgikh-1310474.jpg" width="50px" height="50px"  class="rounded-circle"/> Lexi Delfin</h5>
-                  <p class="card-text"> Musico</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-      
-          </div>
-  
-          <div class="row">
-  
-            <div class="col-sm-3 mb-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/pintura2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/pexels-italo-melo-2379004.jpg" width="50px" height="50px"  class="rounded-circle"/> Albert Turner</h5>
-                  <p class="card-text">Pintor/a</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-            <div class="col-sm-3 mb-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/pintura1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/pexels-kampus-production-6481907.jpg" width="50px" height="50px"  class="rounded-circle"/>Diego Costa</h5>
-                  <p class="card-text">Pintor/a</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-            <div class="col-sm-3 mb-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/pintura3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/pexels-daniel-xavier-1102341.jpg" width="50px" height="50px"  class="rounded-circle"/> Fernanda Rui</h5>
-                  <p class="card-text">Pintor/a</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-            <div class="col-sm-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/pintura4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/pexels-george-dolgikh-1310474.jpg" width="50px" height="50px"  class="rounded-circle"/> Luisa Teja</h5>
-                  <p class="card-text">Pintor/a</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-      
-          </div>
-  
-          <div class="row">
-  
-            <div class="col-sm-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/cultura1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/pexels-simon-robben-614810.jpg" width="50px" height="50px"  class="rounded-circle"/> Smelak Cooper</h5>
-                  <p class="card-text">Escultor/a</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-            <div class="col-sm-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/cultura2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/pexels-linkedin-sales-navigator-2182970.jpg" width="50px" height="50px"  class="rounded-circle"/> Serg Masso</h5>
-                  <p class="card-text">Escultor/a</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-            <div class="col-sm-3" >
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/cultura3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/beard-1845166_640.jpg" width="50px" height="50px"  class="rounded-circle"/> Drago Vita</h5>
-                  <p class="card-text">Escritor/a</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-            <div class="col-sm-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/cultura4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/girl-4394578_640.jpg" width="50px" height="50px"  class="rounded-circle"/> Ivanka Lukke</h5>
-                  <p class="card-text">Escritor/a</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-      
-          </div>
-  
-          <div class="row">
-  
-            <div class="col-sm-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/58 Portrait Photos - The Absolute Best Photographers Of 2020.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/pexels-simon-robben-614810.jpg" width="50px" height="50px"  class="rounded-circle"/> Cristopher Urich</h5>
-                  <p class="card-text">Fotografo/a</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-            <div class="col-sm-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/15 Increíbles fotografías que solo personas muy ingeniosas tomarían.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/girl-4394578_640.jpg" width="50px" height="50px"  class="rounded-circle"/> Maria Angela</h5>
-                  <p class="card-text">Fotografo/a</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-            <div class="col-sm-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/Lake Tahoe's Least Crowded and Most Photogenic Campsite.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/pexels-kampus-production-6481907.jpg" width="50px" height="50px"  class="rounded-circle"/> Robert Yaris</h5>
-                  <p class="card-text">Fotografo/a</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-            <div class="col-sm-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/c8e20d24-15b6-40fe-b427-7b9bb561fbf2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/pexels-stefan-stefancik-91227.jpg" width="50px" height="50px"  class="rounded-circle"/> Ivan Rich</h5>
-                  <p class="card-text">Fotografo/a</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-      
-          </div>
-  
-          <div class="row">
-  
-            <div class="col-sm-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/diseño1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/girl-4394578_640.jpg" width="50px" height="50px"  class="rounded-circle"/> Lucia Mayorga</h5>
-                  <p class="card-text">Diseñador/a</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-            <div class="col-sm-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/diseño2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/pexels-andrea-piacquadio-762020.jpg" width="50px" height="50px"  class="rounded-circle"/> Svetlana Jenssen</h5>
-                  <p class="card-text">Diseñador/a</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-            <div class="col-sm-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/diseño3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/pexels-stefan-stefancik-91227.jpg" width="50px" height="50px"  class="rounded-circle"/> Jair Mello</h5>
-                  <p class="card-text">Diseñador/a</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-            <div class="col-sm-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/diseño4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><img src="./Imagenes/beard-1845166_640.jpg" width="50px" height="50px"  class="rounded-circle"/> Joao Jesus</h5>
-                  <p class="card-text">Diseñador/a</p>
-                  <a href="#" class="btn btn-light">Ver perfil</a>
-                </div>
-              </div>
-      
-            </div>
-      
-          </div>
-  
-          <div class="row">
-  
-            <div class="col-sm-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/pintura3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Pintura</h5>
-                  <p class="card-text"></p>
-                  <a href="#" class="btn btn-dark">Ver mas</a>
-                </div>
-              </div>
-      
-            </div>
-            <div class="col-sm-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/58 Portrait Photos - The Absolute Best Photographers Of 2020.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Fotografía</h5>
-                  <p class="card-text"></p>
-                  <a href="#" class="btn btn-dark">Ver mas</a>
-                </div>
-              </div>
-      
-            </div>
-            <div class="col-sm-3">
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/musica2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"> Musica </h5>
-                  <p class="card-text"></p>
-                  <a href="#" class="btn btn-dark">Ver mas</a>
-                </div>
-              </div>
-      
-            </div>
-            <div class="col-sm-3"> 
-              <div class="card text bg-warning" style="width: 18rem;">
-                <img src="./Imagenes/cultura4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"> Escritura </h5>
-                  <p class="card-text"></p>
-                  <a href="#" class="btn btn-dark">Ver mas</a>
-                </div>
-              </div>
-      
-            </div>
-      
           </div>
         </div>
-  
       </div>
+
+       
+          <div class="tarjetas">
   
-    </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mb-3" data-categoria="musica">
+              <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
+                <div class="image-container">
+                <a href="8.PaginaDeProducto.html">
+                  <img src="./Media/Assets/TarjetasWeb_02.jpg" class="card-img-top" alt="...">
+                </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Media/Assets/Artista_Web_01.jpg" width="50px" height="50px"  class="rounded-circle"/>Musica</h5>
+                    <h4 class="mx-2">$1,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg> </h4>
+                  <p class="card-text">Precio</p>
+                </div>
+              </div>
+            
+      
+            </div>
+            <div class= "col-lg-3 col-md-6 mb-3" data-categoria="musica">
+              <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
+                <div class="image-container">
+                <img src="./Media/Assets/TarjetasWeb_02.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Media/Assets/Artista_Web_01.jpg" width="50px" height="50px"  class="rounded-circle"/> Musica</h5>
+                  <h4 class="mx-2">$1,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg> </h4>
+                  <p class="card-text">Precio</p>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="musica">
+              <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
+                <div class="image-container">
+                <img src="./Media/Assets/TarjetasWeb_02.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Media/Assets/Artista_Web_01.jpg" width="50px" height="50px"  class="rounded-circle"/>Musica</h5>
+                  <h4 class="mx-2">$1,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg>  </h4>
+                  <p class="card-text">Precio</p>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="musica">
+              <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
+                <div class="image-container">
+                <img src="./Media/Assets/TarjetasWeb_02.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Media/Assets/Artista_Web_01.jpg" width="50px" height="50px"  class="rounded-circle"/> Musica</h5>
+                  <h4 class="mx-2">$1,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg> </h4>
+                  <p class="card-text"> Precio</p>
+                </div>
+              </div>
+      
+            </div>
+      
+          </div>
+
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="Arte">
+              <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
+                <div class="image-container">
+                <img src="./Media/Assets/TarjetasWeb_03.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Media/Assets/Artista_Web_01.jpg" width="50px" height="50px"  class="rounded-circle"/> Arte</h5>
+                  <h4 class="mx-2">$10,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg> </h4>
+                  <p class="card-text">Precio</p>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="Arte">
+              <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
+                <div class="image-container">
+                <img src="./Media/Assets/TarjetasWeb_03.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Media/Assets/Artista_Web_01.jpg" width="50px" height="50px"  class="rounded-circle"/> Arte</h5>
+                  <h4 class="mx-2">$10,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg> </h4>
+                  <p class="card-text">Precio</p>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="Arte">
+              <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
+                <div class="image-container">
+                <img src="./Media/Assets/TarjetasWeb_03.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Media/Assets/Artista_Web_01.jpg" width="50px" height="50px"  class="rounded-circle"/> Arte</h5>
+                  <h4 class="mx-2">$10,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg> </h4>
+                  <p class="card-text">Precio</p>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="Arte">
+              <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
+                <div class="image-container">
+                <img src="./Media/Assets/TarjetasWeb_03.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Media/Assets/Artista_Web_01.jpg" width="50px" height="50px"  class="rounded-circle"/> Arte</h5>
+                  <h4 class="mx-2">$10,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg> </h4>
+                  <p class="card-text">Precio</p>
+                </div>
+              </div>
+      
+            </div>
+      
+          </div>
+  
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="Fotografía">
+              <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
+                <div class="image-container">
+                <img src="./Media/Assets/TarjetasWeb_04.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Media/Assets/Artista_Web_01.jpg" width="50px" height="50px"  class="rounded-circle"/> Fotografía</h5>
+                  <h4 class="mx-2">$1,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg> </h4>
+                  <p class="card-text">Precio</p>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="Fotografía">
+              <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
+                <div class="image-container">
+                <img src="./Media/Assets/TarjetasWeb_04.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Media/Assets/Artista_Web_01.jpg" width="50px" height="50px"  class="rounded-circle"/> Fotografía</h5>
+                  <h4 class="mx-2">$1,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg> </h4>
+                  <p class="card-text">Precio</p>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="Fotografía">
+              <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
+                <div class="image-container">
+                <img src="./Media/Assets/TarjetasWeb_04.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Media/Assets/Artista_Web_01.jpg" width="50px" height="50px"  class="rounded-circle"/> Fotografía</h5>
+                  <h4 class="mx-2">$1,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg> </h4>
+                  <p class="card-text">Precio</p>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="Fotografía">
+              <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
+                <div class="image-container">
+                <img src="./Media/Assets/TarjetasWeb_04.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Media/Assets/Artista_Web_01.jpg" width="50px" height="50px"  class="rounded-circle"/> Fotografía</h5>
+                  <h4 class="mx-2">$1,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg> </h4>
+                  <p class="card-text">Precio</p>
+                </div>
+              </div>
+      
+            </div>
+      
+          </div>
+  
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6 mb-3">
+              <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
+                <div class="image-container">
+                <img src="./Media/Assets/TarjetasWeb_01.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Media/Assets/Artista_Web_01.jpg" width="50px" height="50px"  class="rounded-circle"/> Diseño</h5>
+                  <h4 class="mx-2">$10,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg> </h4>
+                  <p class="card-text">Precio</p>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="Diseño">
+              <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
+                <div class="image-container">
+                <img src="./Media/Assets/TarjetasWeb_01.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Media/Assets/Artista_Web_01.jpg" width="50px" height="50px"  class="rounded-circle"/> Diseño</h5>
+                  <h4 class="mx-2">$10,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg> </h4>
+                  <p class="card-text">Precio</p>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="Diseño">
+              <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
+                <div class="image-container">
+                <img src="./Media/Assets/TarjetasWeb_01.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Media/Assets/Artista_Web_01.jpg" width="50px" height="50px"  class="rounded-circle"/> Diseño</h5>
+                  <h4 class="mx-2">$10,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg> </h4>
+                  <p class="card-text">Precio</p>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="Diseño">
+              <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
+                <div class="image-container">
+                <img src="./Media/Assets/TarjetasWeb_01.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><img src="./Media/Assets/Artista_Web_01.jpg" width="50px" height="50px"  class="rounded-circle"/> Diseño</h5>
+                  <h4 class="mx-2">$10,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg> </h4>
+                  <p class="card-text">Precio</p>
+                </div>
+              </div>
+      
+            </div>
+      
+          </div>
+
+          <button class="ver-mas-btn text-warning" >Ver más</button>
+
+
+         
+
+          <!-- <div class="slider-container">
+            <div class="slider">
+              <div id="carouselExample" class="carousel carousel-dark slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="cards-carrusel">
+                    <div class="row-2">
+                        <div class="col-sm-3">
+                          <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                            <img src="./Media/Logos/tarjetascarrito/discometal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h3 class="card-title">Pintura</h3>
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="col-sm-3 ">
+                          <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                            <img src="./Media/Logos/tarjetascarrito/pinturanatural.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h3 class="card-title">Escultura</h3>
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="col-sm-3">
+                            <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                              <img src="./Media/Logos/tarjetascarrito/esculturamoderna.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h3 class="card-title">Música</h3>                    
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+          
+                    <div class="row-2">
+                        <div class="col-sm-3 mb-2 mb-sm-0">
+                       
+                            <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                              <img src="./Media/Logos/tarjetascarrito/librohead.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h3 class="card-title">Literatura</h3>
+                              </div>
+                            </div>
+                          
+                      </div>
+                      <div class="col-sm-3 mb-2 mb-sm-0">
+                        <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                          <img src="./Media/Logos/tarjetascarrito/pinturanatural.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Fotografía</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 mb-2 mb-sm-0">
+                        <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                          <img src="./Media/Logos/tarjetascarrito/discometal.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Mercancía</h3>                
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  
+          
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          
+            </div>
+          
+          
+            </div> -->
+        </div>
+   
+          
    
 
   
