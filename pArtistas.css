@@ -32,6 +32,29 @@
     margin-top: 100px;
 }
 
+
+
+pagination-container .pagination .page-item .page-link {
+    color: black; /* Cambia el color del texto de los botones a negro */
+    background-color: transparent; /* Fondo transparente */
+    border: 1px solid black; /* Borde negro */
+    padding: 5px 10px; /* Ajuste de relleno */
+    margin: 0 5px; /* Ajuste de margen entre botones */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+}
+
+/* Cambia el color de fondo al pasar el cursor sobre los botones */
+.pagination-container .pagination .page-item .page-link:hover {
+    background-color: #FFDD03; /* Color de fondo amarillo cuando se pasa el cursor */
+}
+
+/* Estilo para el botón activo */
+.pagination-container .pagination .page-item.active .page-link {
+    background-color: #D9D9D9; /* Color de fondo negro para el botón activo */
+    color: white; /* Texto blanco para el botón activo */
+    border-color: black; /* Borde negro para el botón activo */
+}
+
 .social-icons a {
     color: inherit; /* Utiliza el color heredado del padre (por defecto es negro) */
     text-decoration: none;
