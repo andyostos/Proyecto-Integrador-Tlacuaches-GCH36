@@ -5,7 +5,7 @@
    padding: 1%;
    /*Contenedor general, no meterle color de fondo*/
 }
-
+/*
 .container-MV{
     background-color:#FFDD03;
     height: auto;
@@ -16,15 +16,30 @@
     color:#000000;
     border-radius: 1cm;
 
-    /*Modificadores de los botones de misión y visión*/
+    'Modificadores de los botones de misión y visión DE ANTES'
+}
+*/
+.btn-default{
+    background-color:#000000;
+    color: #ffdd03;
+    width: 350px;
+    height: 77px;
+    border-radius:1cm;
+    border-color: #ffdd03;
+    border-width: 5px;
+    /*Modificadores de los botones de misión y visión ACTUALES*/
+}
+
+.container-valores{
 }
 
 #Separador{
     background-color:#000000;
-    color: #FFFFFF;
+    color:#FFFFFF;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
+    /*Separador conoce nuestra filosofía*/
 }
 
 #Separador-2{

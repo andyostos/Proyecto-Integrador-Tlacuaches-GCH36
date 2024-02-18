@@ -101,7 +101,7 @@ border-radius: 2cm;
 #intruccion_1{
     background-color:#ffdd03;
     color:#000000;
-    display: box;
+    display:inline-table;
     justify-content: center;
     align-items:center;
     width: 273px;
@@ -187,7 +187,7 @@ border-radius: 2cm;
 }
 
 #tarjetaCarrusel_1{
-    background-color:#FFFFEF;
+    background-color:white;
     color:#000000;
     height: 800px;
     width: auto;
@@ -195,7 +195,7 @@ border-radius: 2cm;
     /*Tarjeta MUSICOS*/
 }
 #tarjetaCarrusel_2{
-    background-color:#FFFFEF;
+    background-color:white;
     color: #000000;
     height: 800px;
     width: auto;
@@ -204,7 +204,7 @@ border-radius: 2cm;
 
 }
 #tarjetaCarrusel_3{
-    background-color:#FFFFEF;
+    background-color:white;
     color:#000000;
     height: 800px;
     width: auto;
