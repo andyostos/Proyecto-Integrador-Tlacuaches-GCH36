@@ -1,25 +1,12 @@
 .container{
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
     font-size: large;
    padding: 1%;
    /*Contenedor general, no meterle color de fondo*/
 }
-/*
-.container-MV{
-    background-color:#FFDD03;
-    height: auto;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:#000000;
-    border-radius: 1cm;
 
-    'Modificadores de los botones de misión y visión DE ANTES'
-}
-*/
 .btn-default{
+    font-family:"Rubik" !important;
     background-color:#000000;
     color: #ffdd03;
     width: 350px;
@@ -30,10 +17,13 @@
     /*Modificadores de los botones de misión y visión ACTUALES*/
 }
 
-.container-valores{
+#Separador-2{
+    font-family:"Montserrat" !important;
+    /*Valores*/
 }
 
 #Separador{
+    font-family:"Montserrat" !important;
     background-color:#000000;
     color:#FFFFFF;
     text-align: center;
@@ -42,26 +32,15 @@
     /*Separador conoce nuestra filosofía*/
 }
 
-#Separador-2{
-    background-color:#FFDD03;
-    color:#000000;
-    border-radius: 1cm;
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #Separador-3{
+    font-family:"Montserrat" !important;
     background-color:#FFDD03;
     color:#000000;
     border-radius: 1cm;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
+    /*Conoce a nuestro equipo*/
 }
 
 
@@ -71,49 +50,50 @@
     padding: 3%;
     margin: 0%;
     border-radius: 10%;
+    /*Bordes redondeados valores*/
     
 }
 
 .Valores{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-   padding: 1%;}
-
-.Valores-texto{
-    text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-   padding: 1%;}
-.Impacto {
+    font-family:"Montserrat" !important;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
    padding: 1%;
+   /*Fondo de los valores*/
+/*Esto va sin color de fondo*/
 }
 
+.Valores-texto{
+    font-family:"Montserrat" !important;
+    text-align: justify;
+    font-size: large;
+   padding: 1%;
+}
 .imagenesDesarrolladores{
     border-radius: 10%;
     margin: 0%;
+    /*Bordes redondeados imagenes desarrolladores*/
 }
 
 .container-1{
+    font-family:"Montserrat" !important;
     background-color: #FFDD03;
     color:#000000;
     border-radius: 1cm;
     width:auto;
+    /*Nombres*/
 
 }
 
 .container-2{
+    font-family:"Montserrat" !important;
     background-color: black;
     color:#FFFFFF;
     border-radius: 1cm;
-    size-adjust: ;
-
+    width:auto;
+    /*Puestos*/
 }
-
-
 
 
 
