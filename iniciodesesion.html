@@ -23,24 +23,32 @@
 
 </div>
 
-<div class="iniciar-sesion col-sm-6">
-    <h2>Iniciar sesión</h2>
+<div class="iniciar-sesion col-sm-4">
+    <div class="container-form" id="formulario-titulo">
+      <h2>Iniciar sesión</h2>
     <form action="" method="get">
-        <div class="col-sm-6 mb3">
+        <div class="col">
           <label for="Email" class="form-label">Correo electrónico o nombre de usuario</label>
           <input type="email" class="form-control rounded-pill" id="Email" >
         </div>
-        <div class=" col-sm-6 mb-3">
+
+        <div class="col">
           <label for="Contrasena" class="form-label">Contraseña</label>
           <input type="password" class="form-control rounded-pill" id="Contrasena">
         </div>
-        <div class="col-sm-12 mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="Recordar" aria-describedby="olvido">
-          <label class="form-check-label" for="Recordar">Recordar</label>
+        
+        <div class="col">
+          <div class="row">
+            <input type="checkbox" class="form-check-input" id="Recordar" aria-describedby="olvido">
+            <label class="form-check-label" for="Recordar">Recordar</label>
             <p class="txt-olvido"> ¿Olvidaste tu contraseña?</p>
+          </div>
 
-          <div id="olvido" class="form-text">Al hacer click en iniciar sesiona ceptas las condiciones de uso</div>
+          <div class="row">
+            <div id="olvido" class="form-text">Al hacer click en iniciar sesion aceptas las condiciones de uso</div>
+          </div>
         </div>
+        
         <div class="btn-inicio">
         <button type="submit" class="btn bt-warning btn-inicio-s">Iniciar sesión</button>
         </div>
@@ -59,6 +67,7 @@
         <button type="submit" class="btn bt-warning btn-registro">Registrate</button>
         </div>
 
+    </div>
 </div>
 
 
