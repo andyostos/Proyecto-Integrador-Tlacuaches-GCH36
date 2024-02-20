@@ -1,7 +1,7 @@
 
 .container-form{
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:"Montserrat" !important;
     font-size: large;
     display:flex;
     align-items: center;
@@ -24,7 +24,25 @@
     box-sizing: border-box;
 }
 
+.iniciar-sesion {
+    margin-top: 100px;
+    margin: auto;
+    border: 5px solid #FFDD03;
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+    
+}
 
+.logo-central{
+    margin: auto;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    padding: 1px;
 
+}
 
 
