@@ -92,3 +92,12 @@
   margin-left: 0px !important;
 
 }
+
+.mini-producto{
+  border-radius: 30px;
+}
+
+.mini-producto:hover{
+  transition: filter 0.5s ease;
+    filter: brightness(70%);
+}
