@@ -14,4 +14,14 @@ function addUsertoSystem(pnombre, papellidopaterno, papellidomaterno, pusername,
     };
     console.log(newUser)
     listaUsuarios.push(newUser);
+    localStorageList(listaUsuarios);
+}
+
+localStorageList(listaUsuarios);
+
+function localStorageList(plist){
+    localStorage.setItem("localStorageUserList", JSON.stringify(plist));
+
+   
+
 }
