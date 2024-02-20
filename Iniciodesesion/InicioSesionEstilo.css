@@ -107,10 +107,15 @@
     background-color:#fbc403 !important;
     transform: scale(1.05);
     transition: transform .5s ease;
+    color: #231F20!important;
   }
 
 
-  
+  .btn-link {
+    text-decoration: none !important;
+    color: #231F20 !important;
+    transform: scale(1.00) !important;
+  }
 
   .separador-form {
     display: flex;
