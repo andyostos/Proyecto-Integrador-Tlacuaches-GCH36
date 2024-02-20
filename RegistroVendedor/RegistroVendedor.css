@@ -1,12 +1,12 @@
 
-
-.contenedor-t-inicio-s {
+.contenedor-registro-t {
     display: block;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-
+   
 }
+
 
 
 .logo-central{
@@ -18,19 +18,20 @@
 
 }
 
-.iniciar-sesion {
-    margin-top: 100px;
-    margin: auto;
+
+.registro-vendedor {
+    margin-top: 10px;
+   justify-content: center;
     border: 5px solid #FFDD03;
     border-radius: 30px;
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
-   
-    
+    margin: auto;
+
 }
 
-.iniciar-sesion h2 {
+.registro-vendedor h2 {
     font-family: 'Montserrat'  !important;;
     font-size: xx-large;
     justify-content: center;
@@ -50,44 +51,13 @@
 
 .rounded-pill {
     background-color: #EBEBEB !important;
-}
-
-
-.form-check-input:checked {
-    background-color: #fbc403 !important;
-    border-color: #fbc403 !important;
-
-}
-
-.form-check {
-    display: flex;
-}
-
-.txt-olvido {
-    
-    float: right;
+    border: none;
 }
 
 
 
-.btn-inicio-s{
-    background-color: #FFDD03 !important;
-    border-radius: 30px !important;
-    border: 0px !important;
-    margin-left: 10px;
-    font-family: 'Rubik'  !important;
-    justify-content: center !important;
-    font-size: larger;
-}
 
-.btn-inicio-s:hover {
-    background-color:#fbc403 !important;
-    transform: scale(1.05);
-    transition: transform .5s ease;
-  }
-
-
-  .btn-registro {
+.btn-registro {
     background-color: #FFDD03 !important;
     border-radius: 30px !important;
     border: 0px !important;
@@ -110,31 +80,12 @@
   }
 
 
-  
-
   .separador-form {
     display: flex;
     margin: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    align-items: center;
+
 
   }
-
-  .txt-nuevo{
-    background-color: white;
-    width: fit-content;
-    color: black;
-   margin: auto;
-   float: right;
-    
-  }
-
-
- 
-
-  .border {
-    border-color:#fbc403;
-    width: 3px;
-   
-   
-  }
-
- 
