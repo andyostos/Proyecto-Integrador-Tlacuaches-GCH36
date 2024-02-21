@@ -1,4 +1,5 @@
 
+document.addEventListener('DOMContentLoaded', () => {
 const baseDeDatos = [
 
 //Artista Pintor
@@ -12,6 +13,7 @@ const baseDeDatos = [
     edad:147,
     RFC:"xxxxxxxxxx01",
     Categoria: 'Pintor',
+    imagenObra:'https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRIM_VcFaX0DlMFvSTvOfSLLixgRSjAiK9GAonXH2E_amq0W1Ip4gHidYi_c7ZIX6Nc',
     imagenPerfil:'https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRIM_VcFaX0DlMFvSTvOfSLLixgRSjAiK9GAonXH2E_amq0W1Ip4gHidYi_c7ZIX6Nc',
     nickname:'Vasili Kandinski',
 },
@@ -26,6 +28,7 @@ const baseDeDatos = [
     edad:190,
     RFC:"89097LLL90OP",
     Categoria: 'Escritor',
+    imagenObra:'https://mnh.inah.gob.mx/img/coleccion/10-129995.jpg',
     imagenPerfil:'https://mnh.inah.gob.mx/img/coleccion/10-129995.jpg',
     nickname:'AltamiranodeTixtla',
 },
@@ -40,6 +43,7 @@ const baseDeDatos = [
         edad:53,
         RFC:"TCHAIKOVSKY12",
         Categoria: 'Musica',
+        imagenObra:'https://www.biografiasyvidas.com/biografia/c/fotos/chaikovski.jpg',
         imagenPerfil:'https://www.biografiasyvidas.com/biografia/c/fotos/chaikovski.jpg',
         nickname:'Chaikoski',
     },
@@ -48,12 +52,13 @@ const baseDeDatos = [
         id: 4,
         nombre: 'Alfred',
         primerApellido: "Eisenstaedt",
-        segundoApellido: "",
+        segundoApellido: "Eisenstaedt",
         correo:'alfredeisenstaedt@gmail.com',
         ciudad:"Dirschau, Prusia Occidental ",
         edad:53,
         RFC:"18981995ALEI",
         Categoria: 'Fotografía',
+        imagenObra:'https://th.bing.com/th/id/OIP.RFoDpPsW40UgVF9IrMRDmgAAAA?rs=1&pid=ImgDetMain',
         imagenPerfil:'https://th.bing.com/th/id/OIP.RFoDpPsW40UgVF9IrMRDmgAAAA?rs=1&pid=ImgDetMain',
         nickname:'Alfred Photo',
     },
@@ -62,13 +67,14 @@ const baseDeDatos = [
     {
         id: 5,
         nombre: 'Miguel Ángel',
-        primerApellido: "",
+        primerApellido: "Ángel",
         segundoApellido: "Buonarroti",
         correo:'contacto.MiguelAngel@gmail.com',
         ciudad:"Florencia, Italia",
         edad:83,
         RFC:"MANGEL88",
         Categoria: 'Escultura',
+        imagenObra:'https://www.elcorreo.com/xlsemanal/wp-content/uploads/sites/5/2023/11/miguel-angel-buonarroti-artista-genio-een-la-florencia-de-los-medici-a.jpg',
         imagenPerfil:'https://www.elcorreo.com/xlsemanal/wp-content/uploads/sites/5/2023/11/miguel-angel-buonarroti-artista-genio-een-la-florencia-de-los-medici-a.jpg',
         nickname:'MiguelAngelo',
     }
@@ -237,6 +243,10 @@ const baseDeDatos = [
     }
     */
 
+/*
+    const DOMitems = document.querySelector('#items');
+
+
    // Creacion Tarjeta tipo Indieteca
    function renderizarProductos() {
     baseDeDatos.forEach((info) => {
@@ -247,36 +257,47 @@ const baseDeDatos = [
         const miNodoRow = document.createElement('div');
         miNodoRow.classList.add('row');
         //Columnas division
-        const miNodoDivision = document.createElement('div');
-         miNodoDivision.classList.add('rcol-lg-3', 'col-md-6', 'mb-3');
-        // Contenedero de la Tarjeta de Producto
-        const miNodoTarjetaProduct = document.createElement('div');
-        miNodoTarjetaProduct.classList.add('card', 'text', 'bg-black', 'text-white', 'custom-card');
+        const miNodoColumnas = document.createElement('div');
+         miNodoColumnas.classList.add('col-lg-3', 'col-md-5', 'mb-3');
+        // Contenedero de la Tarjeta de Artista
+        const miNodoTarjetaArtistas = document.createElement('div');
+        miNodoTarjetaArtistas.classList.add('card', 'h-100');
+       // miNodoTarjetaArtistas.setAttribute('width', '18rem', 'border-top-width', '0px', 'border-top-style', 'solid', 'border-right-width', '0px', 'border-right-style', 'solid', 'border-bottom-width', '0px', 'border-bottom-style', 'solid', 'border-left-width', '0px', 'border-left-style', 'solid');
         //Contenedor Imagenes
-        const miNodoContImg = document.createElement('div');
-        miNodoContImg.classList.add('image-container');
+        const miNodoContImg = document.createElement('img');
+        miNodoContImg.classList.add('card-img-top');
+        miNodoContImg.setAttribute('src',`${info.imagenPerfil}`);
+        //cambiar si no funciona el info imagen perfil
         //Link de la imagen
         const miNodoLinkImg = document.createElement('a');
-        miNodoLinkImg.setAttribute('href', '8PaginaDeProducto.html');
+        miNodoLinkImg.setAttribute('href', '7.PaginaDeArtistas.html');
+        // div de card-body
+        const miNodoCont = document.createElement('div');
+        miNodoCont.classList.add('card-body');
         //Imagen del producto
-        const miNodoProducImg = document.createElement('img');
-        miNodoProducImg.classList.add('card-img-top');
-        miNodoProducImg.setAttribute('src', `${info.imagen}`);
-        miNodoProducImg.setAttribute('width','50');
-        miNodoProducImg.setAttribute('height','50');
+        const miNodoArtImg = document.createElement('img');
+        miNodoArtImg.classList.add('bd-placeholder-img', 'rounded-circle');
+        miNodoArtImg.setAttribute('src', `${info.imagenPerfil}`);
+        miNodoArtImg.setAttribute('width','70');
+        miNodoArtImg.setAttribute('height','70');
         // Container card
         const miNodoCardBody = document.createElement('div');
-        miNodoContImg.classList.add('card-body');
+        miNodoCardBody.classList.add('Info-artist-card');
         //Nombre Producto 
-        const miNodoCardTitle = document.createElement('h5');
-        miNodoCardTitle.classList.add('card-title');
-        miNodoCardTitle.textContent = `${info.nombre}`;
-        
-        //Precio
-        const miNodoPrecios = document.createElement('h4');
-        miNodoPrecios.classList.add('mx-2');
-        miNodoPrecios.textContent = `${info.precio}${divisa}`
+        const miNodoCardLink = document.createElement('a');
+        miNodoCardLink.classList.add('link-card');
+        miNodoCardLink.setAttribute('href', '7.PaginaDeArtistas.html');
+        // card text
+        const miNodoCardText = document.createElement('h3');
+        miNodoCardText.classList.add('card-text');
+        miNodoCardText.textContent = `${info.nombre}`;
+        // p
+        const miNodoCardP = document.createElement('p');
+        miNodoCardP.classList.add('card-text');
+        miNodoCardP.textContent = `${info.Categoria}`;
 
+        
+        
         //Carrito Icono
 
         // Titulo
@@ -312,16 +333,120 @@ const baseDeDatos = [
 
 
 
-        miNodoTarjeta.appendChild(miNodoRow);
-        miNodoRow.appendChild(miNodoDivision);
-        miNodoDivision.appendChild(miNodoTarjetaProduct);
-        miNodoTarjetaProduct.appendChild(miNodoContImg);
-        miNodoTarjetaProduct.appendChild(miNodoCardBody);
-        miNodoContImg.appendChild(miNodoLinkImg);
-        miNodoContImg.appendChild(miNodoProducImg);
-        miNodoCardBody.appendChild(miNodoCardTitle);
-        miNodoCardBody.appendChild(miNodoPrecios);
+        miNodoMargenTarjetas.appendChild(miNodoRow);
+        miNodoRow.appendChild(miNodoColumnas);
+        miNodoColumnas.appendChild(miNodoTarjetaArtistas);
+        miNodoTarjetaArtistas.appendChild(miNodoLinkImg);
+        miNodoTarjetaArtistas.appendChild(miNodoContImg);
+        miNodoCardBody.appendChild(miNodoCont);
+        miNodoCont.appendChild(miNodoLinkImg);
+        miNodoLinkImg.appendChild(miNodoArtImg);
+        miNodoCardBody.appendChild(miNodoCardLink);
+        miNodoCardLink.appendChild(miNodoCardText);
+        miNodoCardLink.appendChild(miNodoCardP);
 
-        DOMitems.appendChild(miNodoTarjetaProduct);
+        DOMitems.appendChild(miNodoMargenTarjetas);
     });
 } 
+
+renderizarProductos();
+*/
+
+//////////////////JUSTO AQUI///////
+
+//const baseDeDatos = [
+  // ... (tu base de datos)
+//];
+
+const DOMitems = document.querySelector('#items');
+
+function renderizarProductos() {
+  baseDeDatos.forEach((info) => {
+    // Estructura
+    const miNodoMargenTarjetas = document.createElement('div');
+    miNodoMargenTarjetas.classList.add('margen-tarjetas');
+    
+    // Columnas ROW
+    const miNodoRow = document.createElement('div');
+    miNodoRow.classList.add('row');
+    
+    // Columnas división
+    const miNodoColumnas = document.createElement('div');
+    miNodoColumnas.classList.add('col-lg-3', 'col-md-5', 'mb-3');
+    
+    // Contenedero de la Tarjeta de Artista
+    const miNodoTarjetaArtistas = document.createElement('div');
+    miNodoTarjetaArtistas.classList.add('card', 'h-100');
+   
+    
+    // Imagen del perfil del artista
+    consteateElement('img');
+    miNodoContImg.classList.add('card-img-top');
+    miNodoContImg.setAttribute('src', info.imagenObra);
+    
+    // Link de la imagen
+    const miNodoLinkImg = document.createElement('a');
+    miNodoLinkImg.setAttribute('href', '7.PaginaDeArtistas.html');
+    
+   
+    // Div de card-body
+    const miNodoCont = document.createElement('div');
+    miNodoCont.classList.add('card-body');
+    
+    // Imagen del producto (obra)
+    const miNodoArtImg = document.createElement('img');
+    miNodoArtImg.classList.add('bd-placeholder-img', 'rounded-circle');
+    miNodoArtImg.setAttribute('src', info.imagenObra); // Asegúrate de que la propiedad imagenObra esté definida
+    
+    // Container card
+    const miNodoCardBody = document.createElement('div');
+    miNodoCardBody.classList.add('Info-artist-card');
+    
+    // Nombre del artista (enlace)
+    const miNodoCardLink = document.createElement('a');
+    miNodoCardLink.classList.add('link-card');
+    miNodoCardLink.setAttribute('href', '7.PaginaDeArtistas.html');
+    
+    // Texto del nombre del artista
+    const miNodoCardText = document.createElement('h3');
+    miNodoCardText.classList.add('card-text');
+    miNodoCardText.textContent = `${info.nombre} ${info.primerApellido} ${info.segundoApellido}`;
+    
+    // Párrafo con la categoría del artista
+    const miNodoCardP = document.createElement('p');
+    miNodoCardP.classList.add('card-text');
+    miNodoCardP.textContent = `${info.Categoria}`;
+    
+    // Construcción de la estructura de nodos
+    miNodoLinkImg.appendChild(miNodoContImg);
+    miNodoCont.appendChild(miNodoLinkImg);
+    miNodoCardBody.appendChild(miNodoCont);
+    miNodoCont.appendChild(miNodoArtImg);
+    miNodoCardBody.appendChild(miNodoCardLink);
+    miNodoCardLink.appendChild(miNodoCardText);
+    miNodoCardLink.appendChild(miNodoCardP);
+    miNodoTarjetaArtistas.appendChild(miNodoCardBody);
+    miNodoColumnas.appendChild(miNodoTarjetaArtistas);
+    miNodoRow.appendChild(miNodoColumnas);
+    miNodoMargenTarjetas.appendChild(miNodoRow);
+    
+    // Agregar la tarjeta al contenedor principal
+    DOMitems.appendChild(miNodoMargenTarjetas);
+  });
+}
+
+renderizarProductos();
+
+});
+ 
+
+
+
+
+  /* miNodoTarjetaArtistas.setAttribute('width', '18rem');
+   miNodoTarjetaArtistas.setAttribute('border-right-width', '0px');
+    miNodoTarjetaArtistas.setAttribute('border-top-style', 'solid');
+    miNodoTarjetaArtistas.setAttribute('border-bottom-width', '0px',);
+    miNodoTarjetaArtistas.setAttribute('border-bottom-style', 'solid');
+    miNodoTarjetaArtistas.setAttribute('border-left-width', '0px');
+    miNodoTarjetaArtistas.setAttribute('border-left-style', 'solid');*/
