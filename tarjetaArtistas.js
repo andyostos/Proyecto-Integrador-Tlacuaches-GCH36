@@ -241,8 +241,8 @@ const baseDeDatos = [
    function renderizarProductos() {
     baseDeDatos.forEach((info) => {
         // Estructura
-        const miNodoTarjeta = document.createElement('div');
-        miNodoTarjeta.classList.add('tarjetas');
+        const miNodoMargenTarjeta = document.createElement('div');
+        miNodoMargenTarjeta.classList.add('margen-tarjetas');
         // Columnas ROW
         const miNodoRow = document.createElement('div');
         miNodoRow.classList.add('row');
