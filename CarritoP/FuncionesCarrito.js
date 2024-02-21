@@ -173,7 +173,7 @@ const baseDeDatos = [
         miNodoTarjeta.classList.add('tarjetas');
         // Columnas ROW
         const miNodoRow = document.createElement('div');
-        miNodoRow.classList.add('row');
+        miNodoRow.classList.add('row');  
         //Columnas division
         const miNodoDivision = document.createElement('div');
          miNodoDivision.classList.add('col-lg-3', 'col-md-6', 'mb-3');
