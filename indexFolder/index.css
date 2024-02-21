@@ -5,7 +5,8 @@
 }
 
 .container-1 {
-
+    padding-top: 5vw;
+   
     /* background-color: #231F20; */
 }
 
@@ -128,13 +129,14 @@ align-self:start;
 
 .content{
     font-family: 'Montserrat';
+    
 
 }
 
 .navbar-inverse{
     background-color: #231F20;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 1px;
 
 }
 .container-bottoms{
