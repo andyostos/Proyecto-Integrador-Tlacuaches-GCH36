@@ -49,19 +49,13 @@ body{
 
 /* No agrarra este */
 
-.row {
-    margin: auto;
-    display: flex !important;
-
+.col-sm-8 {
+    display: flex;
+    flex-wrap: wrap; /* Para que las tarjetas se ajusten a la fila si no caben */
+    justify-content: space-around;
 }
 
-#items {
-    justify-content: center;
-
-}
-
-
-
+/* aqui acaba el css acomodr tarjetas*/
 
 .margen-card-carrito{
     border: 30px !important;
