@@ -1,17 +1,80 @@
-/*Cambiar los productos por los artistas */
+
 const baseDeDatos = [
-    //Kandinski 
+
+//Artista Pintor
+{
+    id: 1,
+    nombre: 'Vasili',
+    primerApellido: "Kandinski ",
+    segundoApellido: "Vasílievich",
+    correo:'VasilK@gmail.com',
+    ciudad:"Moscú",
+    edad:147,
+    RFC:"xxxxxxxxxx01",
+    Categoria: 'Pintor',
+    imagenPerfil:'https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRIM_VcFaX0DlMFvSTvOfSLLixgRSjAiK9GAonXH2E_amq0W1Ip4gHidYi_c7ZIX6Nc',
+    nickname:'Vasili Kandinski',
+},
+//Artista Escritor
+{
+    id: 2,
+    nombre: 'Manuel',
+    primerApellido: "Altamirano",
+    segundoApellido: "Basilio",
+    correo:'valtamirano@gmail.com',
+    ciudad:"Guerrero",
+    edad:190,
+    RFC:"89097LLL90OP",
+    Categoria: 'Escritor',
+    imagenPerfil:'https://mnh.inah.gob.mx/img/coleccion/10-129995.jpg',
+    nickname:'AltamiranodeTixtla',
+},
+//Artista1 Músico
     {
-        id: 1,
-        nombre: 'Composición X',
-        precio: 100,
-        Existencia: 'TRUE',
-        Categoria: 'Pintura',
-        Tipo: 'Abstracción',
-        Descripción: 'Composición X es una pintura al óleo abstracta creada en 1939 por el artista emigrado ruso Wassily Kandinsky, que entonces vivía cerca de París. Forma parte de la colección del Kunstsammlung Nordrhein-Westfalen en Düsseldorf, Alemania.',
-        imagen: 'https://kuadros.com/cdn/shop/files/pintura-Composicion-X-KUADROS-2.jpg?v=1683784857&width=2078'
+        id: 3,
+        nombre: 'Piotr',
+        primerApellido: "Ilich",
+        segundoApellido: "Tchaikovsky",
+        correo:'contactoTchaikovsky@gmail.com',
+        ciudad:"San Petersburgo, Rusia",
+        edad:53,
+        RFC:"TCHAIKOVSKY12",
+        Categoria: 'Musica',
+        imagenPerfil:'https://www.biografiasyvidas.com/biografia/c/fotos/chaikovski.jpg',
+        nickname:'Chaikoski',
     },
-    
+//Artista Fotógrafo 
+    {
+        id: 4,
+        nombre: 'Alfred',
+        primerApellido: "Eisenstaedt",
+        segundoApellido: "",
+        correo:'alfredeisenstaedt@gmail.com',
+        ciudad:"Dirschau, Prusia Occidental ",
+        edad:53,
+        RFC:"18981995ALEI",
+        Categoria: 'Fotografía',
+        imagenPerfil:'https://th.bing.com/th/id/OIP.RFoDpPsW40UgVF9IrMRDmgAAAA?rs=1&pid=ImgDetMain',
+        nickname:'Alfred Photo',
+    },
+
+    //Artista Escultor 
+    {
+        id: 5,
+        nombre: 'Miguel Ángel',
+        primerApellido: "",
+        segundoApellido: "Buonarroti",
+        correo:'contacto.MiguelAngel@gmail.com',
+        ciudad:"Florencia, Italia",
+        edad:83,
+        RFC:"MANGEL88",
+        Categoria: 'Escultura',
+        imagenPerfil:'https://www.elcorreo.com/xlsemanal/wp-content/uploads/sites/5/2023/11/miguel-angel-buonarroti-artista-genio-een-la-florencia-de-los-medici-a.jpg',
+        nickname:'MiguelAngelo',
+    }
+]
+/*
+    ///////////////////////////////////////////////////////
     
     {
         id: 2,
@@ -21,21 +84,24 @@ const baseDeDatos = [
         Existencia: 'FALSE',
         Categoria: 'Mercancía',
         Descripción:  'Obra maestra clásica de bellas artes de Vassily Kandinsky en playera unitalla. La Composición VIII de Vassily Kandinsky es una de las obras de arte más famosas de todos los tiempos.',
-    },
+    }
     
     //Manuel Altamirano
     {
         id: 3,
-        nombre: 'El Zarco',
-        precio: 800,
-        Existencia: 'TRUE',
-        Categoria: 'Libro',
-        Tipo: 'Novela',
-        Descripción: 'Una obra clásica escrita aproximadamente entre el año 1884 a 1886, está ambientada en el Estado de Morelos y sigue la historia de Manuela, Pilar, Nicolás y el bandido a quién apodan el Zarco. Esta obra hace referencia al final de La Guerra de Reforma y el reclutamiento de bandidos por el movimiento juarista. ',
-        imagen: 'https://bibliotecaresumen.com/wp-content/uploads/Resumen-de-El-Zarco-Enterate-aqui-de-lo-que-necesitas-saber.jpg'
+        nombre: 'Manuel',
+        primerApellido: 'Altamiran',
+        segundoApellido: 'Basilio',
+        Correo:'valtamirano@gmail.com',
+        Ciudad: 'Guerrero',
+        Edad: '190',
+        RFC: '89097LLL90OP',
+        Categoria: 'Escritor',
+        imagenPerfil: 'https://mnh.inah.gob.mx/img/coleccion/10-129995.jpg',
+        NombreUsuario: 'AltamiranodeTixtla',    
     },
     
-    
+    /*
     {
         id: 4,
         nombre: 'taza navidad en las montañas',
@@ -49,13 +115,19 @@ const baseDeDatos = [
     
     //Tchaikovsky
     {
-        id: 5,
-        nombre: 'El lago de los Cisnes',
-        precio: 1000,
-        imagen: 'https://www.biografiasyvidas.com/biografia/c/fotos/chaikovski.jpg',
-        Existencia: 'TRUE',
-        Categoria: 'Música',
-        Descripción:  'Obra original compuesta por el extraordinario músico Tchaikovsky, entre los años 1875 y 1876 Tan solo un año después, en 1877, se estrenaría bajo el escenario del famoso Teatro Bolshói de Moscú.',
+
+        id: 3,
+        nombre: 'Manuel',
+        primerApellido: 'Altamiran',
+        segundoApellido: 'Basilio',
+        Correo:'valtamirano@gmail.com',
+        Ciudad: 'Guerrero',
+        Edad: '190',
+        RFC: '89097LLL90OP',
+        Categoria: 'Escritor',
+        imagenPerfil: 'https://mnh.inah.gob.mx/img/coleccion/10-129995.jpg',
+        NombreUsuario: 'AltamiranodeTixtla',    
+        
     },
     
     {
@@ -73,7 +145,7 @@ const baseDeDatos = [
         id: 7,
         nombre: 'El David',
         precio: 900,
-        imagen: '',
+        imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFECJc3BvOjwqOuG5Ip2FarEQoqiZskEof9w&usqp=CAU',
         Existencia: 'TRUE',
         Categoria: 'Escultura',
         Descripción: 'Es una famosa escultura realizada por Miguel Angel durante el Renacimiento. La obra representa al héroe bíblico David, quien derrotó al gigante Goliat.'
@@ -83,7 +155,7 @@ const baseDeDatos = [
         id: 8,
         nombre: 'La piedad',
         precio: 500,
-        imagen:'',
+        imagen:'https://cdn.culturagenial.com/es/imagenes/michelangelo-s-pieta-5450-cut-out-black-cke.jpg',
         Existencia: 'TRUE',
         Categoria: 'Escultura',
         Descripcion:'Es una de las obras maestras del escultor renacentista Miguel Angel. Esculpida en mármol entre 1498 y 1499.'
@@ -112,16 +184,16 @@ const baseDeDatos = [
     
     ]
     
-    
+    */
     
     //esto tiene que ir conectado a las paginas
     
-    let carrito = [];
-    const divisa = '$mxn';
-    const DOMitems = document.querySelector('#items');
-    const DOMcarrito = document.querySelector('#carrito');
-    const DOMtotal = document.querySelector('#total');
-    const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+    // let carrito = [];
+    // const divisa = '$mxn';
+    // const DOMitems = document.querySelector('#items');
+    // const DOMcarrito = document.querySelector('#carrito');
+    // const DOMtotal = document.querySelector('#total');
+    // const DOMbotonVaciar = document.querySelector('#boton-vaciar');
     
     // Funciones
     
@@ -179,7 +251,7 @@ const baseDeDatos = [
          miNodoDivision.classList.add('rcol-lg-3', 'col-md-6', 'mb-3');
         // Contenedero de la Tarjeta de Producto
         const miNodoTarjetaProduct = document.createElement('div');
-        miNodoTarjetaProduct.classList.add('card', 'text', 'text-white', 'custom-card', 'margen-card-carrito');
+        miNodoTarjetaProduct.classList.add('card', 'text', 'bg-black', 'text-white', 'custom-card');
         //Contenedor Imagenes
         const miNodoContImg = document.createElement('div');
         miNodoContImg.classList.add('image-container');
@@ -206,8 +278,6 @@ const baseDeDatos = [
         miNodoPrecios.textContent = `${info.precio}${divisa}`
 
         //Carrito Icono
-        // const miNodoIconoCar = document.createElement('i');
-        // miNodoPrecios.classList.add('bi', 'bi-cart-fill', 'img-color-icon');
 
         // Titulo
 
@@ -223,11 +293,11 @@ const baseDeDatos = [
         // miNodoPrecio.classList.add('card-text');
         // miNodoPrecio.textContent = `${info.precio}${divisa}`;
         // Boton
-        const miNodoBoton = document.createElement('button');
-        miNodoBoton.classList.add('btn', 'btn-primary', 'btn-color-carrito');
-        miNodoBoton.textContent = '+';
-        miNodoBoton.setAttribute('marcador', info.id);
-        miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
+        // const miNodoBoton = document.createElement('button');
+        // miNodoBoton.classList.add('btn', 'btn-primary');
+        // miNodoBoton.textContent = '+';
+        // miNodoBoton.setAttribute('marcador', info.id);
+        // miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
         
         // // Inserta
         // miNodoCardBody.appendChild(miNodoImagen);
@@ -251,109 +321,7 @@ const baseDeDatos = [
         miNodoContImg.appendChild(miNodoProducImg);
         miNodoCardBody.appendChild(miNodoCardTitle);
         miNodoCardBody.appendChild(miNodoPrecios);
-        miNodoPrecios.appendChild(miNodoBoton);
 
         DOMitems.appendChild(miNodoTarjetaProduct);
     });
 } 
-
-//hasta aqui tiene que ir lo de los productos en una página.
-
-
-
-
-    function anyadirProductoAlCarrito(evento) {
-        // Añade carrito
-        carrito.push(evento.target.getAttribute('marcador'))
-        // Actualiza el carrito
-        renderizarCarrito();
-    
-    }
-    
-    /**
-     * Dibuja todos los productos 
-     */
-    function renderizarCarrito() {
-        // Vaciamos todo el html
-        DOMcarrito.textContent = '';
-       
-        const carritoSinDuplicados = [...new Set(carrito)];
-        // Genera Nodos
-        carritoSinDuplicados.forEach((item) => {
-            // Obtenemos el item que necesitamos de la variable base de datos
-            const miItem = baseDeDatos.filter((itemBaseDatos) => {
-             
-                return itemBaseDatos.id === parseInt(item);
-            });
-            // Cuenta el número de veces que se repite el producto
-            const numeroUnidadesItem = carrito.reduce((total, itemId) => {
-                // Incremento el contador
-                return itemId === item ? total += 1 : total;
-            }, 0);
-            //  item del carrito
-            const miNodo = document.createElement('li');
-            miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
-            miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}${divisa}`;
-            // Boton de borrar
-            const miBoton = document.createElement('button');
-            miBoton.classList.add('btn', 'btn-danger', 'mx-5','btn-primary-carrito');
-            miBoton.textContent = 'X';
-            miBoton.style.marginLeft = '1rem';
-            miBoton.dataset.item = item;
-            miBoton.addEventListener('click', borrarItemCarrito);
-            // Mezcla
-            miNodo.appendChild(miBoton);
-            DOMcarrito.appendChild(miNodo);
-        });
-        // Renderiza
-        DOMtotal.textContent = calcularTotal();
-    }
-    
-    /**
-     *borrarcosas
-     */
-    function borrarItemCarrito(evento) {
-        // id
-        const id = evento.target.dataset.item;
-        // Borra
-        carrito = carrito.filter((carritoId) => {
-            return carritoId !== id;
-        });
-        //  renderizar
-        renderizarCarrito();
-    }
-    
-    /**
-     * Calcula el precio total 
-     */
-    function calcularTotal() {
-        //  array del carrito
-        return carrito.reduce((total, item) => {
-            // obten su precio
-            const miItem = baseDeDatos.filter((itemBaseDatos) => {
-                return itemBaseDatos.id === parseInt(item);
-            });
-            // suma
-            return total + miItem[0].precio;
-        }, 0).toFixed(2);
-    }
-    
-    
-    
-    
-    
-    
-    function vaciarCarrito() {
-       
-        carrito = [];
-      
-        renderizarCarrito();
-    }
-    
-    
-    DOMbotonVaciar.addEventListener('click', vaciarCarrito);
-    
-    
-    renderizarProductos();
-    renderizarCarrito();
-    
