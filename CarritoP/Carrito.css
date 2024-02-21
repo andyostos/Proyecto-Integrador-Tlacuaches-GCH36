@@ -50,15 +50,34 @@ body{
 /* No agrarra este */
 
 .row {
-    margin: auto;
+    
     display: flex !important;
+    flex-direction: row !important;
+    float: right !important;
+    /*flex: space-between !important;*/
+ 
 
 }
 
 #items {
+    display: flex !important;
+    flex-direction: column !important;
+    float: right !important;
+    /*flex: space-between !important;*/
     justify-content: center;
+ 
+}
+
+
+#carrito {
+    margin: 5px;
 
 }
+
+.col-sm-4 {
+    margin-left: 30px;
+}
+
 
 
 
