@@ -7,15 +7,16 @@
     <title>Document</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script async defer src="./components/Navbar/Navbar.js"></script> 
-    <script async defer src="./components/Endpage/Endpage.js"></script>
+    <script async defer src="./Componentes/Endpage/Endpage.js"></script> 
+    <script async defer src="./Componentes/Navbar/Navbar.js"></script>
+    <script async defer src="./indexFolder/carrusel.js"></script>
+    <script src="./Artistas/Artistas.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> 
-    <script src="./Artistas.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="./">
     <link rel="stylesheet" href="./indexFolder/index.css">
-    <link rel="stylesheet" href="./botones/botones.css">
-    <link rel="stylesheet" href="./Artistas.css">
+    <link rel="stylesheet" href="./BotonElementos/Botones.css">
+    <link rel="stylesheet" href="./Artistas/Artistas.css">
      
 </head>
 <body>
@@ -93,9 +94,7 @@
                 <form action="./" method="post">
                     <div class="input-group" id="div-src">
                         <input type="text" id="input-src" class="form-control large-input" placeholder="Buscar">
-                        <button class="btn btn-outline-secondary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                        </svg></button>
+                       
                     </div>
                 </form>
                 <h4>Categorias</h4>
@@ -154,7 +153,7 @@
                   </div>
         
                   <div class="col-sm-3 mb-3 m-4 escritura contenido">
-                    <div class="card text bg-dark text-white" style="width: 18rem;">
+                    <div class="card text bg-yellow text-white" style="width: 18rem;">
                         <img src="./Imagenes/musica1.jpg" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column align-items-center">
                           <h2 class="card-title">Escritura</h2>
@@ -243,7 +242,7 @@
                   </div>
 
                   <div class="col-sm-3 m-4 esculturas contenido">
-                    <div class="card text bg-dark text-white" style="width: 18rem;">
+                    <div class="card text-white bg-dark" style="width: 18rem;">
                       <img src="./Imagenes/cultura1.jpg" class="card-img-top" alt="...">
                       <div class="card-body d-flex flex-column align-items-center">
                         <h2 class="card-title">Escultura</h2>
@@ -352,70 +351,89 @@
       </div>   
 
     </body>
-    <div class="container-4">
-        <div class="btn-container">
-          <button type="button" class="btn btn-primary btn-lg"><h3>Categorias</h3></button>
-        </div>
-        <div id="carouselExample" class="carousel carousel-dark slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="cards-carrusel">
+    <div class="container-fluid">
+      <div class="btn-container">
+        <button type="button" class="btn btn-primary btn-lg">Categorías</button>
+      </div>
+      <div id="carouselExample" class="carousel carousel-dark slide">
+        <div class="carousel-inner">
+    
+          <div class="carousel-item active">
+    
+            <div class="cards-carrusel">
+    
               <div class="row-2">
-                  <div class="col-sm-3">
-                    <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
-                      <img src="./Media/Logos/tarjetascarrito/discometal.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h3 class="card-title">Pintura</h3>
-                      </div>
-                    </div>
-                  </div>
     
-                  <div class="col-sm-3 ">
-                    <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
-                      <img src="./Media/Logos/tarjetascarrito/pinturanatural.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h3 class="card-title">Escultura</h3>
-                      </div>
+                <div class="col-sm-3 ">
+                  <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                    <img src="./Media/Logos/tarjetascarrito/discometal.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        
+                    <h3 class="card-title">Pintura</h3>
+                       
                     </div>
-                  </div>
-    
-                  <div class="col-sm-3">
-                      <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
-                        <img src="./Media/Logos/tarjetascarrito/esculturamoderna.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h3 class="card-title">Música</h3>                    
-                        </div>
-                      </div>
                   </div>
                 </div>
+    
+                <div class="col-sm-3 ">
+                  <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                    <img src="./Media/Logos/tarjetascarrito/pinturanatural.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        
+                      <h3 class="card-title">Escultura</h3>
+                      
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-sm-3">
+                  <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                    <img src="./Media/Logos/tarjetascarrito/esculturamoderna.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                          
+                    <h3 class="card-title">Música</h3> 
+                                          
+                    </div>
+                  </div>
+                </div>
+    
               </div>
+              
             </div>
-            <div class="carousel-item">
+    
+          </div>
+          <div class="carousel-item ">
     
               <div class="row-2">
-                  <div class="col-sm-3 mb-2 mb-sm-0">
+                  <div class="col-sm-3">
                  
                       <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
                         <img src="./Media/Logos/tarjetascarrito/librohead.png" class="card-img-top" alt="...">
                         <div class="card-body">
+                          
                           <h3 class="card-title">Literatura</h3>
+                          
                         </div>
                       </div>
                     
                 </div>
-                <div class="col-sm-3 mb-2 mb-sm-0">
+                <div class="col-sm-3">
                   <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
                     <img src="./Media/Logos/tarjetascarrito/pinturanatural.png" class="card-img-top" alt="...">
                     <div class="card-body">
+                      
                       <h3 class="card-title">Fotografía</h3>
+                    
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-3 mb-2 mb-sm-0">
+                <div class="col-sm-3">
                   <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
                     <img src="./Media/Logos/tarjetascarrito/discometal.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h3 class="card-title">Mercancía</h3>                
+                     
+                      <h3 class="card-title">Mercancía</h3> 
+                                  
                     </div>
                   </div>
                 </div>
@@ -433,8 +451,12 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-
-    <div id="end-container-dom"></div>
+    
+      </div>
+<div id="end-container-dom"></div>
+  
+  
+    
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
