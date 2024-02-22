@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Producto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="ListaProductos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,35 +29,37 @@
                 <li><input type="checkbox" id="escritura" name="categoria" value="escritura"><label for="escritura">Escritura</label></li>
                 <li><input type="checkbox" id="pintura" name="categoria" value="pintura"><label for="pintura">Pintura</label></li>
                 <li><input type="checkbox" id="fotografia" name="categoria" value="fotografia"><label for="fotografia">Fotografía</label></li>
-                <li><input type="checkbox" id="diseno" name="categoria" value="diseno"><label for="diseno">Diseño</label></li>
-                <li><input type="checkbox" id="cultura" name="categoria" value="cultura"><label for="escultura">Escultura</label></li>
+                <li><input type="checkbox" id="merchandise" name="categoria" value="merchandise"><label for="merchandise">Merchandise</label></li>
+                <li><input type="checkbox" id="escultura" name="categoria" value="escultura"><label for="escultura">Escultura</label></li>
               </ul>
             </div>
         
             <div class="orden">
               <h5 class="ordenar-por">Ordenar por</h5>
-              <select>
+              <!-- <select>
                 <option value="a-z">A-Z</option>
                 <option value="todos">Todos</option>
-              </select>
+              </select> -->
             </div>
             <div class="precios">
               <h5 class="precios">Precios</h5>
               <select id="rangoPrecios">
-                <option value="1000-2000">100 - 2000</option>
+                <option value="todos">Todos los precios</option>
                     <option value="2000-3000">2000 - 3000</option>
                     <option value="3000-4000">3000 - 4000</option>
                     <option value="4000-5000">4000 - 5000</option>
                     <option value="6000-20000">6000 - 20000</option>
               </select>
             </div>
-            <div class="buscador">
+            <!-- <div class="buscador">
               <input type="text" placeholder="Buscar">
               <button type="button" class="amarillo-btn">Buscar</button>
               <button type="button" class="amarillo-btn">Borrar</button>
-            </div>
+            </div> -->
           </div> 
         </div>
+
+       
          
          <div class="col-md-10"> 
   
@@ -81,10 +84,10 @@
           <div class="tarjetas">
   
             <div class="row">
-              <div class="col-lg-3 col-md-6 mb-3" data-categoria="musica">
+              <div class="col-lg-3 col-md-6 mb-3" data-categoria="musica" data-precio="todos">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
-                <a href="8.PaginaDeProducto.html">
+                <a href="PaginaDeProducto.html">
                   <img src="./Imagenes/musica1.jpg" width="50" height="50" class="card-img-top" alt="...">
                 </a>
                 </div>
@@ -93,20 +96,14 @@
                     <h4 class="mx-2">$1,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                       <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                   </svg> </h4>
-                  <!-- <div class="rating" data-card="1">
-                    <i class="far fa-star" data-rating="1"></i>
-                    <i class="far fa-star" data-rating="2"></i>
-                    <i class="far fa-star" data-rating="3"></i>
-                    <i class="far fa-star" data-rating="4"></i>
-                    <i class="far fa-star" data-rating="5"></i>
-                  </div> -->
+                  
 
                 </div>
               </div>
             
       
             </div>
-            <div class= "col-lg-3 col-md-6 mb-3" data-categoria="musica">
+            <div class= "col-lg-3 col-md-6 mb-3" data-categoria="musica" data-precio="2000">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/musica2.jpg" class="card-img-top" alt="...">
@@ -116,20 +113,14 @@
                   <h4 class="mx-2">$2,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg> </h4>
-                <!-- <div class="rating" data-card="2">
-                  <i class="far fa-star" data-rating="1"></i>
-                  <i class="far fa-star" data-rating="2"></i>
-                  <i class="far fa-star" data-rating="3"></i>
-                  <i class="far fa-star" data-rating="4"></i>
-                  <i class="far fa-star" data-rating="5"></i>
-                </div> -->
+                
                   
                 </div>
               </div>
       
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-3" data-categoria="musica">
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="musica" data-precio="2000">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/musica3.jpg" class="card-img-top" alt="...">
@@ -139,19 +130,13 @@
                   <h4 class="mx-2">$2,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg>  </h4>
-                <!-- <div class="rating" data-card="3">
-                  <i class="far fa-star" data-rating="1"></i>
-                  <i class="far fa-star" data-rating="2"></i>
-                  <i class="far fa-star" data-rating="3"></i>
-                  <i class="far fa-star" data-rating="4"></i>
-                  <i class="far fa-star" data-rating="5"></i>
-                </div> -->
+                
                   
                 </div>
               </div>
       
             </div>
-            <div class="col-lg-3 col-md-6 mb-3" data-categoria="musica">
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="musica" data-precio="3000">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/musica4.jpg" class="card-img-top" alt="...">
@@ -161,13 +146,7 @@
                   <h4 class="mx-2">$3,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg> </h4>
-                <!-- <div class="rating" data-card="4">
-                  <i class="far fa-star" data-rating="1"></i>
-                  <i class="far fa-star" data-rating="2"></i>
-                  <i class="far fa-star" data-rating="3"></i>
-                  <i class="far fa-star" data-rating="4"></i>
-                  <i class="far fa-star" data-rating="5"></i>
-                </div> -->
+                
                  
                 </div>
               </div>
@@ -178,7 +157,7 @@
 
           <div class="row">
   
-            <div class="col-lg-3 col-md-6 mb-3" data-categoria="escultura">
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="escultura" data-precio="20000">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/cultura1.jpg" class="card-img-top" alt="...">
@@ -188,19 +167,13 @@
                   <h4 class="mx-2">$20,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg> </h4>
-                <!-- <div class="rating" data-card="5">
-                  <i class="far fa-star" data-rating="1"></i>
-                  <i class="far fa-star" data-rating="2"></i>
-                  <i class="far fa-star" data-rating="3"></i>
-                  <i class="far fa-star" data-rating="4"></i>
-                  <i class="far fa-star" data-rating="5"></i>
-                </div> -->
+                
                 
                 </div>
               </div>
       
             </div>
-            <div class="col-lg-3 col-md-6 mb-3" data-categoria="escultura">
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="escultura" data-precio="10500">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/cultura2.jpg" class="card-img-top" alt="...">
@@ -210,19 +183,13 @@
                   <h4 class="mx-2">$10,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg> </h4>
-                <!-- <div class="rating" data-card="6">
-                  <i class="far fa-star" data-rating="1"></i>
-                  <i class="far fa-star" data-rating="2"></i>
-                  <i class="far fa-star" data-rating="3"></i>
-                  <i class="far fa-star" data-rating="4"></i>
-                  <i class="far fa-star" data-rating="5"></i>
-                </div> -->
+               
                 
                 </div>
               </div>
       
             </div>
-            <div class="col-lg-3 col-md-6 mb-3" data-categoria="escritura">
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="escritura" data-precio="3500">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/cultura3.jpg" class="card-img-top" alt="...">
@@ -232,19 +199,13 @@
                   <h4 class="mx-2">$3,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg> </h4>
-                <!-- <div class="rating" data-card="7">
-                  <i class="far fa-star" data-rating="1"></i>
-                  <i class="far fa-star" data-rating="2"></i>
-                  <i class="far fa-star" data-rating="3"></i>
-                  <i class="far fa-star" data-rating="4"></i>
-                  <i class="far fa-star" data-rating="5"></i>
-                </div> -->
+                
               
                 </div>
               </div>
       
             </div>
-            <div class="col-lg-3 col-md-6 mb-3" data-categoria="escritura">
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="escritura" data-precio="2500">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/cultura4.jpg" class="card-img-top" alt="...">
@@ -254,13 +215,7 @@
                   <h4 class="mx-2">$2,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg> </h4>
-                <!-- <div class="rating" data-card="8">
-                  <i class="far fa-star" data-rating="1"></i>
-                  <i class="far fa-star" data-rating="2"></i>
-                  <i class="far fa-star" data-rating="3"></i>
-                  <i class="far fa-star" data-rating="4"></i>
-                  <i class="far fa-star" data-rating="5"></i>
-                </div> -->
+                
                   
                 </div>
               </div>
@@ -271,7 +226,7 @@
 
           <div class="row">
   
-            <div class="col-lg-3 col-md-6 mb-3" data-categoria="pintura">
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="pintura" data-precio="3000">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/pintura1.jpg" class="card-img-top" alt="...">
@@ -281,19 +236,12 @@
                   <h4 class="mx-2">$3,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg> </h4>
-                <!-- <div class="rating" data-card="9">
-                  <i class="far fa-star" data-rating="1"></i>
-                  <i class="far fa-star" data-rating="2"></i>
-                  <i class="far fa-star" data-rating="3"></i>
-                  <i class="far fa-star" data-rating="4"></i>
-                  <i class="far fa-star" data-rating="5"></i>
-                </div>
-                  -->
+                
                 </div>
               </div>
       
             </div>
-            <div class="col-lg-3 col-md-6 mb-3" data-categoria="pintura">
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="pintura" data-precio="3500">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/pintura2.jpg" class="card-img-top" alt="...">
@@ -303,19 +251,13 @@
                   <h4 class="mx-2">$3,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg> </h4>
-                <!-- <div class="rating" data-card="10">
-                  <i class="far fa-star" data-rating="1"></i>
-                  <i class="far fa-star" data-rating="2"></i>
-                  <i class="far fa-star" data-rating="3"></i>
-                  <i class="far fa-star" data-rating="4"></i>
-                  <i class="far fa-star" data-rating="5"></i>
-                </div> -->
+               
                   
                 </div>
               </div>
       
             </div>
-            <div class="col-lg-3 col-md-6 mb-3" data-categoria="pintura">
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="pintura" data-precio="2000">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/pintura3.jpg" class="card-img-top" alt="...">
@@ -325,19 +267,13 @@
                   <h4 class="mx-2">$2,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg> </h4>
-                <!-- <div class="rating" data-card="11">
-                  <i class="far fa-star" data-rating="1"></i>
-                  <i class="far fa-star" data-rating="2"></i>
-                  <i class="far fa-star" data-rating="3"></i>
-                  <i class="far fa-star" data-rating="4"></i>
-                  <i class="far fa-star" data-rating="5"></i>
-                </div> -->
+               
                   
                 </div>
               </div>
       
             </div>
-            <div class="col-lg-3 col-md-6 mb-3" data-categoria="pintura">
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="pintura" data-precio="2500">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/pintura4.jpg" class="card-img-top" alt="...">
@@ -347,13 +283,7 @@
                   <h4 class="mx-2">$2,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg> </h4>
-                <!-- <div class="rating" data-card="12">
-                  <i class="far fa-star" data-rating="1"></i>
-                  <i class="far fa-star" data-rating="2"></i>
-                  <i class="far fa-star" data-rating="3"></i>
-                  <i class="far fa-star" data-rating="4"></i>
-                  <i class="far fa-star" data-rating="5"></i>
-                </div> -->
+               
                   
                 </div>
               </div>
@@ -364,7 +294,7 @@
   
           <div class="row">
   
-            <div class="col-lg-3 col-md-6 mb-3" data-categoria="diseno">
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="escultura" data-precio="9000">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/MundoGIF_files/57f8d32254f8e17d78d19aac779f891b.gif" class="card-img-top" alt="...">
@@ -374,19 +304,12 @@
                   <h4 class="mx-2">$9,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg> </h4>
-                <!-- <div class="rating" data-card="13">
-                  <i class="far fa-star" data-rating="1"></i>
-                  <i class="far fa-star" data-rating="2"></i>
-                  <i class="far fa-star" data-rating="3"></i>
-                  <i class="far fa-star" data-rating="4"></i>
-                  <i class="far fa-star" data-rating="5"></i>
-                </div>
-                   -->
+               
                 </div>
               </div>
       
             </div>
-            <div class="col-lg-3 col-md-6 mb-3" data-categoria="diseno">
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="merchandise" data-precio="8000">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/PatoGIF_files/57615b8c0092a66c1d4058b1692955cc.gif" class="card-img-top" alt="...">
@@ -396,19 +319,12 @@
                   <h4 class="mx-2">$8,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg> </h4>
-                <!-- <div class="rating" data-card="14">
-                  <i class="far fa-star" data-rating="1"></i>
-                  <i class="far fa-star" data-rating="2"></i>
-                  <i class="far fa-star" data-rating="3"></i>
-                  <i class="far fa-star" data-rating="4"></i>
-                  <i class="far fa-star" data-rating="5"></i>
-                </div>
-                  -->
+              
                 </div>
               </div>
       
             </div>
-            <div class="col-lg-3 col-md-6 mb-3" data-categoria="pintura">
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="pintura" data-precio="10500">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/MonaLisaGIF_files/12e227fe933e4f8d4c09bcec2b79c84f.gif" class="card-img-top" alt="...">
@@ -418,19 +334,13 @@
                   <h4 class="mx-2">$10,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg> </h4>
-                <!-- <div class="rating" data-card="15">
-                  <i class="far fa-star" data-rating="1"></i>
-                  <i class="far fa-star" data-rating="2"></i>
-                  <i class="far fa-star" data-rating="3"></i>
-                  <i class="far fa-star" data-rating="4"></i>
-                  <i class="far fa-star" data-rating="5"></i>
-                </div> -->
+               
                   
                 </div>
               </div>
       
             </div>
-            <div class="col-lg-3 col-md-6 mb-3" data-categoria="fotografia">
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="fotografia" >
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/ArcoirisGIF_files/e429df6ee27fe1ce9e7165f81ce3af04.gif" class="card-img-top" alt="...">
@@ -440,14 +350,7 @@
                   <h4 class="mx-2">$10,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg> </h4>
-                <!-- <div class="rating" data-card="16">
-                  <i class="far fa-star" data-rating="1"></i>
-                  <i class="far fa-star" data-rating="2"></i>
-                  <i class="far fa-star" data-rating="3"></i>
-                  <i class="far fa-star" data-rating="4"></i>
-                  <i class="far fa-star" data-rating="5"></i>
-                </div> -->
-                  
+                
                 </div>
               </div>
       
@@ -477,14 +380,7 @@
                 <h4 class="mx-2">$1,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
               </svg> </h4>
-              <!-- <div class="rating" data-card="17">
-                <i class="far fa-star" data-rating="1"></i>
-                <i class="far fa-star" data-rating="2"></i>
-                <i class="far fa-star" data-rating="3"></i>
-                <i class="far fa-star" data-rating="4"></i>
-                <i class="far fa-star" data-rating="5"></i>
-              </div>
-                -->
+              
               </div>
             </div>
     
@@ -499,14 +395,7 @@
                 <h4 class="mx-2">$4,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
               </svg> </h4>
-              <!-- <div class="rating" data-card="18">
-                <i class="far fa-star" data-rating="1"></i>
-                <i class="far fa-star" data-rating="2"></i>
-                <i class="far fa-star" data-rating="3"></i>
-                <i class="far fa-star" data-rating="4"></i>
-                <i class="far fa-star" data-rating="5"></i>
-              </div>
-                 -->
+              
               </div>
             </div>
     
@@ -521,13 +410,7 @@
                 <h4 class="mx-2">$3,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
               </svg> </h4>
-              <!-- <div class="rating" data-card="19">
-                <i class="far fa-star" data-rating="1"></i>
-                <i class="far fa-star" data-rating="2"></i>
-                <i class="far fa-star" data-rating="3"></i>
-                <i class="far fa-star" data-rating="4"></i>
-                <i class="far fa-star" data-rating="5"></i>
-              </div> -->
+             
                
               </div>
             </div>
@@ -543,13 +426,7 @@
                 <h4 class="mx-2">$5,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
               </svg> </h4>
-              <!-- <div class="rating" data-card="20">
-                <i class="far fa-star" data-rating="1"></i>
-                <i class="far fa-star" data-rating="2"></i>
-                <i class="far fa-star" data-rating="3"></i>
-                <i class="far fa-star" data-rating="4"></i>
-                <i class="far fa-star" data-rating="5"></i>
-              </div> -->
+             
                
               </div>
             </div>
@@ -560,7 +437,7 @@
 
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 mb-3" data-categoria="diseno">
+          <div class="col-lg-3 col-md-6 mb-3" data-categoria="merchandise">
             <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
               <div class="image-container">
               <img src="./Imagenes/diseño1.jpg" class="card-img-top" alt="...">
@@ -570,19 +447,13 @@
                 <h4 class="mx-2">$3,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
               </svg> </h4>
-              <!-- <div class="rating" data-card="21">
-                <i class="far fa-star" data-rating="1"></i>
-                <i class="far fa-star" data-rating="2"></i>
-                <i class="far fa-star" data-rating="3"></i>
-                <i class="far fa-star" data-rating="4"></i>
-                <i class="far fa-star" data-rating="5"></i>
-              </div> -->
+              
                 
               </div>
             </div>
     
           </div>
-          <div class="col-lg-3 col-md-6 mb-3" data-categoria="diseno">
+          <div class="col-lg-3 col-md-6 mb-3" data-categoria="merchandise">
             <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
               <div class="image-container">
               <img src="./Imagenes/diseño2.jpg" class="card-img-top" alt="...">
@@ -592,19 +463,13 @@
                 <h4 class="mx-2">$4,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
               </svg> </h4>
-              <!-- <div class="rating" data-card="22">
-                <i class="far fa-star" data-rating="1"></i>
-                <i class="far fa-star" data-rating="2"></i>
-                <i class="far fa-star" data-rating="3"></i>
-                <i class="far fa-star" data-rating="4"></i>
-                <i class="far fa-star" data-rating="5"></i>
-              </div> -->
+             
                
               </div>
             </div>
     
           </div>
-          <div class="col-lg-3 col-md-6 mb-3" data-categoria="diseno">
+          <div class="col-lg-3 col-md-6 mb-3" data-categoria="merchandise">
             <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
               <div class="image-container">
               <img src="./Imagenes/diseño3.jpg" class="card-img-top" alt="...">
@@ -614,19 +479,13 @@
                 <h4 class="mx-2">$4,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
               </svg> </h4>
-              <!-- <div class="rating" data-card="23">
-                <i class="far fa-star" data-rating="1"></i>
-                <i class="far fa-star" data-rating="2"></i>
-                <i class="far fa-star" data-rating="3"></i>
-                <i class="far fa-star" data-rating="4"></i>
-                <i class="far fa-star" data-rating="5"></i>
-              </div> -->
+             
                 
               </div>
             </div>
     
           </div>
-          <div class="col-lg-3 col-md-6 mb-3" data-categoria="diseno">
+          <div class="col-lg-3 col-md-6 mb-3" data-categoria="merchandise">
             <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
               <div class="image-container">
               <img src="./Imagenes/diseño4.jpg" class="card-img-top" alt="...">
@@ -636,14 +495,7 @@
                 <h4 class="mx-2">$2,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
               </svg> </h4>
-              <!-- <div class="rating" data-card="24">
-                <i class="far fa-star" data-rating="1"></i>
-                <i class="far fa-star" data-rating="2"></i>
-                <i class="far fa-star" data-rating="3"></i>
-                <i class="far fa-star" data-rating="4"></i>
-                <i class="far fa-star" data-rating="5"></i>
-              </div> -->
-                
+             
               </div>
             </div>
     
@@ -673,45 +525,80 @@
         });
         </script>
 
-        <!-- ------------------------------------------------------------------------------ -->
-
-<script>
-  // Función para filtrar las tarjetas según las opciones seleccionadas
-  function filtrarTarjetas() {
-      // Obtener valores seleccionados
-      const categoriasSeleccionadas = Array.from(document.querySelectorAll('input[name="categoria"]:checked')).map(input => input.value);
-      const ordenSeleccionado = document.getElementById('ordenar-por').value;
-      const rangoPreciosSeleccionado = document.getElementById('rangoPrecios').value;
-      const textoBusqueda = document.getElementById('buscar-input').value.trim().toLowerCase();
-      
-      // Lógica de filtrado aquí
-      
-      // Por ahora, simplemente mostramos los valores seleccionados
-      console.log('Categorías:', categoriasSeleccionadas);
-      console.log('Orden:', ordenSeleccionado);
-      console.log('Rango de Precios:', rangoPreciosSeleccionado);
-      console.log('Texto de Búsqueda:', textoBusqueda);
-  }
+        ------------------------------------------------------------------------------
+         <!-- <script>
+          // JavaScript code for filtering items
+          document.addEventListener('DOMContentLoaded', function() {
+            const checkboxes = document.querySelectorAll('input[name="categoria"]');
+            checkboxes.forEach(function(checkbox) {
+              checkbox.addEventListener('change', function() {
+                const categoria = this.value;
+                const tarjetas = document.querySelectorAll('.tarjetas .col-lg-3 ');
+                tarjetas.forEach(function(tarjeta) {
+                  if (tarjeta.getAttribute('data-categoria') === categoria || categoria === 'todos') {
+                    tarjeta.style.display = 'block';
+                  } else {
+                    tarjeta.style.display = 'none';
+                  }
+                });
+              });
+            });
+        
+          });
+        </script>
+  -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const checkboxes = document.querySelectorAll('input[name="categoria"]');
+      checkboxes.forEach(function(checkbox) {
+        checkbox.addEventListener('change', filtrar);
+      });
   
-  // Event listeners para los elementos de filtro
-  document.querySelectorAll('input[type="checkbox"], select, #buscar-input').forEach(element => {
-    element.addEventListener('change', filtrarTarjetas);
-  });
-
-  // Función para limpiar los filtros
-  document.getElementById('borrar-btn').addEventListener('click', () => {
-    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-      checkbox.checked = false;
+      function filtrar() {
+        const categoriaSeleccionada = obtenerCategoriaSeleccionada();
+        const precioSeleccionado = obtenerPrecioSeleccionado();
+  
+        const tarjetas = document.querySelectorAll('.tarjetas .col-lg-3');
+        tarjetas.forEach(function(tarjeta) {
+          const categoriaTarjeta = tarjeta.getAttribute('data-categoria');
+          const precioTarjeta = parseFloat(tarjeta.getAttribute('data-precio'));
+  
+          const categoriaCoincide = categoriaSeleccionada === 'todos' || categoriaSeleccionada === categoriaTarjeta;
+          const precioCoincide = precioSeleccionado === 'todos' || precioEstaEnRango(precioTarjeta, precioSeleccionado);
+  
+          if (categoriaCoincide && precioCoincide) {
+            tarjeta.style.display = 'block';
+          } else {
+            tarjeta.style.display = 'none';
+          }
+        });
+      }
+  
+      function obtenerCategoriaSeleccionada() {
+        const checkboxes = document.querySelectorAll('input[name="categoria"]');
+        for (const checkbox of checkboxes) {
+          if (checkbox.checked) {
+            return checkbox.value;
+          }
+        }
+        return 'todos'; // Si ninguna categoría está seleccionada, se muestran todas
+      }
+  
+      function obtenerPrecioSeleccionado() {
+        const selectPrecio = document.getElementById('rangoPrecios');
+        return selectPrecio.value;
+      }
+  
+      function precioEstaEnRango(precio, rango) {
+        if (rango === 'todos') {
+          return true; // Si se selecciona "todos los precios", siempre se considera que está en rango
+        }
+        const [min, max] = rango.split('-').map(parseFloat);
+        return precio >= min && precio <= max;
+      }
     });
-    document.getElementById('ordenar-por').value = 'a-z';
-    document.getElementById('rangoPrecios').value = '1000-2000';
-    document.getElementById('buscar-input').value = '';
-    filtrarTarjetas(); // Aplicar filtros borrados
-  });
-</script>
-
-
-
+  </script>
+  
   <!-- ---------------------------------------------------------------------------------------------- -->
   
         
