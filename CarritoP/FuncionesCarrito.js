@@ -185,7 +185,7 @@ const baseDeDatos = [
         miNodoContImg.classList.add('image-container');
         //Link de la imagen
         const miNodoLinkImg = document.createElement('a');
-        miNodoLinkImg.setAttribute('href', '8PaginaDeProducto.html');
+        miNodoLinkImg.setAttribute('href', 'PaginaDeProducto.html');
         //Imagen del producto
         const miNodoProducImg = document.createElement('img');
         miNodoProducImg.classList.add('card-img-top');

@@ -52,6 +52,19 @@
     
 }
 
+
+.iniciar-sesion input{
+  font-family: 'Montserrat'  !important;;
+}
+
+.iniciar-sesion label{
+  font-family: 'Montserrat'  !important;;
+}
+
+.iniciar-sesion p{
+  font-family: 'Montserrat'  !important;;
+}
+
 .iniciar-sesion h2 {
     font-family: 'Montserrat'  !important;;
     font-size: xx-large;
