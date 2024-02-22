@@ -27,7 +27,7 @@
            
 
              
-                <form id="registroForm" action="" method="post" class="needs-validation" novalidate>
+                <form id="registroForm" action="" method="post" class="needs-validation"  novalidate>
                     <div class="col-sm">
                       <label for="txtNombre" class="form-label ">Nombre</label>
                       <input type="text" class="form-control rounded-pill" id="txtNombre" pattern="[A-Za-z]+" required>
@@ -60,7 +60,7 @@
 
                       <div class="col-sm" >
                         <label for="txtBirthday" class="form-label">Fecha de nacimiento</label>
-                        <input type="date" class="form-control rounded-pill" id="txtBirthday" required>
+                        <input type="date" class="form-control rounded-pill" id="txtBirthday" min= "1906-01-01" max = "2007-01-01"   required>
                         <div class="invalid-feedback">
                           Tienes que ser mayor de edad
                         </div>
@@ -74,7 +74,7 @@
 
                       <div class="col-sm" >
                         <label for="txtCiudad" class="form-label">Dirección</label>
-                        <input type="text" class="form-control rounded-pill" id="txtCiudad" required>
+                        <input type="text" class="form-control rounded-pill" id="txtCiudad" pattern="[A-Za-z]+"required>
                         <div class="invalid-feedback">
                           Ingresa solo tu Ciudad de origen y Estado
                         </div>
