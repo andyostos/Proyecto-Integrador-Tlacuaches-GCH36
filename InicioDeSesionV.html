@@ -22,29 +22,54 @@
 <img src="./Media/Logos/Indieteca_logoWeb_01.png" class="img-fluid"  alt="logo de Indieteca">
 
 </div>
-
-<div class="iniciar-sesion col-sm-6">
-    <h2>Iniciar sesión</h2>
+<div class="iniciar-sesion col-sm-4">
+  <div class="container-form" id="formulario-titulo">
+    <div class="row">
+      <div class="col">
+        <h2>Iniciar sesión</h2>
+      </div>
+    </div>
     <form id= "inicio-sesion"action="" method="get" onsubmit="return validarLogin()">
-        <div class="col-sm-6 mb3">
-          <label for="Email" class="form-label">Correo electrónico o nombre de usuario</label>
-          <input type="email" class="form-control rounded-pill" id="Email" name="Email"autocomplete="off" >
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <label for="Email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control rounded-pill" id="Email" name="Email"autocomplete="off" >
+          </div>
         </div>
-        <div class=" col-sm-6 mb-3">
-          <label for="Contrasena" class="form-label">Contraseña</label>
-          <input type="password" class="form-control rounded-pill" id="Contrasena"  name="Contrasena" autocomplete="off">
+        <div class="row">
+          <div class=" col-sm-12">
+            <label for="Contrasena" class="form-label">Contraseña</label>
+            <input type="password" class="form-control rounded-pill" id="Contrasena"  name="Contrasena" autocomplete="off">
+          </div>
         </div>
-        <div class="col-sm-12 mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="Recordar" aria-describedby="olvido">
-          <label class="form-check-label" for="Recordar">Recordar</label>
-          <a class= "btn-link"href="./11.contacto.html">
-            <p class="txt-olvido"> ¿Olvidaste tu contraseña?</p>
-          </a>
-          <div id="olvido" class="form-text">Al hacer click en iniciar sesiona ceptas las condiciones de uso</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-1">
+                <input type="checkbox" class="form-check-input" id="Recordar" aria-describedby="olvido">
+              </div>
+              <div class="col-sm-1">
+                <label class="form-check-label" for="Recordar">Recordar</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <a class= "btn-link"href="./11.contacto.html">
+              <div class="row"> <p class="txt-olvido"> ¿Olvidaste tu contraseña?</p></div>
+             </a>
+             <div id="olvido" class="form-text">Al hacer click en iniciar sesiona ceptas las condiciones de uso</div>
+          </div>
+          
         </div>
+      </div>
+      <div class="row">
         <div class="btn-inicio">
-        <button type="submit" class="btn bt-warning btn-inicio-s">Iniciar sesión</button>
-        </div>
+          <button type="submit" class="btn bt-warning btn-inicio-s">Iniciar sesión</button>
+          </div>
+      </div>
       </form>
 
       <div class="separador-form" >
@@ -60,21 +85,8 @@
         <button type="submit" class="btn bt-warning btn-registro" >Registrate</button>
       </a>
         </div>
-
-      
-
+  </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
 </div> <!--cerrado de contenedor total-->
 
      

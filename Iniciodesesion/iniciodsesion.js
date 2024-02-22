@@ -10,11 +10,20 @@ function validarLogin() {
 
     for (var i = 0; i < usuariosPermitidos.length; i++) {
         if (password === usuariosPermitidos[i].Contrasena && email === usuariosPermitidos[i].Email) {
+            localStorage.setItem("username", email);
             window.location.href = usuariosPermitidos[i].pagina;
             return false; // Detener el envío del formulario
         }
     }
 
-    alert("Credenciales incorrectas o usuario no encontrado");
+    alert("password  incorrecto o usuario no encontrado");
     return false; // Detener el envío del formulario
 }
+
+window.onload = function() {
+    var storedUsername = localStorage.getItem("username");
+    if (storedUsername) {
+      // Si hay una sesión almacenada, pues se redirige a la pagina mencionada en el array de arriba
+      window.location.href = usuariosPermitidos.find(user => user.Email === storedUsername).pagina;
+    }
+  };

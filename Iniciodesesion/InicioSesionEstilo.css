@@ -1,10 +1,15 @@
 
-
+.iniciar-sesion{
+  display:flex;
+    align-items: center;
+    flex-direction:column;
+}
 .contenedor-t-inicio-s {
-    display: block;
+    display: center;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    padding-top: 75px;
 
 }
 
@@ -14,10 +19,17 @@
     font-size: large;
     display:flex;
     align-items: center;
-    flex-direction: column;;
-   align-items: center;
+    flex-direction: column;
 }
 
+.container-general{
+   text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 .logo-central{
     margin: auto;

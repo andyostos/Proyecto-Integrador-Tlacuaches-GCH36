@@ -1,5 +1,9 @@
 #NavBar-style{
-background-color: #FBFBFB;
+background-color: #ffffff;
+position:fixed;
+z-index: 2;
+width: 100vw;
+
 
 }
 

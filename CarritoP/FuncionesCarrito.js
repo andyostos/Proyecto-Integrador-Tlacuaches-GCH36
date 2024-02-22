@@ -173,10 +173,10 @@ const baseDeDatos = [
         miNodoTarjeta.classList.add('tarjetas');
         // Columnas ROW
         const miNodoRow = document.createElement('div');
-        miNodoRow.classList.add('row');
+        miNodoRow.classList.add('row');  
         //Columnas division
         const miNodoDivision = document.createElement('div');
-         miNodoDivision.classList.add('rcol-lg-3', 'col-md-6', 'mb-3');
+         miNodoDivision.classList.add('col-lg-3', 'col-md-6', 'mb-3');
         // Contenedero de la Tarjeta de Producto
         const miNodoTarjetaProduct = document.createElement('div');
         miNodoTarjetaProduct.classList.add('card', 'text', 'text-white', 'custom-card', 'margen-card-carrito');
