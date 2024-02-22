@@ -52,17 +52,17 @@ document.addEventListener("DOMContentLoaded", function () {
           return;
       }
 
-      var fechaNacimientoDate = new Date(fechaNacimiento);
+        var fechaNacimientoDate = new Date(fechaNacimiento);
         var fechaActual = new Date();
         var edad = fechaActual.getFullYear() - fechaNacimientoDate.getFullYear();
 
-        if (edad < 18) {
-            alert("Debes ser mayor de 18 años para registrarte.");
-            return;
-        }
+         if (edad === 18) {
+             alert("Debes ser mayor de 18 años para registrarte.");
+             return;
+         }
 
-      alert("¡Formulario válido! Puedes enviarlo.");
-
+       alert("¡Formulario válido! Puedes enviarlo.");
+    
     });
 });
 

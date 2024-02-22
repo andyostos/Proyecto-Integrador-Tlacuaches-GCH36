@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Producto</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="ListaProductos.css">
+    <link rel="stylesheet" href="./ListaProductos/ListaProductos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -340,7 +340,7 @@
               </div>
       
             </div>
-            <div class="col-lg-3 col-md-6 mb-3" data-categoria="fotografia" >
+            <div class="col-lg-3 col-md-6 mb-3" data-categoria="fotografia" data-precio="10500">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/ArcoirisGIF_files/e429df6ee27fe1ce9e7165f81ce3af04.gif" class="card-img-top" alt="...">
@@ -370,7 +370,7 @@
 
         <div class="row">
   
-          <div class="col-lg-3 col-md-6 mb-3" data-categoria="fotografia">
+          <div class="col-lg-3 col-md-6 mb-3" data-categoria="fotografia" data-precio="1000">
             <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
               <div class="image-container">
               <img src="./Imagenes/15 Increíbles fotografías que solo personas muy ingeniosas tomarían.jpg" class="card-img-top" alt="...">
@@ -385,7 +385,7 @@
             </div>
     
           </div>
-          <div class="col-lg-3 col-md-6 mb-3" data-categoria="fotografia">
+          <div class="col-lg-3 col-md-6 mb-3" data-categoria="fotografia" data-precio="4000">
             <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
               <div class="image-container">
               <img src="./Imagenes/58 Portrait Photos - The Absolute Best Photographers Of 2020.jpg" class="card-img-top" alt="...">
@@ -400,7 +400,7 @@
             </div>
     
           </div>
-          <div class="col-lg-3 col-md-6 mb-3" data-categoria="fotografia">
+          <div class="col-lg-3 col-md-6 mb-3" data-categoria="fotografia" data-precio="3500">
             <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
               <div class="image-container">
               <img src="./Imagenes/Lake Tahoe's Least Crowded and Most Photogenic Campsite.jpg" class="card-img-top" alt="...">
@@ -416,7 +416,7 @@
             </div>
     
           </div>
-          <div class="col-lg-3 col-md-6 mb-3" data-categoria="fotografia">
+          <div class="col-lg-3 col-md-6 mb-3" data-categoria="fotografia" data-precio="5000">
             <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
               <div class="image-container">
               <img src="./Imagenes/Leica compie 100 anni_ un mito della fotografia in 100 immagini.jpg" class="card-img-top" alt="...">
@@ -437,7 +437,7 @@
 
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 mb-3" data-categoria="merchandise">
+          <div class="col-lg-3 col-md-6 mb-3" data-categoria="merchandise" data-precio="3500">
             <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
               <div class="image-container">
               <img src="./Imagenes/diseño1.jpg" class="card-img-top" alt="...">
@@ -453,7 +453,7 @@
             </div>
     
           </div>
-          <div class="col-lg-3 col-md-6 mb-3" data-categoria="merchandise">
+          <div class="col-lg-3 col-md-6 mb-3" data-categoria="merchandise" data-precio="4000">
             <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
               <div class="image-container">
               <img src="./Imagenes/diseño2.jpg" class="card-img-top" alt="...">
@@ -469,7 +469,7 @@
             </div>
     
           </div>
-          <div class="col-lg-3 col-md-6 mb-3" data-categoria="merchandise">
+          <div class="col-lg-3 col-md-6 mb-3" data-categoria="merchandise" data-precio="4500">
             <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
               <div class="image-container">
               <img src="./Imagenes/diseño3.jpg" class="card-img-top" alt="...">
@@ -485,7 +485,7 @@
             </div>
     
           </div>
-          <div class="col-lg-3 col-md-6 mb-3" data-categoria="merchandise">
+          <div class="col-lg-3 col-md-6 mb-3" data-categoria="merchandise" data-precio="2000">
             <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
               <div class="image-container">
               <img src="./Imagenes/diseño4.jpg" class="card-img-top" alt="...">
@@ -510,17 +510,16 @@
         const verMasBtn = document.getElementById('verMasBtn');
         const contenidoAdicional = document.getElementById('contenidoAdicional');
 
-        // Agregamos un event listener para el evento de clic en el botón
         verMasBtn.addEventListener('click', function() {
-            // Mostramos u ocultamos el contenido adicional al hacer clic en el botón
+            
             if (contenidoAdicional.style.display === 'none') {
                 contenidoAdicional.style.display = 'block';
-                verMasBtn.textContent = 'Ver menos'; // Cambiamos el texto del botón
-                // Desplazamos suavemente el botón hacia abajo para que esté visible
+                verMasBtn.textContent = 'Ver menos'; 
+                
                 verMasBtn.scrollIntoView({ behavior: 'smooth', block: 'start' });
             } else {
                 contenidoAdicional.style.display = 'none';
-                verMasBtn.textContent = 'Ver más'; // Cambiamos el texto del botón
+                verMasBtn.textContent = 'Ver más';
             }
         });
         </script>
