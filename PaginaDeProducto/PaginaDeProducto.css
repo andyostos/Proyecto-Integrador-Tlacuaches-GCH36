@@ -107,3 +107,11 @@
   padding-top: 8vw;
   padding-bottom: 1px;
 }
+
+.end-posicion{
+  align-self: flex-end;
+}
+
+#end-container-dom{
+  justify-self: end;
+}
