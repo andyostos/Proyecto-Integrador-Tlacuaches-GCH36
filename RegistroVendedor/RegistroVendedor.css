@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    padding-top: 100px;
    
 }
 
@@ -14,7 +15,7 @@
     justify-content: center;
     width: 300px;
     height: auto;
-    padding: 10px;
+    padding: 20px;
 
 }
 
@@ -29,14 +30,21 @@
     padding-right: 20px;
     margin: auto;
 
+
+    
+
 }
 
 .registro-vendedor h2 {
     font-family: 'Montserrat'  !important;;
     font-size: xx-large;
     justify-content: center;
-    display: flex;
+   /* display: flex;*/
 }
+
+
+
+
 
 
 #inputEmail {
@@ -86,6 +94,21 @@
     padding-left: 0px !important;
     padding-right: 0px !important;
     align-items: center;
+
+
+  }
+
+
+  .registro-form {
+
+    text-align: center;
+    font-family:"Montserrat" !important;
+
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+
 
 
   }

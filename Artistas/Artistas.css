@@ -161,8 +161,8 @@ border-radius: 10px;
 }
 
 .card-title {
-  color:#FFDD03\ /* Color del texto */
-  font-size: 24px; /* Tamaño del texto */
+  color:#FFDD03 /* Color del texto */ 24px; /* Tamaño del texto */
+  font-size: 24px; 
   font-weight: bold; /* Negrita */
 }
 
