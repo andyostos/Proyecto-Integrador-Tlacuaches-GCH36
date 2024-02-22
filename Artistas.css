@@ -79,17 +79,6 @@ input[type="checkbox"] {
   margin-right: 15px; /* Ajusta el margen derecho entre los checkboxes */
 }
 
-/* Crea el círculo personalizado */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px; /* Tamaño del círculo */
-  width: 20px; /* Tamaño del círculo */
-  border-radius: 50%; /* Hace que el círculo tenga bordes redondeados */
-  background-color: #fff;
-  border: 2px solid #aaa; /* Borde del círculo */
-}
 
 /* Cambia el color de fondo del círculo cuando el checkbox está marcado */
 input[type="checkbox"]:checked + .checkmark {
@@ -170,7 +159,7 @@ border-radius: 10px;
   background-color: #FFDD03; /* Color de fondo */
   padding: 10px; /* Espaciado interno */
   border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  box-shadow: 0 4px 8px #FFDD03(0, 0, 0, 0.1); /* Sombra */
 }
 
 .card-title {
@@ -212,11 +201,115 @@ border-radius: 10px;
 }
 
 .card-title {
-  color: #333; /* Color del texto */
+  color: #0e854d; /* Color del texto */
   font-size: 24px; /* Tamaño del texto */
   font-weight: bold; /* Negrita */
 }
 
+.escritura-contenido{
+  color: #333; /* Color del texto */
+  font-size: 24px; /* Tamaño del texto */
+  font-weight: bold; /* Negrita */
 
+}
+.custom-bg-black {
+  background-color: #000000; /* Color negro */
+}
+.cards-carrusel{
+  margin-left: 100px;
+  align-items: center;
+  justify-content: center !important;
+ }
+ 
+ .carousel-inner{
+     align-items: center;
+     justify-content: center;
+ }
+ .row-2{
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .card-title{
+     font-family:'Rubik' !important;
+    
+ 
+ }
+ 
+ .container-fluid{
+     align-items: center !important;
+     justify-content: center !important;
+ }
+ 
+ .cards-carrusel{
+     margin-left: 0px !important;
+ }
+ .col-sm-3{
+     margin-top: 2vw;
+     justify-content: center !important;
+ }
+
+ .tarjeta {
+  width: calc(25% - 15px); 
+  margin-bottom: 20px;
+  background-color: #f7de3d;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /* Sombra suave */
+  }
+
+ #mi-tarjeta.custom-card {
+  border-radius: 50px; 
+  border: none;
+ }
+
+ .image-container {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%; 
+  height: 200px; /
+}
+
+.image-container img {
+  transition: transform 0.3s ease; 
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+  
+}
+
+.image-container:hover img {
+  transform: scale(1.05); /* Aumentamos ligeramente el tamaño de la imagen al pasar el cursor */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Agregamos una sombra alrededor de la imagen */
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
+
+.ver-mas-btn {
+  /* Estilos para el botón "Ver más" */
+  display: block;
+  width: 150px; /* Ancho deseado */
+  height: 50px; /* Altura deseada */
+  margin: 20px auto; /* Margen superior e inferior para centrar verticalmente */
+  background-color: black;
+  border-radius: 80px;
+  margin-top: 20px; /* Espacio superior para dejar espacio al contenido adicional */
+}
+
+.ver-mas-btn:hover{
+  background-color: #ffff66; /* Color amarillo más claro al pasar el cursor */
+}
+
+#contenidoAdicional {
+  margin-top: 20px; /* Espacio superior para dejar espacio al contenido adicional (no se si sirve aqui) */
+}
 
 
