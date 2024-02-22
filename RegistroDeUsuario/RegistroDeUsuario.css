@@ -1,4 +1,6 @@
-
+.container-general{
+    padding-top: 130px;
+}
 .container-form{
     text-align: center;
     font-family:"Montserrat" !important;
@@ -7,6 +9,7 @@
     align-items: center;
     flex-direction: column;;
    align-items: center;
+   
 }
 .container-marco{
     
