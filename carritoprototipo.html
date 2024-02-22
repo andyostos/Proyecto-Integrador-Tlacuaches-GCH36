@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./ListaProductos.css">
+
+    <link rel="stylesheet" href="./ListaProductos/ListaProductos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="./CarritoP/Carrito.css">
+    <link rel="stylesheet" href="./BotonElementos/Botones.css">
+    <script async defer src="./Componentes/Navbar/Navbar.js"></script> 
+    <script async defer src="./Componentes/Endpage/Endpage.js"></script> 
 </head>
 <body>
-
-
+  <div id="navbar-container-dom"></div>
 
   <!-- Carrito -->
   
@@ -21,7 +24,7 @@
 
           <div class="row">
             <!-- Elementos generados a partir del JSON -->
-            <main id="items" class="col-sm-6"></main>
+            <main id="items" class="col-sm-8"></main>
             <!-- Carrito -->
             <div class="col-sm-4">
                 <h2>Carrito</h2>
@@ -49,7 +52,7 @@
               <!-- //Contenedor Imagenes -->
               <div class="image-container">
                 <!-- Link Imagen -->
-                <a  href="8PaginaDeProducto.html">
+                <a  href="PaginaDeProducto.html">
                   <!-- Imagen del producto -->
                   <img src="./Imagenes/musica1.jpg" width="50" height="50" class="card-img-top" alt="...">
                 </a>
@@ -74,7 +77,7 @@
         </div>
     </div>
 
-
+    <div id="end-container-dom"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="./CarritoP/FuncionesCarrito.js"></script>
 </body>

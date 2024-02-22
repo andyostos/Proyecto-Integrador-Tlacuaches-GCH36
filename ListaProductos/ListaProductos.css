@@ -130,3 +130,7 @@ body {
 #contenidoAdicional {
   margin-top: 20px; /* Espacio superior para dejar espacio al contenido adicional (no se si sirve aqui) */
 }
+
+.container-2{
+  padding-top: 5vw;
+}

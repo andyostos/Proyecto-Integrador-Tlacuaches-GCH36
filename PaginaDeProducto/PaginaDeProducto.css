@@ -101,3 +101,17 @@
   transition: filter 0.5s ease;
     filter: brightness(70%);
 }
+
+.navbar-inverse{
+  background-color: #231F20;
+  padding-top: 8vw;
+  padding-bottom: 1px;
+}
+
+.end-posicion{
+  align-self: flex-end;
+}
+
+#end-container-dom{
+  justify-self: end;
+}

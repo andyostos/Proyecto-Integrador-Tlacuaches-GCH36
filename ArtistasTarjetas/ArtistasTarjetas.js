@@ -126,7 +126,7 @@ function renderizarProductos() {
 
     // Link de la imagen
     const miNodoLinkImg = document.createElement('a');
-    miNodoLinkImg.setAttribute('href', '7.PaginaDeArtistas.html');
+    miNodoLinkImg.setAttribute('href', 'PaginaDeArtistas.html');
     miNodoLinkImg.appendChild(miNodoContImg);
 
     // Div de card-body
@@ -145,7 +145,7 @@ function renderizarProductos() {
     // Nombre del artista (enlace)
     const miNodoCardLink = document.createElement('a');
     miNodoCardLink.classList.add('link-card');
-    miNodoCardLink.setAttribute('href', '7.PaginaDeArtistas.html');
+    miNodoCardLink.setAttribute('href', 'PaginaDeArtistas.html');
     
     // Texto del nombre del artista
     const miNodoCardText = document.createElement('h3');
