@@ -34,13 +34,13 @@
               </ul>
             </div>
         
-            <div class="orden">
+             <!-- <div class="orden">
               <h5 class="ordenar-por">Ordenar por</h5>
-              <!-- <select>
+               <select>
                 <option value="a-z">A-Z</option>
                 <option value="todos">Todos</option>
-              </select> -->
-            </div>
+              </select> 
+            </div> 
             <div class="precios">
               <h5 class="precios">Precios</h5>
               <select id="rangoPrecios">
@@ -50,7 +50,7 @@
                     <option value="4000-5000">4000 - 5000</option>
                     <option value="6000-20000">6000 - 20000</option>
               </select>
-            </div>
+            </div>  -->
             <!-- <div class="buscador">
               <input type="text" placeholder="Buscar">
               <button type="button" class="amarillo-btn">Buscar</button>
@@ -340,7 +340,7 @@
               </div>
       
             </div>
-            <div class="col-lg-3 col-md-6 mb-3" data-categoria="fotografia" data-precio="10500">
+            <div class="col-lg-3 col-md-6 mb-3"  data-categoria="fotografia" data-precio="10500">
               <div id="mi-tarjeta" class="card text bg-black text-white custom-card">
                 <div class="image-container">
                 <img src="./Imagenes/ArcoirisGIF_files/e429df6ee27fe1ce9e7165f81ce3af04.gif" class="card-img-top" alt="...">
@@ -525,28 +525,45 @@
         </script>
 
         ------------------------------------------------------------------------------
-         <!-- <script>
-          // JavaScript code for filtering items
-          document.addEventListener('DOMContentLoaded', function() {
-            const checkboxes = document.querySelectorAll('input[name="categoria"]');
-            checkboxes.forEach(function(checkbox) {
-              checkbox.addEventListener('change', function() {
-                const categoria = this.value;
-                const tarjetas = document.querySelectorAll('.tarjetas .col-lg-3 ');
+       <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const checkboxes = document.querySelectorAll('input[name="categoria"]');
+    
+    checkboxes.forEach(function(checkbox) {
+        checkbox.addEventListener('change', function() {
+            const categoriaSeleccionada = obtenerCategoriaSeleccionada();
+            const tarjetas = document.querySelectorAll('.tarjetas .col-lg-3 ');
+
+            if (categoriaSeleccionada === 'todos') {
                 tarjetas.forEach(function(tarjeta) {
-                  if (tarjeta.getAttribute('data-categoria') === categoria || categoria === 'todos') {
                     tarjeta.style.display = 'block';
-                  } else {
-                    tarjeta.style.display = 'none';
-                  }
                 });
-              });
-            });
-        
-          });
-        </script>
-  -->
-  <script>
+            } else {
+                tarjetas.forEach(function(tarjeta) {
+                    if (tarjeta.getAttribute('data-categoria') === categoriaSeleccionada) {
+                        tarjeta.style.display = 'block';
+                    } else {
+                        tarjeta.style.display = 'none';
+                    }
+                });
+            }
+        });
+    });
+});
+
+function obtenerCategoriaSeleccionada() {
+    const checkboxes = document.querySelectorAll('input[name="categoria"]');
+    for (const checkbox of checkboxes) {
+        if (checkbox.checked) {
+            return checkbox.value;
+        }
+    }
+    return 'todos'; 
+}
+
+       </script>
+       
+  <!-- <script>
     document.addEventListener('DOMContentLoaded', function() {
       const checkboxes = document.querySelectorAll('input[name="categoria"]');
       checkboxes.forEach(function(checkbox) {
@@ -588,15 +605,16 @@
         return selectPrecio.value;
       }
   
-      function precioEstaEnRango(precio, rango) {
-        if (rango === 'todos') {
-          return true; // Si se selecciona "todos los precios", siempre se considera que está en rango
-        }
-        const [min, max] = rango.split('-').map(parseFloat);
-        return precio >= min && precio <= max;
-      }
+      // function precioEstaEnRango(precio, rango) {
+      //   if (rango === 'todos') {
+      //     return true; // Si se selecciona "todos los precios", siempre se considera que está en rango
+      //   }
+      //   const [min, max] = rango.split('-').map(parseFloat);
+      //   return precio >= min && precio <= max;
+      // } 
+      // este es el precio
     });
-  </script>
+  </script> -->
   
   <!-- ---------------------------------------------------------------------------------------------- -->
   
