@@ -9,94 +9,88 @@ document.addEventListener('DOMContentLoaded', () => {
     //Artista Pintor
     {
         id: 1,
-        nombre: 'Vasili',
-        primerApellido: "Kandinski ",
-        segundoApellido: "Vasílievich",
-        correo:'VasilK@gmail.com',
-        ciudad:"Moscú",
-        edad:147,
-        RFC:"xxxxxxxxxx01",
-        Categoria: 'Pintor',
+        primerNombreV: 'Vasili',
+        primerApellidoV: "Kandinski ",
+        segundoApellidoV: "Vasílievich",
+        correoElectronicoV:'VasilK@gmail.com',
+        ciudadV:"Moscú",
+        edadV:147,
+        rfc:"FGRDSAREP40",
+        categoriaV: 'Pintor',
         imagenObra:'https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRIM_VcFaX0DlMFvSTvOfSLLixgRSjAiK9GAonXH2E_amq0W1Ip4gHidYi_c7ZIX6Nc',
-        imagenPerfil:'https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRIM_VcFaX0DlMFvSTvOfSLLixgRSjAiK9GAonXH2E_amq0W1Ip4gHidYi_c7ZIX6Nc',
-        nickname:'Vasili Kandinski',
+        imagenPerfilV:'https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRIM_VcFaX0DlMFvSTvOfSLLixgRSjAiK9GAonXH2E_amq0W1Ip4gHidYi_c7ZIX6Nc',
+        nombreDeUsuarioV:'Vasili Kandinski',
+        contrasenaV: '1234'
     },
+
     //Artista Escritor
     {
         id: 2,
-        nombre: 'Manuel',
-        primerApellido: "Altamirano",
-        segundoApellido: "Basilio",
-        correo:'valtamirano@gmail.com',
-        ciudad:"Guerrero",
-        edad:190,
-        RFC:"89097LLL90OP",
-        Categoria: 'Escritor',
+        primerNombreV: 'Manuel',
+        primerApellidoV: "Altamirano",
+        segundoApellidoV: "Basilio",
+        correoElectronicoV:'valtamirano@gmail.com',
+        ciudadV:"Guerrero",
+        edadV:190,
+        rfc:"89097LLL90OP",
+        categoriaV: 'Escritor',
         imagenObra:'https://mnh.inah.gob.mx/img/coleccion/10-129995.jpg',
-        imagenPerfil:'https://mnh.inah.gob.mx/img/coleccion/10-129995.jpg',
-        nickname:'AltamiranodeTixtla',
+        imagenPerfilV:'https://mnh.inah.gob.mx/img/coleccion/10-129995.jpg',
+        nombreDeUsuarioV:'AltamiranodeTixtla',
+        contrasena: "1234",
     },
     //Artista1 Músico
         {
             id: 3,
-            nombre: 'Piotr',
-            primerApellido: "Ilich",
-            segundoApellido: "Tchaikovsky",
-            correo:'contactoTchaikovsky@gmail.com',
-            ciudad:"San Petersburgo, Rusia",
-            edad:53,
-            RFC:"TCHAIKOVSKY12",
-            Categoria: 'Musica',
+            primerNombreV: 'Piotr',
+            primerApellidoV: "Ilich",
+            segundoApellidoV: "Tchaikovsky",
+            correoElectronicoV:'contactoTchaikovsky@gmail.com',
+            ciudadV:"San Petersburgo",
+            edadV:53,
+            rfc:"TCHAIKOVSKY12",
+            categoriaV: 'Musico',
             imagenObra:'https://www.biografiasyvidas.com/biografia/c/fotos/chaikovski.jpg',
-            imagenPerfil:'https://www.biografiasyvidas.com/biografia/c/fotos/chaikovski.jpg',
-            nickname:'Chaikoski',
+            imagenPerfilV:'https://www.biografiasyvidas.com/biografia/c/fotos/chaikovski.jpg',
+            nombreDeUsuarioV:'Piotr Tchaikovsky',
+            contrasena: '1234',
         },
-    //Artista Fotógrafo 
+
+    //Artista Escultor 
         {
             id: 4,
-            nombre: 'Alfred',
-            primerApellido: "Eisenstaedt",
-            segundoApellido: "Eisenstaedt",
-            correo:'alfredeisenstaedt@gmail.com',
-            ciudad:"Dirschau, Prusia Occidental ",
-            edad:53,
-            RFC:"18981995ALEI",
-            Categoria: 'Fotografía',
-            imagenObra:'https://th.bing.com/th/id/OIP.RFoDpPsW40UgVF9IrMRDmgAAAA?rs=1&pid=ImgDetMain',
-            imagenPerfil:'https://th.bing.com/th/id/OIP.RFoDpPsW40UgVF9IrMRDmgAAAA?rs=1&pid=ImgDetMain',
-            nickname:'Alfred Photo',
+            prnombre: 'Miguel',
+            primerApellidoV: "Ángel",
+            segundoApellidoV: "Buonarroti",
+            correoElectronicoV:'contacto.MiguelAngel@gmail.com',
+            ciudadV:"Florencia",
+            edadV:83,
+            rfc:"MANGEL888888",
+            categoriaV: 'Escultor',
+            imagenObra:'https://www.elcorreo.com/xlsemanal/wp-content/uploads/sites/5/2023/11/miguel-angel-buonarroti-artista-genio-een-la-florencia-de-los-medici-a.jpg',
+            imagenPerfilV:'https://www.elcorreo.com/xlsemanal/wp-content/uploads/sites/5/2023/11/miguel-angel-buonarroti-artista-genio-een-la-florencia-de-los-medici-a.jpg',
+            nombreDeUsuarioV:'Miguel Angelo',
+            contrasena:'1234'
         },
-    
-        //Artista Escultor 
+
+    //Artista Fotógrafo 
         {
             id: 5,
-            nombre: 'Miguel Ángel',
-            primerApellido: "Ángel",
-            segundoApellido: "Buonarroti",
-            correo:'contacto.MiguelAngel@gmail.com',
-            ciudad:"Florencia, Italia",
-            edad:83,
-            RFC:"MANGEL88",
-            Categoria: 'Escultura',
-            imagenObra:'https://www.elcorreo.com/xlsemanal/wp-content/uploads/sites/5/2023/11/miguel-angel-buonarroti-artista-genio-een-la-florencia-de-los-medici-a.jpg',
-            imagenPerfil:'https://www.elcorreo.com/xlsemanal/wp-content/uploads/sites/5/2023/11/miguel-angel-buonarroti-artista-genio-een-la-florencia-de-los-medici-a.jpg',
-            nickname:'MiguelAngelo',
-        }
+            primerNombreV: 'Alfred',
+            primerApellidoV: "Eisenstaedt",
+            segundoApellidoV: "Eisenstaedt",
+            correoElectronicoV:'alfredeisenstaedt@gmail.com',
+            ciudadV:"Dirschau, Prusia Occidental ",
+            edadV:53,
+            rfc:"18981995ALEI",
+            categoriaV: 'Fotografo',
+            imagenObra:'https://th.bing.com/th/id/OIP.RFoDpPsW40UgVF9IrMRDmgAAAA?rs=1&pid=ImgDetMain',
+            imagenPerfilV:'https://th.bing.com/th/id/OIP.RFoDpPsW40UgVF9IrMRDmgAAAA?rs=1&pid=ImgDetMain',
+            nombreDeUsuarioV:'Alfred Eisenstaedt',
+            contrasena:'1234',
+        },
+    
     ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const DOMitems = document.querySelector('#items');
 
