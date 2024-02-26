@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Producto</title>
+    <link rel="icon" type="image/x-icon" href="./Media/Logos/Indieteca_logoWeb_01.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./ListaProductos/ListaProductos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -34,12 +35,12 @@
               </ul>
             </div>
         
-             <!-- <div class="orden">
+             <div class="orden">
               <h5 class="ordenar-por">Ordenar por</h5>
-               <select>
+               <!-- <select>
                 <option value="a-z">A-Z</option>
                 <option value="todos">Todos</option>
-              </select> 
+              </select>  -->
             </div> 
             <div class="precios">
               <h5 class="precios">Precios</h5>
@@ -50,12 +51,12 @@
                     <option value="4000-5000">4000 - 5000</option>
                     <option value="6000-20000">6000 - 20000</option>
               </select>
-            </div>  -->
-            <!-- <div class="buscador">
+            </div> 
+            <div class="buscador">
               <input type="text" placeholder="Buscar">
               <button type="button" class="amarillo-btn">Buscar</button>
               <button type="button" class="amarillo-btn">Borrar</button>
-            </div> -->
+            </div> 
           </div> 
         </div>
 
@@ -93,9 +94,9 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Album NOS</h5>
-                    <h4 class="mx-2">$1,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <h4 class="mx-2">$1,500 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                       <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                  </svg> </h4>
+                  </svg> </span> </h4>
                   
 
                 </div>
@@ -110,9 +111,9 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"> Disco Jazz Indie</h5>
-                  <h4 class="mx-2">$2,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <h4 class="mx-2">$2,000 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg> </h4>
+                </svg> </span> </h4>
                 
                   
                 </div>
@@ -127,9 +128,9 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"> Album SAIKO</h5>
-                  <h4 class="mx-2">$2,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <h4 class="mx-2">$2,000 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg>  </h4>
+                </svg> </span> </h4>
                 
                   
                 </div>
@@ -143,9 +144,9 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"> Disco Vinil</h5>
-                  <h4 class="mx-2">$3,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <h4 class="mx-2">$3,000 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg> </h4>
+                </svg> </span> </h4>
                 
                  
                 </div>
@@ -164,9 +165,9 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"> Fuente de Trevi</h5>
-                  <h4 class="mx-2">$20,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <h4 class="mx-2">$20,000 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg> </h4>
+                </svg> </span> </h4>
                 
                 
                 </div>
@@ -180,9 +181,9 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"> Angel de Roma </h5>
-                  <h4 class="mx-2">$10,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <h4 class="mx-2">$10,500 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg> </h4>
+                </svg> </span> </h4>
                
                 
                 </div>
@@ -196,9 +197,9 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"> Libro de Pizarnik</h5>
-                  <h4 class="mx-2">$3,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <h4 class="mx-2">$3,500 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg> </h4>
+                </svg> </span> </h4>
                 
               
                 </div>
@@ -212,9 +213,9 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Secretos Vivientes</h5>
-                  <h4 class="mx-2">$2,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <h4 class="mx-2">$2,500 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg> </h4>
+                </svg> </span> </h4>
                 
                   
                 </div>
@@ -233,9 +234,9 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"> Paraiso</h5>
-                  <h4 class="mx-2">$3,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <h4 class="mx-2">$3,000 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg> </h4>
+                </svg> </span> </h4>
                 
                 </div>
               </div>
@@ -248,9 +249,9 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"> Luz de Noche</h5>
-                  <h4 class="mx-2">$3,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <h4 class="mx-2">$3,500 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg> </h4>
+                </svg> </span> </h4>
                
                   
                 </div>
@@ -264,9 +265,9 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"> Sin rostro</h5>
-                  <h4 class="mx-2">$2,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <h4 class="mx-2">$2,000 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg> </h4>
+                </svg> </span> </h4>
                
                   
                 </div>
@@ -280,9 +281,9 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"> Mind</h5>
-                  <h4 class="mx-2">$2,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <h4 class="mx-2">$2,500 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg> </h4>
+                </svg> </span> </h4>
                
                   
                 </div>
@@ -301,9 +302,9 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"> Mundo 360°</h5>
-                  <h4 class="mx-2">$9,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <h4 class="mx-2">$9,000 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg> </h4>
+                </svg> </span> </h4>
                
                 </div>
               </div>
@@ -316,9 +317,9 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"> Duck Go</h5>
-                  <h4 class="mx-2">$8,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <h4 class="mx-2">$8,000 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg> </h4>
+                </svg> </span> </h4>
               
                 </div>
               </div>
@@ -331,9 +332,9 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"> Mona Lisa Digital</h5>
-                  <h4 class="mx-2">$10,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <h4 class="mx-2">$10,500 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg> </h4>
+                </svg> </span> </h4>
                
                   
                 </div>
@@ -347,9 +348,9 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"> Arcoiris Digital</h5>
-                  <h4 class="mx-2">$10,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <h4 class="mx-2">$10,500 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg> </h4>
+                </svg> </span> </h4>
                 
                 </div>
               </div>
@@ -361,9 +362,9 @@
       </div>
   
 
-          <button id="verMasBtn" class="ver-mas-btn text-warning" >Ver más</button>
+          <button id="verMasBtn" class="ver-mas-btn text-warning" onclick="toggleContent()" >Ver más</button>
 
-          <div id="contenidoAdicional" style="display: none;">
+          <div id="contenidoAdicional" class="contenido-adicional" style="display: none;">
             <!-- Contenido adicional oculto inicialmente -->
 
            
@@ -377,9 +378,9 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title"> Surfeando</h5>
-                <h4 class="mx-2">$1,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <h4 class="mx-2">$1,000 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-              </svg> </h4>
+              </svg> </span> </h4>
               
               </div>
             </div>
@@ -392,9 +393,9 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title"> Vida</h5>
-                <h4 class="mx-2">$4,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <h4 class="mx-2">$4,000 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-              </svg> </h4>
+              </svg> </span> </h4>
               
               </div>
             </div>
@@ -407,9 +408,9 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title"> Bosque atardecer</h5>
-                <h4 class="mx-2">$3,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <h4 class="mx-2">$3,500 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-              </svg> </h4>
+              </svg> </span> </h4>
              
                
               </div>
@@ -423,9 +424,9 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title"> Fin de la guerra</h5>
-                <h4 class="mx-2">$5,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <h4 class="mx-2">$5,000 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-              </svg> </h4>
+              </svg> </span> </h4>
              
                
               </div>
@@ -444,9 +445,9 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title"> Escultura moderna</h5>
-                <h4 class="mx-2">$3,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <h4 class="mx-2">$3,500 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-              </svg> </h4>
+              </svg> </span> </h4>
               
                 
               </div>
@@ -460,9 +461,9 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title"> Frida Khalo XXI</h5>
-                <h4 class="mx-2">$4,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <h4 class="mx-2">$4,000 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-              </svg> </h4>
+              </svg> </span> </h4>
              
                
               </div>
@@ -476,9 +477,9 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title"> Mercury Gold</h5>
-                <h4 class="mx-2">$4,500 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <h4 class="mx-2">$4,500 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-              </svg> </h4>
+              </svg> </span> </h4>
              
                 
               </div>
@@ -492,9 +493,9 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title"> Fashion Art</h5>
-                <h4 class="mx-2">$2,000 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <h4 class="mx-2">$2,000 <span class="svg-button" onclick="addToCart()"><svg class="svg-button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-              </svg> </h4>
+              </svg> </span> </h4>
              
               </div>
             </div>
@@ -505,7 +506,7 @@
 
         <!-- Aqui comienza los DOM'S lo de mas de JS -->
     
-        <script>
+       <script>
            
         const verMasBtn = document.getElementById('verMasBtn');
         const contenidoAdicional = document.getElementById('contenidoAdicional');
@@ -522,10 +523,89 @@
                 verMasBtn.textContent = 'Ver más';
             }
         });
-        </script>
+        </script>  
+        <!-- <script>
+          function toggleContent() {
+              var contenidoAdicional = document.getElementById("contenidoAdicional");
+              if (contenidoAdicional.style.display === "none") {
+                  contenidoAdicional.style.display = "block";
+                  document.getElementById("verMasBtn").innerText = "Ver menos";
+              } else {
+                  contenidoAdicional.style.display = "none";
+                  document.getElementById("verMasBtn").innerText = "Ver más";
+              }
+          }
+      </script> -->
+      
 
-        ------------------------------------------------------------------------------
+       <!-- ---------------------------------------------------------------------------------------------- -->
        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkboxes = document.querySelectorAll('input[name="categoria"]');
+            const select = document.querySelector('#rangoPrecios');
+            const searchInput = document.querySelector('.buscador input[type="text"]');
+            const buscarBtn = document.querySelector('.buscador button:nth-of-type(1)');
+            const borrarBtn = document.querySelector('.buscador button:nth-of-type(2)');
+            const tarjetas = document.querySelectorAll('.tarjetas .col-lg-3');
+        
+            checkboxes.forEach(function(checkbox) {
+                checkbox.addEventListener('change', filtrarTarjetas);
+            });
+        
+            select.addEventListener('change', filtrarTarjetas);
+        
+            buscarBtn.addEventListener('click', filtrarTarjetas);
+        
+            borrarBtn.addEventListener('click', function() {
+                searchInput.value = '';
+                filtrarTarjetas();
+            });
+        
+            function filtrarTarjetas() {
+                const categoriaSeleccionada = obtenerCategoriaSeleccionada();
+                const precioSeleccionado = select.value;
+                const filtroTexto = searchInput.value.toLowerCase();
+        
+                tarjetas.forEach(function(tarjeta) {
+                    const categoriaTarjeta = tarjeta.dataset.categoria;
+                    const precioTarjeta = parseInt(tarjeta.dataset.precio);
+                    const tituloTarjeta = tarjeta.querySelector('.card-title').textContent.toLowerCase();
+        
+                    const categoriaValida = categoriaSeleccionada === 'todos' || categoriaSeleccionada === categoriaTarjeta;
+                    const precioValido = precioSeleccionado === 'todos' || precioSeleccionado === 'todos' || verificarPrecio(precioSeleccionado, precioTarjeta);
+                    const textoValido = !filtroTexto || tituloTarjeta.includes(filtroTexto);
+        
+                    if (categoriaValida && precioValido && textoValido) {
+                        tarjeta.style.display = 'block';
+                    } else {
+                        tarjeta.style.display = 'none';
+                    }
+                });
+            }
+        
+            function obtenerCategoriaSeleccionada() {
+                const checkboxes = document.querySelectorAll('input[name="categoria"]');
+                for (const checkbox of checkboxes) {
+                    if (checkbox.checked) {
+                        return checkbox.value;
+                    }
+                }
+                return 'todos'; 
+            }
+        
+            function verificarPrecio(rango, precio) {
+                if (rango === 'todos') {
+                    return true;
+                }
+                const [min, max] = rango.split('-').map(Number);
+                return precio >= min && precio <= max;
+            }
+        });
+        </script>
+        
+
+      
+       <!-- <script>
         document.addEventListener('DOMContentLoaded', function() {
     const checkboxes = document.querySelectorAll('input[name="categoria"]');
     
@@ -562,7 +642,7 @@ function obtenerCategoriaSeleccionada() {
 }
 
        </script>
-       
+        -->
   <!-- <script>
     document.addEventListener('DOMContentLoaded', function() {
       const checkboxes = document.querySelectorAll('input[name="categoria"]');
