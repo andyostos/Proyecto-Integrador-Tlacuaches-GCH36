@@ -8,13 +8,14 @@ function saveVendor(){
     sRfc = document.querySelector('#txtRfc').value,
     sBirthday = document.querySelector('#txtBirthday').value,
     sCiudad = document.querySelector('#txtCiudad').value,
+    sTipo = document.querySelector('#txtTipo').value,
     sEmail = document.querySelector('#txtEmail').value,
     sPassword = document.querySelector('#txtPassword').value
     
 
     
     
-    addVendedortoSystem(sNombre, sApellidoPaterno,sApellidoMaterno,sUsuario, sRfc, sBirthday, sCiudad, sEmail, sPassword);
+    addVendedortoSystem(sNombre, sApellidoPaterno,sApellidoMaterno,sUsuario, sRfc, sBirthday, sCiudad, sTipo, sEmail, sPassword);
 
 
 }

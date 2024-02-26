@@ -1,6 +1,6 @@
 var listaVendedores = [];
 
-function addVendedortoSystem(pnombre, papellidopaterno, papellidomaterno, pusuario, prfc, pbirthday, pciudad, pemail, ppassword){
+function addVendedortoSystem(pnombre, papellidopaterno, papellidomaterno, pusuario, prfc, pbirthday, pciudad, ptipo, pemail, ppassword){
 
     var newVendedor = {
         nombre : pnombre,
@@ -10,6 +10,7 @@ function addVendedortoSystem(pnombre, papellidopaterno, papellidomaterno, pusuar
         rfc : prfc,
         birthday : pbirthday,
         ciudad : pciudad,
+        tipo : ptipo, 
         email : pemail,
         password : ppassword,
 
