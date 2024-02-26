@@ -25,3 +25,11 @@ f.addEventListener('submit', (ev) => {
   but.type = (but.type === 'search') ? 'submit' : 'search';
   ev.preventDefault();
 });
+
+
+function logout() {
+  // Eliminar la información de inicio de sesión almacenada en localStorage
+  localStorage.removeItem("username");
+  // Redirigir a la página de inicio de sesión
+  window.location.href = "InicioDeSesionV.html";
+}

@@ -15,7 +15,7 @@
 
 .container-form{
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Montserrat';
     font-size: large;
     display:flex;
     align-items: center;
@@ -24,7 +24,7 @@
 
 .container-general{
    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Montserrat';
     font-size: large;
     display:flex;
     align-items: center;
@@ -177,4 +177,6 @@
    
   }
 
- 
+ .form-text {
+  font-family: 'Montserrat'  !important;
+ }

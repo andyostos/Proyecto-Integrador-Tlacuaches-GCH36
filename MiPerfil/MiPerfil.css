@@ -487,3 +487,27 @@
     margin: 40px;
 
 }
+
+
+
+
+.btn-logout {
+    background-color: #FFDD03 !important;
+    border-radius: 30px !important;
+    border: 0px !important;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+    padding: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-family: 'Montserrat'  !important;
+    font-size: larger;
+    
+  
+ }
+ 
+ .btn-logout:hover {
+     background-color:#fbc403 !important;
+     transform: scale(1.05);
+     transition: transform .5s ease;
+   }

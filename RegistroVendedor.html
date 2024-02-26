@@ -22,7 +22,7 @@
             </div>
 
 
-        <div class="registro-vendedor col-sm-6">
+        <div class="registro-vendedor col-sm-5">
             <h2>Registrate como artista</h2>
            
 
@@ -80,6 +80,16 @@
                         </div>
                       </div>
 
+
+
+                      <div class="col-sm">
+                        <label for="txtTipo" class="form-label">Tipo: Escritor/Músico/Pintor/Escultor</label>
+                        <input type="text" class="form-control rounded-pill" id="txtTipo" pattern="[A-Za-z]+"required>
+                        <div class="invalid-feedback">
+                          Pon un tipo de artista
+                        </div>
+
+
                       <div class="col-sm" >
                         <label for="txtEmail" class="form-label">Correo electrónico</label>
                         <input type="email" class="form-control rounded-pill" id="txtEmail" required>
@@ -94,7 +104,7 @@
                         
                       </div>
 
-                      <div class="separador-form col-sm-12">
+                      <div class="separador-form col-sm">
                         <hr style="color: #FFDD03; width: 30%;" class="border-4 opacity-100">
                          <button type="submit" class="btn bt-warning btn-registro" id="btnSaveVendor">Registrate</button>
                          <hr style="color: #FFDD03; width: 30%; height: 3px;" class="border-4 opacity-100">
