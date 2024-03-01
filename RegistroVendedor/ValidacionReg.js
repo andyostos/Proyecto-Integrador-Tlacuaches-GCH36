@@ -35,15 +35,15 @@ document.addEventListener("DOMContentLoaded", function  () {
             return;
         }
   
-     //   if (!nombrePattern.test(apellidoMaterno)) {
-          //  alert("El campo Apellido Materno solo debe contener letras.");
-      //      return;
-   //     }
+       if (!nombrePattern.test(apellidoMaterno)) {
+        alert("El campo Apellido Materno solo debe contener letras.");
+           return;
+     }
   
-        if (!rfcPattern.test(rfc)) {
-          alert("El campo rfc solo debe contener letras y numeros");
-          return;
-      }
+     //   if (!rfcPattern.test(rfc)) {
+        //  alert("El campo rfc solo debe contener letras y numeros");
+      //    return;
+    //  }
   
         if (!nombrePattern.test(ciudad)) {
             alert("El campo Dirección solo debe contener letras.");
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function  () {
               return;
           }
   
-        alert("¡Formulario válido! Puedes enviarlo.");
+        alert("¡Formulario válido! Se ha enviado.");
   
   
   
