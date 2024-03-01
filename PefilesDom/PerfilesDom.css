@@ -1,7 +1,6 @@
 .row{
     text-align: justify;
     font-family:"Montserrat" !important;
-    background-color:;
     color:black;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
@@ -71,7 +70,7 @@
     border-radius: 1cm;
 }
 
-#text-center{
+.text-center{
     text-align: center;
 }
 

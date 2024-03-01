@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PerfilTchaikovski</title>
-    <link rel="stylesheet" href="./Pefiles/Tchaikovski.css">
+    <link rel="stylesheet" href="./PefilesDom/PerfilesDom.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <script async defer src="./Componentes/Navbar/Navbar.js"></script> 
@@ -14,30 +14,26 @@
   <div id="navbar-container-dom"></div>
     <div class="container">
         <div class="row" id="portada">
-            <img src="./Imagenes/PortadaTchaikovski.png" class="img-fluid" alt="...">
         </div>
         <div class="row" id="semblanza">
           <div class="container" id="Separador-1" >
-            <h2>"Tchaikovski"</h2>
+            <h2 id="nombre-artista"></h2>
           </div>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <div class="row">
-                    <img src="./Imagenes/FotoPerfilTchaikovski.png" class="img-fluid" alt="...">
+                    <img id="imagen-artista-perfil"  class="img-fluid" alt="...">
                 </div>
                 <div class="row">
-                    <h2 id="text-center" >Piotr Ilich Chaikovski</h2>
+                  <h2 class="text-center" id="nombre-artista-foto"></h2>
                 </div>
 
             </div>
             <div class="col-md-6">
                 <div class="row">
-                    <h2 id="text-center">Semblanza</h2>
-                    <p>Piotr Ilich Tchaikovski, nacido el 7 de mayo de 1840 en Votkinsk, Rusia, y aún activo en el mundo musical contemporáneo, sigue siendo un faro de creatividad y emoción en el escenario mundial. Aunque el tiempo ha pasado desde sus primeras composiciones, su presencia musical es tan viva como siempre.
-                        Con su característica barba y una mirada penetrante, Tchaikovski encarna la pasión y la profundidad de sus propias composiciones. Si bien sigue siendo un ícono de la música clásica, su influencia se expande a través de géneros y generaciones, demostrando que la grandeza musical trasciende el tiempo.
-                        En una era digital, Tchaikovski encontraría formas innovadoras de compartir su música con el mundo, quizás colaborando con artistas contemporáneos o utilizando plataformas de streaming para llegar a un público más amplio. Su habilidad para capturar la esencia de las emociones humanas resonaría de manera poderosa en la actualidad, conectando con audiencias de todas las edades.
-                        Aún comprometido con la maestría compositiva, Tchaikovski se destacaría por su capacidad para fusionar lo clásico con lo moderno, explorando nuevas sonoridades sin perder la esencia romántica que caracteriza su obra. 
+                    <h2 class="text-center" >Semblanza</h2>
+                    <p id="semblanza-artista">  
                     </p>
                 </div>
                 <div class="row">
@@ -78,26 +74,26 @@
             <div class="col-md-3">
                 <div class="container-fluid" id="intruccion_1">
                     <div class="row"> <h2><button type="button" class="btn-default-2"  id="btnSaveUser"><h2>1</h2></button></h2></div>
-                    <div class="row"><h2>Pasión por la Música Rusa</h2></div>
+                    <div class="row"><h2 id="pasion1"></h2></div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="container-fluid" id="intruccion_1">
                     <div class="row"> <h2><button type="button" class="btn-default-2"  id="btnSaveUser"><h2>2</h2></button></h2></div>
-                    <div class="row"><h2>Vida Emocional Intensa</h2></div>
+                    <div class="row"><h2 id="pasion2"></h2></div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="container-fluid" id="intruccion_1">
                     <div class="row"> <h2><button type="button" class="btn-default-2"  id="btnSaveUser"><h2>3</h2></button></h2></div>
-                    <div class="row"><h2>Influencia de la Literatura y la Danza</h2></div>
+                    <div class="row"><h2 id="pasion3"></h2></div>
                 </div>
     
             </div>
             <div class="col-md-3">
                 <div class="container-fluid" id="intruccion_1">
                     <div class="row"> <h2><button type="button" class="btn-default-2"  id="btnSaveUser"><h2>4</h2></button></h2></div>
-                    <div class="row"><h2>Búsqueda de Reconocimiento </h2></div>
+                    <div class="row"><h2 id="pasion4"></h2></div>
                 </div>
             </div>
         </div>
@@ -139,7 +135,7 @@
           </div>
         </div>
     </div>
-
+<script src="./PefilesDom/PerfilesDom.js"></script>
 <div id="end-container-dom"></div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
