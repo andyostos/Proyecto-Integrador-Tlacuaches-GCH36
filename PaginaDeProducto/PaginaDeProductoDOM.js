@@ -200,8 +200,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Verifica si se encontró el artista
         if (eImagen) {
             // Cambia la fuente de la imagen por la del artista
-            imagenElement.img = eImagen.imagen;
+            imagenElement.src = eImagen.imagen;
         } else {
             console.log('Artista no encontrado');
         }
+
+    
 });
