@@ -140,3 +140,21 @@ body {
 .container-2{
   padding-top: 5vw;
 }
+
+.card-body i {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.card-body a {
+  color: white;
+  
+  }
+
+  
+
+
+

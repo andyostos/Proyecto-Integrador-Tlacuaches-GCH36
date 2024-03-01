@@ -34,6 +34,8 @@
 
 
 
+
+
 pagination-container .pagination .page-item .page-link {
   color: black; /* Cambia el color del texto de los botones a negro */
   background-color: transparent; /* Fondo transparente */
@@ -116,6 +118,8 @@ input[type="checkbox"]:checked + .checkmark::before {
 
 .filtro {
   width: 200px; 
+  margin-right: 100px;
+  padding-right: 20%;
 }
 
 .card-img-top {
@@ -201,7 +205,7 @@ border-radius: 10px;
 }
 
 .card-title {
-  color: #0e854d; /* Color del texto */
+  color: black !important; /* Color del texto */
   font-size: 24px; /* Tamaño del texto */
   font-weight: bold; /* Negrita */
 }

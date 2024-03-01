@@ -1,6 +1,7 @@
 var usuariosPermitidos = [
     { Email: "prometeo@gmail.com", Contrasena: "12345", pagina: "MiPerfil.html" },
     { Email: "karladiaz@gmail.com", Contrasena: "666456", pagina: "MiPerfil.html" },
+    { Email: "pintork@gmail.com", Contrasena: "12345", pagina: "CreacionProducto" },
     // base de datos ficticia simulador
 ];
 
