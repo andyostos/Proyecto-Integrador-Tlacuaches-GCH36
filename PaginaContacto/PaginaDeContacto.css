@@ -19,10 +19,10 @@
     color:#000000;
 }
 
-*{
+ /* *{
     margin: 5px;
     box-sizing: border-box;
-}
+}*/
 
 .contacto-registro {
     margin-top: 100px;
@@ -32,9 +32,55 @@
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
-   
     
+}
+
+.total-div {
+    padding-top: 100px;
 }
 
 
 
+.rounded-pill {
+    background-color: #EBEBEB !important;
+    border: none;
+}
+
+#contact-form input{
+    margin-bottom: 5%;
+
+  }
+
+  #contact-form textarea{
+    margin-bottom: 5%;
+
+  }
+
+  #contact-form select{
+    margin-bottom: 5%;
+
+  }
+
+
+  .btn-default {
+    background-color: #FFDD03 !important;
+    border-radius: 30px !important;
+    border: 0px !important;
+    margin-left: 10px;
+    font-family: 'Rubik'  !important;
+    justify-self: center !important;
+    font-size: larger;
+
+  }
+
+.btn-default{
+    margin-top: 10px;
+    justify-content: center;
+    
+}
+
+  .btn-default:hover {
+    background-color:#fbc403 !important;
+    transform: scale(1.05);
+    transition: transform .5s ease;
+  }

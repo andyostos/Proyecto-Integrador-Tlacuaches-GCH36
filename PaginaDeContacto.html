@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="./PaginaContacto/PaginaDeContacto.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <script async defer src="./Componentes/Navbar/Navbar.js"></script> 
-    <script async defer src="./Componentes/Endpage/Endpage.js"></script> 
-    <script async defer src="./PaginaContacto/PaginaDeContacto.js"></script>
+   
+    
 </head>
 <body>
     <div id="navbar-container-dom"></div>
 
     
-
-    <div class="container contacto-registro col-sm-4">
+<div class="total-div">
+    <div class="contacto-registro col-sm-4">
         <div class="container-form" id="formulario-titulo">
             <div class="row">
                 <div class="col">
@@ -57,7 +56,9 @@
                                             </div>
                                         </div>
                                         <div class="row">
+                                            <div class="col">
                                             <button type="submit" class="btn btn-default" id="btnSaveUser">Enviar mensaje</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -68,8 +69,13 @@
             </div>
         </div>
     </div>
+</div> <!--aquí se cierra todo-->
 
 
     <div id="end-container-dom"></div>
+
+    <script src="./Componentes/Navbar/Navbar.js"></script> 
+    <script  src="./Componentes/Endpage/Endpage.js"></script> 
+    <script async defer src="./PaginaContacto/PaginaDeContacto.js"></script>
 </body>
 </html>
