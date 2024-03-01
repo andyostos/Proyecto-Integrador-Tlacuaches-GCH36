@@ -1,0 +1,122 @@
+
+.contenedor-registro-t {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 100px;
+   
+}
+
+
+
+.logo-central{
+    margin: auto;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+
+}
+
+
+.registro-vendedor {
+    margin-top: 0px;
+   justify-content: center;
+    border: 5px solid #FFDD03;
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+
+
+    
+
+}
+
+.registro-vendedor h2 {
+    font-family: 'Montserrat'  !important;;
+    font-size: xx-large;
+    justify-content: center;
+   /* display: flex;*/
+}
+
+
+
+
+
+
+#inputEmail {
+    background-color: #EBEBEB !important;
+    font-family: 'Montserrat'  !important;
+}
+
+#inputContrasena {
+    background-color: #EBEBEB !important;
+    font-family: 'Montserrat'  !important;
+}
+
+.rounded-pill {
+    background-color: #EBEBEB !important;
+    border: none;
+}
+
+
+
+
+.btn-registro {
+    background-color: #FFDD03 !important;
+    border-radius: 30px !important;
+    border: 0px !important;
+    margin-left: 10px;
+    font-family: 'Rubik'  !important;
+    justify-self: center !important;
+    font-size: larger;
+
+  }
+
+.btn-registro{
+    margin-top: 10px;
+    justify-content: center;
+    
+}
+
+  .btn-registro:hover {
+    background-color:#fbc403 !important;
+    transform: scale(1.05);
+    transition: transform .5s ease;
+  }
+
+
+  .separador-form {
+    display: flex;
+    margin: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+  .registro-form {
+
+    text-align: center;
+    font-family:"Montserrat" !important;
+
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+  }
+
+
+  #registroForm input{
+    margin-bottom: 5%;
+
+  }

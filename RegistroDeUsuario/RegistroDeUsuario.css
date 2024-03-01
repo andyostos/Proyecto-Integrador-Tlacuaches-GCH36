@@ -1,0 +1,48 @@
+.container-general{
+    padding-top: 130px;
+}
+.container-form{
+    text-align: center;
+    font-family:"Montserrat" !important;
+    font-size: large;
+    display:flex;
+    align-items: center;
+    flex-direction: column;;
+   align-items: center;
+}
+.container-marco{
+    
+    border-color: #ffdd03;
+    border-width: 50px;
+}
+
+#formulario-titulo{
+    color:#000000;
+}
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.iniciar-sesion {
+    margin-top: 100px;
+    margin: auto;
+    border: 5px solid #FFDD03;
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+
+.logo-central{
+    margin: auto;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    padding: 1px;
+
+}
+
+

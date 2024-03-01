@@ -1,0 +1,107 @@
+.row{
+    text-align: justify;
+    font-family:"Montserrat" !important;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    /*Separador conoce nuestra filosofía*/
+}
+
+#Separador{
+    background-color:#000000;
+    color: #000000;
+    text-align: center;
+    font-size: large;
+   padding: 1%;}
+
+   #Separador-1{
+    background-color:#000000;
+    color: white;
+    text-align: center;
+    font-size: large;
+   padding: 1%;}
+
+   #intruccion_1{
+    font-family:"Montserrat" !important;
+    background-color:#ffdd03;
+    color:#000000;
+    display:inline-table;
+    justify-content: center;
+    align-items:center;
+    width: 273px;
+    height: 301px;
+    margin: 5%;
+    border-radius: 1cm;
+    
+}
+
+.btn-default{
+    font-family:"Rubik" !important;
+    background-color:#000000;
+    color: #ffdd03;
+    width: 350px;
+    height: 77px;
+    border-radius:1cm;
+    border-color: #ffdd03;
+    border-width: 5px;
+    /*Todos los botones con borde amarillo*/
+}
+
+.btn-default-2{
+    background-color:#000000;
+    color: #ffdd03;
+    width: 80px;
+    height: 80px;
+    border-radius:1cm;
+    border-color: #ffdd03;
+    border-width: 5px;
+    /*Boton con números*/
+}
+
+#portada{
+    padding-top: 9%;
+}
+
+#semblanza{
+    padding: 1%;
+}
+
+.img-fluid{
+    border-radius: 1cm;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/*copia del css*/
+
+
+#colaboradores_1{
+    font-family:"Montserrat" !important;
+    background-color:#ffdd03;
+    color: black;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    padding: 0%;
+    width: auto;
+    height: auto;
+    margin: 2%;
+    border-radius: 1cm;
+    /*Boton del nombre del artista*/
+}
+
+.Impacto {
+    font-family:"Montserrat" !important;
+    text-align: center;
+    font-size: large;
+   padding: 1%;
+}
+
+#titulares{
+    font-family:"Montserrat" !important;
+}
+
+
+

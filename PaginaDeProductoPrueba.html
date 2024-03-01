@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina De Producto</title>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./BotonElementos/Botones.css"> 
+    <link rel="stylesheet" href="./IndexFolder/Index.css">
+    <link rel="stylesheet" href="./PaginaDeProducto/PaginaDeProducto.css">
+    <script async defer src="./Componentes/Navbar/Navbar.js"></script> 
+    <script async defer src="./Componentes/Endpage/Endpage.js"></script> 
+    
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar-container-dom"></div>
+
+<!-- Breadcrumb  -->
+<div class="margin-top-nvr">
+  <div class="nav-text-container"> 
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <p>.</p>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+
+  <!-- Breadcrumb  -->
+  <div class="navbar-inverse">
+    <div class="nav-text-container"> 
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"> <button class="btn btn-danger navbar-btn btn-bread"><a class="secondnav-btn btn-bread" href="ListaProductos.html">Artista</a></button></a></li>
+          <li class="breadcrumb-item"> <button class="btn btn-danger navbar-btn btn-bread"><a class="secondnav-btn btn-bread" href="ListaProductos.html">Categoria</a></button></li>
+          <li class="breadcrumb-item"> <button class="btn btn-danger navbar-btn btn-bread"><a class="secondnav-btn btn-bread" href="ListaProductos.html">Tipo</a></button></li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+
+  <!-- Seccionde producto e informcion -->
+  <div class="container text-center">
+    <div class="row align-items-start">
+
+      <!-- Carrusel imagen verticales  -->    
+      <!-- <div class="col-md-2">   
+        <div class="carrusel_vertical">
+          <div class="info product">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><div class="text-center">
+                <img class="mini-producto img-fluid img-max-width" width="75px" src="https://kuadros.com/cdn/shop/files/pintura-Composicion-X-KUADROS-2.jpg?v=1683784857&width=2078" class="rounded" alt="producto-img1">
+              </div></li>
+             
+            </ul>
+          </div>
+        </div>
+      </div> -->
+  
+      <!-- Imagen Producto -->
+      <div class="col-md-6 offset-md-2">       
+        <div class="clearfix">
+          <div id="imageProduct_Space">
+            <div class="product_image">
+            <i id=""></i>
+              <img id="imagen-prod-db"  class="card-img-top img-fluid img-max-width card-img-top2" alt="Card image cap">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Barra de INformación -->
+      <div class="col-md-4">
+        <div class="info-product">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h3 id="nombre-obra"> Nombre Obra</h3>
+              <p id="tipo-tec">Tecnica</p>
+              <p id="nombre-artista">Nombre Artista</p>
+              <div class="valoracion">
+                <p>Stock: 1</p>
+              </div>
+              <h3 id="numero-precio">$10,000</h3>
+            </li>
+            <li class="list-group-item">
+              <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Agregar al carrito</a></button>
+            </li>
+            <li class="list-group-item">
+              <button type="button" class="btn btn-primary btn-lg btn-negro-borde">Comprar Ahora</button>
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-twitter-x"></i>
+              <i class="bi bi-behance"></i>
+              <i class="bi bi-tiktok"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-link"></i>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  
+  <div class="container">
+   <div class="description_product">
+    <div class="jumbotron jumbotron-fluid">
+       
+      <div class="col-md-6 offset-md-2">   
+        <h4 class="display-6">Descripción de la Obra:</h4>
+        <p id="descripcion-obra" class="lead"></p>
+      </div>
+      
+       <!-- Tags -->
+      <div class="col-md-6 offset-md-2">   
+        <h4 class="display-6">Tags:</h4>
+        <div class="d-flex align-content-start flex-wrap">
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+          <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="">Tags</a></button>
+        </div>
+      </div>
+        
+
+    </div>
+   </div>
+  </div>
+  
+  <!-- INfo Artista -->
+  <div class="col-md-6 offset-md-2 color2">  
+    <div class="color3">
+      <div class="clearfix"></div>
+      <div class="container-texto">
+        <div class="row margenes-perfil">
+          <!-- IMagen Artista y nombre -->
+          <div class="col-4">
+            <div class="margin-info-artist">
+              <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">            
+              <h3 class="card-text">Nombre</h3>
+              <p class="card-text">Profesion</p>
+            </div> 
+          </div>
+          <!-- descripcion artista -->
+          <div class="col-6">Guadalajara, Jal. México<br><h5>Acerca de mí:</h5> <br>
+            <p>Mi obra es un viaje emocional donde los colores y formas danzan en una sinfonía de libertad creativa... </p>
+            <p>Leer más</p></div>
+          </div>
+        </div>  
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+<div id="end-container-dom"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./PaginaDeProducto/PaginaDeProductoDOM.js"></script>
+</body>
+</html>

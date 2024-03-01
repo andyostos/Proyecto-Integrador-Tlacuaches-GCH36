@@ -1,0 +1,182 @@
+
+.iniciar-sesion{
+  display:flex;
+    align-items: center;
+    flex-direction:column;
+}
+.contenedor-t-inicio-s {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 75px;
+
+}
+
+.container-form{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: large;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-general{
+   text-align: center;
+    font-family: 'Montserrat';
+    font-size: large;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-central{
+    margin: auto;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    padding: 1px;
+
+}
+
+.iniciar-sesion {
+    margin-top: 100px;
+    margin: auto;
+    border: 5px solid #FFDD03;
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+    
+}
+
+
+.iniciar-sesion input{
+  font-family: 'Montserrat'  !important;;
+}
+
+.iniciar-sesion label{
+  font-family: 'Montserrat'  !important;;
+}
+
+.iniciar-sesion p{
+  font-family: 'Montserrat'  !important;;
+}
+
+.iniciar-sesion h2 {
+    font-family: 'Montserrat'  !important;;
+    font-size: xx-large;
+    justify-content: center;
+    display: flex;
+}
+
+
+#inputEmail {
+    background-color: #EBEBEB !important;
+    font-family: 'Montserrat'  !important;
+}
+
+#inputContrasena {
+    background-color: #EBEBEB !important;
+    font-family: 'Montserrat'  !important;
+}
+
+.rounded-pill {
+    background-color: #EBEBEB !important;
+}
+
+
+.form-check-input:checked {
+    background-color: #fbc403 !important;
+    border-color: #fbc403 !important;
+
+}
+
+.form-check {
+    display: flex;
+}
+
+.txt-olvido {
+    
+    float: right;
+}
+
+
+
+.btn-inicio-s{
+    background-color: #FFDD03 !important;
+    border-radius: 30px !important;
+    border: 0px !important;
+    margin-left: 10px;
+    font-family: 'Rubik'  !important;
+    justify-content: center !important;
+    font-size: larger;
+}
+
+.btn-inicio-s:hover {
+    background-color:#fbc403 !important;
+    transform: scale(1.05);
+    transition: transform .5s ease;
+  }
+
+
+  .btn-registro {
+    background-color: #FFDD03 !important;
+    border-radius: 30px !important;
+    border: 0px !important;
+    margin-left: 10px;
+    font-family: 'Rubik'  !important;
+    justify-self: center !important;
+    font-size: larger;
+
+  }
+
+.btn-registro{
+    margin-top: 10px;
+    
+}
+
+  .btn-registro:hover {
+    background-color:#fbc403 !important;
+    transform: scale(1.05);
+    transition: transform .5s ease;
+    color: #231F20!important;
+  }
+
+
+  .btn-link {
+    text-decoration: none !important;
+    color: #231F20 !important;
+    transform: scale(1.00) !important;
+  }
+
+  .separador-form {
+    display: flex;
+    margin: 0px !important;
+
+  }
+
+  .txt-nuevo{
+    background-color: white;
+    width: fit-content;
+    color: black;
+   margin: auto;
+   float: right;
+    
+  }
+
+
+ 
+
+  .border {
+    border-color:#fbc403;
+    width: 3px;
+   
+   
+  }
+
+ .form-text {
+  font-family: 'Montserrat'  !important;
+ }

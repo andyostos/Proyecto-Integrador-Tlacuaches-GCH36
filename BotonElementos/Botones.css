@@ -1,0 +1,58 @@
+.navbar-btn{
+   background-color: #FFDD03 !important;
+   border-radius: 30px !important;
+   border: 0px !important;
+   margin-left: 1vw;
+   margin-bottom: 1vw;
+ 
+}
+
+.navbar-btn:hover {
+    background-color:#fbc403 !important;
+    transform: scale(1.05);
+    transition: transform .5s ease;
+  }
+
+.secondnav-btn{
+    color: #231F20 !important;
+    text-decoration: none;
+    font-family: 'Rubik'  !important;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que desborda */
+    text-overflow: ellipsis;
+}
+
+.btn-primary{
+    background-color: #231F20 !important;
+    color: #ffffff !important;
+    font-family: 'Rubik'  !important;
+    border-radius: 30px !important;
+    border: 0px !important;
+    text-decoration: none;
+    transform: scale(1.00);
+    transition: transform .5s ease;
+    white-space: nowrap !important; /* Evita que el texto se divida en varias líneas */
+        overflow: hidden !important; /* Oculta el texto que desborda */
+        text-overflow: ellipsis !important;
+    
+    
+}
+
+.btn-primary:hover {
+    background-color: black !important;
+    transform: scale(1.05);
+    transition: transform .5s ease;
+  }
+
+.btn-negro-borde{
+  border-color: #FFDD03 !important;
+  color: #FFDD03 !important;
+  border: 3px solid !important;
+  
+    text-decoration: none;
+    font-family: 'Rubik'  !important;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que desborda */
+    text-overflow: ellipsis;
+
+}

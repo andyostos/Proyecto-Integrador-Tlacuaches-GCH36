@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./kike.js"></script>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./IndexFolder/Index.css">
+    <link rel="stylesheet" href="./BotonElementos/Botones.css">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script async defer src="./Componentes/Navbar/Navbar.js"></script> 
+    <script async defer src="./Componentes/Endpage/Endpage.js"></script> 
+
+</head>
+<body>
+    <!-- Navbar -->
+  <div id="navbar-container-dom"></div>
+<!-- 
+    <div class="content">
+      <div class="container-1">
+       
+        <nav class="navbar-inverse">
+            <div class="container-bottoms">
+                <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="ListaProductos.html">Tienda</a></button>
+                <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="6.Artistas.html">Artistas</a></button>
+            </div>
+        </nav>
+      </div> -->
+
+      <div class="container-1">
+       
+        <nav class="navbar-inverse">
+            <div class="container-bottoms">
+                <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="ListaProductos.html">Tienda</a></button>
+                <button class="btn btn-danger navbar-btn"><a class="secondnav-btn" href="6.Artistas.html">Artistas</a></button>
+            </div>
+        </nav>
+      </div>
+     
+      <div class="container-2">
+        <!-- Banner -->
+          <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active"> 
+                <img src="./Media/Assets/Indieteca_BannersWeb01.jpg" alt="Baner1" width="100%">
+              </div>
+              <div class="carousel-item">
+                <img src="./Media/Assets/Indieteca_BannersWeb02.jpg" alt="Baner2" width="100%">
+              </div>
+              <div class="carousel-item">
+                <img src="./Media/Assets/Indieteca_BannersWeb03.jpg" alt="Baner3" width="100%">
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>  
+          </div>
+      </div>
+
+      <!-- tarjetas1 -->
+      <div class="container-fluid">
+        <!-- boton titulo -->
+        <div class="btn-container">
+          <button type="button" class="btn btn-primary btn-lg">Mejores Artistas</button>
+        </div>
+        <!-- tarjetas -->
+        <div class="margen-tarjetas">     
+          <div class="row">   
+            <div class="col-lg-3 col-md-5 mb-3">      
+              <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                <a href="PaginaDeProducto.html">
+                  <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                  <a href="7.PaginaDeArtistas.html">
+                    <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+                  </a>
+                  <div class="Info-artist-card">
+                    <a class="link-card" href="7.PaginaDeArtistas.html">
+                      <h3 class="card-text">Nombre</h3>
+                      <p class="card-text">Profesion</p>
+                    </a>
+                  </div> 
+                </div>
+              </div>         
+            </div>
+            <!-- /.col-lg-4 -->
+           <div class="col-lg-3 col-md-5 mb-3">
+          
+            <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+              <a href="PaginaDeProducto.html.html">
+                <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+              </a>
+                <div class="card-body">
+                <a href="7.PaginaDeArtistas.html">
+                  <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+                </a>
+                <div class="Info-artist-card">
+                  <a class="link-card" href="7.PaginaDeArtistas.html">
+                    <h3 class="card-text">Nombre</h3>
+                    <p class="card-text">Profesion</p>
+                </a>
+                </div> 
+              </div>
+            
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3 col-md-5 mb-3">
+          
+            <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+              <a href="PaginaDeProducto.html">
+                <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+              </a>
+                <div class="card-body">
+                <a href="7.PaginaDeArtistas.html">
+                  <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+                </a>
+                <div class="Info-artist-card">
+                  <a class="link-card" href="7.PaginaDeArtistas.html">
+                    <h3 class="card-text">Nombre</h3>
+                    <p class="card-text">Profesion</p>
+                </a>
+                </div> 
+              </div>
+            
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3 col-md-5 mb-3">
+          
+            <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+              <a href="PaginaDeProducto.html">
+                <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+              </a>
+                <div class="card-body">
+                <a href="7.PaginaDeArtistas.html">
+                  <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+                </a>
+                <div class="Info-artist-card">
+                  <a class="link-card" href="7.PaginaDeArtistas.html">
+                    <h3 class="card-text">Nombre</h3>
+                    <p class="card-text">Profesion</p>
+                </a>
+                </div> 
+              </div>
+            </div>
+          
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </div> 
+
+      </div>
+
+      <!-- tarjetas2 -->
+      <div class="container-fluid">
+
+         <!-- boton titulo -->
+      <div class="btn-container">
+        <button type="button" class="btn btn-primary btn-lg">Nuevos Artistas</button>
+    </div>
+
+  <!-- tarjetas -->
+  <div class="margen-tarjetas">     
+    <div class="row">
+      
+      <div class="col-lg-3 col-md-5 mb-3">
+        
+          <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+            <a href="PaginaDeProducto.html">
+              <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+            </a>
+              <div class="card-body">
+              <a href="7.PaginaDeArtistas.html">
+                <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+              </a>
+              <div class="Info-artist-card">
+                <a class="link-card" href="7.PaginaDeArtistas.html">
+                  <h3 class="card-text">Nombre</h3>
+                  <p class="card-text">Profesion</p>
+              </a>
+              </div> 
+            </div>
+          </div>
+        
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3 col-md-5 mb-3">
+        
+          <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+            <a href="PaginaDeProducto.html">
+              <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+            </a>
+              <div class="card-body">
+              <a href="7.PaginaDeArtistas.html">
+                <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+              </a>
+              <div class="Info-artist-card">
+                <a class="link-card" href="7.PaginaDeArtistas.html">
+                  <h3 class="card-text">Nombre</h3>
+                  <p class="card-text">Profesion</p>
+              </a>
+              </div> 
+            </div>
+          
+        </div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3 col-md-5 mb-3">
+        
+          <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+            <a href="PaginaDeProducto.html">
+              <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+            </a>
+              <div class="card-body">
+              <a href="7.PaginaDeArtistas.html">
+                <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+              </a>
+              <div class="Info-artist-card">
+                <a class="link-card" href="7.PaginaDeArtistas.html">
+                  <h3 class="card-text">Nombre</h3>
+                  <p class="card-text">Profesion</p>
+              </a>
+              </div> 
+            </div>
+          
+        </div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3 col-md-5 mb-3">
+        
+          <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+            <a href="PaginaDeProducto.html">
+              <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+            </a>
+              <div class="card-body">
+              <a href="7.PaginaDeArtistas.html">
+                <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+              </a>
+              <div class="Info-artist-card">
+                <a class="link-card" href="7.PaginaDeArtistas.html">
+                  <h3 class="card-text">Nombre</h3>
+                  <p class="card-text">Profesion</p>
+              </a>
+              </div> 
+            </div>
+          </div>
+        
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div> 
+
+      </div>
+
+      <!-- tarjetas3 -->
+      <div class="container-fluid">
+        
+              <!-- boton titulo -->
+      <div class="btn-container">
+        <button type="button" class="btn btn-primary btn-lg">Nuevos Artistas</button>
+    </div>
+
+  <!-- tarjetas -->
+  <div class="margen-tarjetas">     
+    <div class="row">
+      
+      <div class="col-lg-3 col-md-5 mb-3">
+        
+          <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+            <a href="PaginaDeProducto.html">
+              <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+            </a>
+              <div class="card-body">
+              <a href="7.PaginaDeArtistas.html">
+                <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+              </a>
+              <div class="Info-artist-card">
+                <a class="link-card" href="7.PaginaDeArtistas.html">
+                  <h3 class="card-text">Nombre</h3>
+                  <p class="card-text">Profesion</p>
+              </a>
+              </div> 
+            </div>
+          </div>
+        
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3 col-md-5 mb-3">
+        
+          <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+            <a href="PaginaDeProducto.html">
+              <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+            </a>
+              <div class="card-body">
+              <a href="7.PaginaDeArtistas.html">
+                <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+              </a>
+              <div class="Info-artist-card">
+                <a class="link-card" href="7.PaginaDeArtistas.html">
+                  <h3 class="card-text">Nombre</h3>
+                  <p class="card-text">Profesion</p>
+              </a>
+              </div> 
+            </div>
+          
+        </div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3 col-md-5 mb-3">
+        
+          <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+            <a href="PaginaDeProducto.html">
+              <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+            </a>
+              <div class="card-body">
+              <a href="7.PaginaDeArtistas.html">
+                <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+              </a>
+              <div class="Info-artist-card">
+                <a class="link-card" href="7.PaginaDeArtistas.html">
+                  <h3 class="card-text">Nombre</h3>
+                  <p class="card-text">Profesion</p>
+              </a>
+              </div> 
+            </div>
+          
+        </div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3 col-md-5 mb-3">
+        
+          <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+            <a href="PaginaDeProducto.html">
+              <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+            </a>
+              <div class="card-body">
+              <a href="7.PaginaDeArtistas.html">
+                <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+              </a>
+              <div class="Info-artist-card">
+                <a class="link-card" href="7.PaginaDeArtistas.html">
+                  <h3 class="card-text">Nombre</h3>
+                  <p class="card-text">Profesion</p>
+              </a>
+              </div> 
+            </div>
+          </div>
+        
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div> 
+  </div>
+
+    <!-- tarjetas4 -->
+    <div class="container-fluid">
+        
+      <!-- boton titulo -->
+<div class="btn-container">
+<button type="button" class="btn btn-primary btn-lg">Nuevos Artistas</button>
+</div>
+
+<!-- tarjetas -->
+<div class="margen-tarjetas">     
+<div class="row">
+
+<div class="col-lg-3 col-md-5 mb-3">
+
+  <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+    <a href="PaginaDeProducto.html">
+      <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+    </a>
+      <div class="card-body">
+      <a href="7.PaginaDeArtistas.html">
+        <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+      </a>
+      <div class="Info-artist-card">
+        <a class="link-card" href="7.PaginaDeArtistas.html">
+          <h3 class="card-text">Nombre</h3>
+          <p class="card-text">Profesion</p>
+      </a>
+      </div> 
+    </div>
+  </div>
+
+</div><!-- /.col-lg-4 -->
+<div class="col-lg-3 col-md-5 mb-3">
+
+  <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+    <a href="PaginaDeProducto.html">
+      <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+    </a>
+      <div class="card-body">
+      <a href="7.PaginaDeArtistas.html">
+        <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+      </a>
+      <div class="Info-artist-card">
+        <a class="link-card" href="7.PaginaDeArtistas.html">
+          <h3 class="card-text">Nombre</h3>
+          <p class="card-text">Profesion</p>
+      </a>
+      </div> 
+    </div>
+  
+</div>
+</div><!-- /.col-lg-4 -->
+<div class="col-lg-3 col-md-5 mb-3">
+
+  <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+    <a href="PaginaDeProducto.html">
+      <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+    </a>
+      <div class="card-body">
+      <a href="7.PaginaDeArtistas.html">
+        <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+      </a>
+      <div class="Info-artist-card">
+        <a class="link-card" href="7.PaginaDeArtistas.html">
+          <h3 class="card-text">Nombre</h3>
+          <p class="card-text">Profesion</p>
+      </a>
+      </div> 
+    </div>
+  
+</div>
+</div><!-- /.col-lg-4 -->
+<div class="col-lg-3 col-md-5 mb-3">
+
+  <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+    <a href="PaginaDeProducto.html">
+      <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+    </a>
+      <div class="card-body">
+      <a href="7.PaginaDeArtistas.html">
+        <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+      </a>
+      <div class="Info-artist-card">
+        <a class="link-card" href="7.PaginaDeArtistas.html">
+          <h3 class="card-text">Nombre</h3>
+          <p class="card-text">Profesion</p>
+      </a>
+      </div> 
+    </div>
+  </div>
+
+</div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
+</div> 
+</div>  
+
+
+<!-- Tarjetas5 -->
+<div class="container-fluid">
+        
+      <!-- boton titulo -->
+<div class="btn-container">
+<button type="button" class="btn btn-primary btn-lg">Nuevos Artistas</button>
+</div>
+
+<!-- tarjetas -->
+<div class="margen-tarjetas">     
+<div class="row">
+
+<div class="col-lg-3 col-md-5 mb-3">
+
+  <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+    <a href="PaginaDeProducto.html">
+      <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+    </a>
+      <div class="card-body">
+      <a href="7.PaginaDeArtistas.html">
+        <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+      </a>
+      <div class="Info-artist-card">
+        <a class="link-card" href="7.PaginaDeArtistas.html">
+          <h3 class="card-text">Nombre</h3>
+          <p class="card-text">Profesion</p>
+      </a>
+      </div> 
+    </div>
+  </div>
+
+</div><!-- /.col-lg-4 -->
+<div class="col-lg-3 col-md-5 mb-3">
+
+  <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+    <a href="PaginaDeProducto.html">
+      <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+    </a>
+      <div class="card-body">
+      <a href="7.PaginaDeArtistas.html">
+        <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+      </a>
+      <div class="Info-artist-card">
+        <a class="link-card" href="7.PaginaDeArtistas.html">
+          <h3 class="card-text">Nombre</h3>
+          <p class="card-text">Profesion</p>
+      </a>
+      </div> 
+    </div>
+  
+</div>
+</div><!-- /.col-lg-4 -->
+<div class="col-lg-3 col-md-5 mb-3">
+
+  <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+    <a href="PaginaDeProducto.html">
+      <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+    </a>
+      <div class="card-body">
+      <a href="7.PaginaDeArtistas.html">
+        <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+      </a>
+      <div class="Info-artist-card">
+        <a class="link-card" href="7.PaginaDeArtistas.html">
+          <h3 class="card-text">Nombre</h3>
+          <p class="card-text">Profesion</p>
+      </a>
+      </div> 
+    </div>
+  
+</div>
+</div><!-- /.col-lg-4 -->
+<div class="col-lg-3 col-md-5 mb-3">
+
+  <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+    <a href="PaginaDeProducto.html">
+      <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+    </a>
+      <div class="card-body">
+      <a href="7.PaginaDeArtistas.html">
+        <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+      </a>
+      <div class="Info-artist-card">
+        <a class="link-card" href="7.PaginaDeArtistas.html">
+          <h3 class="card-text">Nombre</h3>
+          <p class="card-text">Profesion</p>
+      </a>
+      </div> 
+    </div>
+  </div>
+
+</div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
+</div> 
+</div>
+
+    <!-- carrusel -->
+<div class="container-fluid">
+  <div class="btn-container">
+    <button type="button" class="btn btn-primary btn-lg">Categorías</button>
+  </div>
+  <div id="carouselExample" class="carousel carousel-dark slide">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+
+        <div class="cards-carrusel">
+
+          <div class="row-2">
+
+            <div class="col-sm-3 ">
+              <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                <img src="./Media/Logos/tarjetascarrito/discometal.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    
+                <h3 class="card-title">Pintura</h3>
+                   
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 ">
+              <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                <img src="./Media/Logos/tarjetascarrito/pinturanatural.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    
+                  <h3 class="card-title">Escultura</h3>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                <img src="./Media/Logos/tarjetascarrito/esculturamoderna.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                      
+                <h3 class="card-title">Música</h3> 
+                                      
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+
+      </div>
+      <div class="carousel-item ">
+
+          <div class="row-2">
+              <div class="col-sm-3">
+             
+                  <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                    <img src="./Media/Logos/tarjetascarrito/librohead.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      
+                      <h3 class="card-title">Literatura</h3>
+                      
+                    </div>
+                  </div>
+                
+            </div>
+            <div class="col-sm-3">
+              <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                <img src="./Media/Logos/tarjetascarrito/pinturanatural.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  
+                  <h3 class="card-title">Fotografía</h3>
+                
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card" style="width: 12rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                <img src="./Media/Logos/tarjetascarrito/discometal.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                 
+                  <h3 class="card-title">Mercancía</h3> 
+                              
+                </div>
+              </div>
+            </div>
+        </div>
+        
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+
+  <div id="end-container-dom"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+  </body>
+</html> 

@@ -1,0 +1,106 @@
+.container-general{
+    padding-top: 120px;
+}
+.container{
+    text-align: center;
+    font-size: large;
+   padding: 1%;
+   /*Contenedor general, no meterle color de fondo*/
+}
+
+.btn-default{
+    font-family:"Rubik" !important;
+    background-color:#000000;
+    color: #ffdd03;
+    width: 350px;
+    height: 77px;
+    border-radius:1cm;
+    border-color: #ffdd03;
+    border-width: 5px;
+    /*Modificadores de los botones de misión y visión ACTUALES*/
+}
+
+#Separador-2{
+    font-family:"Montserrat" !important;
+    /*Valores*/
+}
+
+#Separador{
+    font-family:"Montserrat" !important;
+    background-color:#000000;
+    color:#FFFFFF;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    /*Separador conoce nuestra filosofía*/
+}
+
+#Separador-3{
+    font-family:"Montserrat" !important;
+    background-color:#FFDD03;
+    color:#000000;
+    border-radius: 1cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Conoce a nuestro equipo*/
+}
+
+
+.Imagenes{
+    width: auto;
+    height: auto;
+    padding: 3%;
+    margin: 0%;
+    border-radius: 10%;
+    /*Bordes redondeados valores*/
+    
+}
+
+.Valores{
+    font-family:"Montserrat" !important;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+   padding: 1%;
+   /*Fondo de los valores*/
+/*Esto va sin color de fondo*/
+}
+
+.Valores-texto{
+    font-family:"Montserrat" !important;
+    text-align: justify;
+    font-size: large;
+   padding: 1%;
+}
+.imagenesDesarrolladores{
+    border-radius: 10%;
+    margin: 0%;
+    /*Bordes redondeados imagenes desarrolladores*/
+}
+
+.container-1{
+    font-family:"Montserrat" !important;
+    background-color: #FFDD03;
+    color:#000000;
+    border-radius: 1cm;
+    width:auto;
+    /*Nombres*/
+
+}
+
+.container-2{
+    font-family:"Montserrat" !important;
+    background-color: black;
+    color:#FFFFFF;
+    border-radius: 1cm;
+    width:auto;
+    /*Puestos*/
+}
+
+
+
+
+
+
+

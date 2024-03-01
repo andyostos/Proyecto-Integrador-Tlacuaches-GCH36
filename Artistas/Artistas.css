@@ -1,0 +1,319 @@
+#Artist {
+  width: 620;
+  height: 110;
+  /*display: block; /* Evita que haya espacio adicional debajo de la imagen */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+#Perfil{
+  width: 490px;
+  height: 490px;
+ /* display: block; */
+  margin: 10px;
+}
+
+#barra{
+  background-color: black;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  padding: 2.3% 0;
+}
+
+.mcontainer{
+  position: relative;
+  letter-spacing: -1px;
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+.change{
+  margin-top: 100px;
+}
+
+
+
+
+
+pagination-container .pagination .page-item .page-link {
+  color: black; /* Cambia el color del texto de los botones a negro */
+  background-color: transparent; /* Fondo transparente */
+  border: 1px solid black; /* Borde negro */
+  padding: 5px 10px; /* Ajuste de relleno */
+  margin: 0 5px; /* Ajuste de margen entre botones */
+  transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+}
+
+/* Cambia el color de fondo al pasar el cursor sobre los botones */
+.pagination-container .pagination .page-item .page-link:hover {
+  background-color: #FFDD03; /* Color de fondo amarillo cuando se pasa el cursor */
+}
+
+/* Estilo para el botón activo */
+.pagination-container .pagination .page-item.active .page-link {
+  background-color: #D9D9D9; /* Color de fondo negro para el botón activo */
+  color: white; /* Texto blanco para el botón activo */
+  border-color: black; /* Borde negro para el botón activo */
+}
+
+.social-icons a {
+  color: inherit; /* Utiliza el color heredado del padre (por defecto es negro) */
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+
+/* Oculta los checkboxes originales */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Estilo personalizado para los contenedores de los checkboxes */
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 25px; /* Ajusta el espacio a la izquierda del círculo */
+  margin-right: 15px; /* Ajusta el margen derecho entre los checkboxes */
+}
+
+
+/* Cambia el color de fondo del círculo cuando el checkbox está marcado */
+input[type="checkbox"]:checked + .checkmark {
+  background-color: gold; /* Color de fondo cuando está seleccionado */
+}
+
+/* Muestra una marca dentro del círculo cuando el checkbox está marcado */
+input[type="checkbox"]:checked + .checkmark::before {
+  content: '\2713'; /* Código de verificación Unicode */
+  display: block;
+  color: #fff; /* Color de la marca */
+  text-align: center;
+  line-height: 18px; /* Alinea la marca en el centro del círculo */
+  font-size: 14px; /* Tamaño de la marca */
+}
+
+
+.image-description {
+  display: flex; /* Utiliza flexbox para alinear los elementos */
+}
+
+.buscador input {
+  width: 150px; 
+}
+
+.buscador button {
+  margin-left: 5px;
+  background-color: yellow; 
+}
+
+
+.contenedor {
+  display: flex; 
+}
+
+.filtro {
+  width: 200px; 
+  margin-right: 100px;
+  padding-right: 20%;
+}
+
+.card-img-top {
+  width: auto; 
+  height: 200px;  
+  object-fit: cover;  
+}
+
+.card-body {
+border-radius: 100px;
+}
+
+
+.buscador input[type="text"],
+.buscador button {
+border-radius: 10px;
+}
+
+
+
+.image-container {
+  flex: 0 0 auto; /* La imagen no cambiará de tamaño */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que esté fuera del contenedor */
+  border-radius: 100%; /* Crea un borde redondeado en la */
+  margin-left: 20px; /* Espacio entre la imagen y el texto */
+}
+.card-body.categoria.fotografia {
+  background-color: #FFDD03(0, 0, 0); /* Color de fondo */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.card-title {
+  color:#FFDD03 /* Color del texto */ 24px; /* Tamaño del texto */
+  font-size: 24px; 
+  font-weight: bold; /* Negrita */
+}
+
+.card-body.categoria.escritura {
+  background-color: #FFDD03; /* Color de fondo */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px #FFDD03(0, 0, 0, 0.1); /* Sombra */
+}
+
+.card-title {
+  color: #333; /* Color del texto */
+  font-size: 24px; /* Tamaño del texto */
+  font-weight: bold; /* Negrita */
+}
+
+.card-body.categoria.pintura {
+  background-color: #FFDD03; /* Color de fondo */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.card-title {
+  color: #333; /* Color del texto */
+  font-size: 24px; /* Tamaño del texto */
+  font-weight: bold; /* Negrita */
+}
+
+.card-body.categoria.esculturas {
+  background-color: #FFDD03; /* Color de fondo */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.card-title {
+  color: #333; /* Color del texto */
+  font-size: 24px; /* Tamaño del texto */
+  font-weight: bold; /* Negrita */
+}
+.card-body.categoria.musica {
+  background-color: #FFDD03; /* Color de fondo */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.card-title {
+  color: black !important; /* Color del texto */
+  font-size: 24px; /* Tamaño del texto */
+  font-weight: bold; /* Negrita */
+}
+
+.escritura-contenido{
+  color: #333; /* Color del texto */
+  font-size: 24px; /* Tamaño del texto */
+  font-weight: bold; /* Negrita */
+
+}
+.custom-bg-black {
+  background-color: #000000; /* Color negro */
+}
+.cards-carrusel{
+  margin-left: 100px;
+  align-items: center;
+  justify-content: center !important;
+ }
+ 
+ .carousel-inner{
+     align-items: center;
+     justify-content: center;
+ }
+ .row-2{
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .card-title{
+     font-family:'Rubik' !important;
+    
+ 
+ }
+ 
+ .container-fluid{
+     align-items: center !important;
+     justify-content: center !important;
+ }
+ 
+ .cards-carrusel{
+     margin-left: 0px !important;
+ }
+ .col-sm-3{
+     margin-top: 2vw;
+     justify-content: center !important;
+ }
+
+ .tarjeta {
+  width: calc(25% - 15px); 
+  margin-bottom: 20px;
+  background-color: #070707;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /* Sombra suave */
+  }
+
+ #mi-tarjeta.custom-card {
+  border-radius: 50px; 
+  border: none;
+ }
+
+ .image-container {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%; 
+  height: 200px; /
+}
+
+.image-container img {
+  transition: transform 0.3s ease; 
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+  
+}
+
+.image-container:hover img {
+  transform: scale(1.05); /* Aumentamos ligeramente el tamaño de la imagen al pasar el cursor */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Agregamos una sombra alrededor de la imagen */
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
+
+.ver-mas-btn {
+  /* Estilos para el botón "Ver más" */
+  display: block;
+  width: 150px; /* Ancho deseado */
+  height: 50px; /* Altura deseada */
+  margin: 20px auto; /* Margen superior e inferior para centrar verticalmente */
+  background-color: black;
+  border-radius: 80px;
+  margin-top: 20px; /* Espacio superior para dejar espacio al contenido adicional */
+}
+
+.ver-mas-btn:hover{
+  background-color: #ffff66; /* Color amarillo más claro al pasar el cursor */
+}
+
+#contenidoAdicional {
+  margin-top: 20px; /* Espacio superior para dejar espacio al contenido adicional (no se si sirve aqui) */
+}
+
+

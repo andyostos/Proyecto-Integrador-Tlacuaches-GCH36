@@ -1,0 +1,513 @@
+.separador {
+    background-color: black;
+    width: 100vw;
+    height: 50px;
+}
+
+
+
+
+.contenedor-perfil {
+    margin: 30px;
+   
+}
+
+
+.cuadro {
+    border: 5px solid #231F20;
+    border-radius: 30px;
+    padding: 10px;
+   padding-left: 5px;
+   padding-right: 5px;
+   
+}
+
+.perfil-foto {
+    display: flex;
+    justify-content: center;
+}
+
+.perfil-foto img {
+    width: 300px;
+    height: 300px;
+   
+
+
+}
+
+
+.contenedor-dg {
+
+    overflow: hidden;
+}
+
+#datos-generales-1 {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.col-sm-8{
+ 
+    margin: initial;
+   
+}
+
+.col-sm-4{
+ 
+    margin: initial;
+}
+
+#datos-generales {
+    display: block;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.btn-edicion{
+    background-color: #231F20 !important;
+    color: #ffffff !important;
+    font-family: 'Rubik'  !important;
+    border-radius: 30px !important;
+    border: 0px !important;
+    text-decoration: none;
+    transform: scale(1.00);
+    transition: transform .5s ease;
+    margin: 5px;
+}
+
+
+.btn-edicion:hover{
+    background-color: black !important;
+    transform: scale(1.05);
+    transition: transform .5s ease;
+}
+
+
+
+.btn-guardar{
+    background-color: #FFDD03 !important;
+    border-radius: 30px !important;
+    border: 0px !important;
+    margin-left: 10px;
+    font-family: 'Rubik'  !important;
+}
+
+.btn-guardar:hover {
+    background-color:#fbc403 !important;
+    transform: scale(1.05);
+    transition: transform .5s ease;
+  }
+
+
+.btn-terminar-compra {
+    background-color:#231F20 !important;
+    border-radius: 30px !important;
+    border-color: #FFDD03 !important;
+    margin-left: 3%;
+    font-family: 'Rubik'  !important;
+    color:#231F20 !important;
+    border-width: 1px;
+    border-color: #FFDD03!important;
+    border-width: 3px !important;
+    border-style: solid;
+
+}
+
+
+.second-btn {
+    
+    color:#FFDD03 !important;
+    text-decoration: none;
+    font-family: 'Montserrat'  !important;
+    font-size: larger;
+    
+}
+
+.second-btn:hover {
+    
+    color:#231F20 !important;
+    text-decoration: none;
+    font-family: 'Montserrat'  !important;
+    font-size: larger;
+    
+}
+
+
+
+.btn-terminar-compra:hover {
+    background-color:#fbc403 !important;
+    transform: scale(1.05);
+    transition: transform .5s ease;
+    color: #231F20 !important;
+    
+  }
+
+
+  .secondnav-btn{
+    color: #231F20 !important;
+    text-decoration: none;
+    font-family: 'Rubik'  !important;
+}
+
+
+
+
+.termino {
+    margin: 30px;
+}
+
+
+.form-label{
+    background-color: #FFDD03;
+    color: #231F20;
+    border-radius: 30px;
+    width: max-content;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin: 10px;
+    font-family: 'Montserrat'  !important;
+}
+
+.titulo-datos h1 {
+    background-color:#231F20; 
+    color: white;
+    border-radius: 30px;
+    width: max-content;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 20px;
+    font-size: larger;
+    justify-items: center;
+    font-family: 'Montserrat'  !important;
+    
+}
+
+
+.titulo-datos {
+    display: flex ;
+    justify-content: center;
+
+}
+
+
+.form-label-1 {
+    background-color: none !important;
+    font-family: 'Montserrat'  !important;
+}
+
+#inputApellidoMaterno{
+    background-color: #EBEBEB;
+    font-family: 'Montserrat'  !important;
+}
+
+#inputApellidoPaterno{
+    background-color: #EBEBEB;
+    font-family: 'Montserrat'  !important;
+}
+
+#inputFechaDeNacimiento{
+    background-color: #EBEBEB;
+    font-family: 'Montserrat'  !important;
+}
+
+#inputUsuario{
+    background-color: #EBEBEB;
+    font-family: 'Montserrat'  !important;
+}
+
+
+#inputCorreo {
+    background-color: #EBEBEB;
+    font-family: 'Montserrat'  !important;
+}
+#inputContrasena {
+    background-color: #EBEBEB;
+}
+
+#inputNombre {
+    background-color: #EBEBEB;
+    font-family: 'Montserrat'  !important;
+}
+#inputDireccion {
+    background-color: #EBEBEB;
+    font-family: 'Montserrat'  !important;
+}
+#inputTelefono {
+    background-color: #EBEBEB;
+    font-family: 'Montserrat'  !important;
+}
+
+.separador-carrito {
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn-titulo {
+    align-items: center;
+    background-color: #FFDD03 !important;
+    color: #231F20 !important;
+    border-radius: 30px !important;
+    border: 0px !important;
+    margin-left: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 20% !important;
+    padding-right: 20% !important;
+    font-family: 'Rubik'  !important;
+    font-weight: bolder !important;
+    font-size: x-large !important;
+    align-items: center;
+   
+}
+
+.icon {
+    padding: 20px;
+    float: left;
+    
+}
+
+.icon:hover {
+ background-color: gold;
+ border-radius: 30px;
+}
+
+.icons {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.card-body {
+    background-color: gold;
+}
+
+.carouselExample{
+   margin-left: 30px;
+   justify-content: space-between;
+   
+  
+}
+
+#carouselExample {
+    margin-bottom: 30px;
+}
+
+.container-t {
+    display: flexbox;
+    overflow: hidden;
+    
+}
+
+
+/*carousel 
+*/
+
+.carousel-item {
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.carousel-inner{
+    align-items: center;
+    justify-content: center;
+}
+
+
+.carousel-control-prev {
+    color: black;
+    justify-content: flex-start !important;
+    width: 8%;
+    align-items:center;
+    display: flex!important;
+    margin: 1%;
+       
+}
+
+.carousel-control-next {
+    color: black;
+    justify-content: flex-end !important;
+    width: 8%;
+    align-items:center;
+    margin: 1%;
+
+}
+
+/*.card {
+    float: left;
+    margin: 20px;
+}
+*/
+.card-body{
+    display: flexbox;
+    overflow: hidden;
+}
+
+.card-body {
+    display: flex  ;
+    justify-content: center ;
+}
+
+.perfil-art{
+    float:left;
+}
+
+.perfil-art img{
+    border-radius: 30px;
+}
+
+
+
+
+
+.total-container-perfil{
+    margin-bottom: 0px;
+}
+
+
+
+
+
+.margen-tarjetas{
+    justify-content: space-evenly;
+
+}
+
+
+.row {
+  
+  justify-content: space-evenly;
+}
+
+
+
+/*Aqui esta el estilo de las tarjetas original*/
+.card-body{
+    display: flex;
+    flex-direction: row;
+}
+
+.Info-artist-card{
+    margin-left: 20px;
+}
+
+.card{
+    border-radius: 30px;
+    background-color: #FFDD03;
+    width: 50%; /* Porcentaje */
+    max-width: 500px; /* Máximo ancho */
+    margin: auto;
+   padding: 2px;
+
+}
+
+.card-body{
+    
+    background-color: #FFDD03; 
+}
+
+.container-tarjetas{
+    flex-wrap: wrap;
+}
+
+.margen-tarjetas{
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.responsive-img {
+    max-width: 100%; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    
+}
+
+.card-body{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 10px !important;
+   
+    
+}
+
+.card-img-top{
+    border-top-left-radius: 30px !important;
+    border-top-right-radius: 30px !important;
+    border: 10px !important;
+}
+
+.link-card{
+    text-decoration: none !important;
+    color: #231F20;
+    transform: scale(1.00) !important;
+  
+}
+
+.link-card:hover{
+    text-decoration:underline !important;
+    color: #000000;
+    
+}
+
+.card-img-top:hover{
+    transition: filter 0.5s ease;
+    filter: brightness(70%);
+}
+.bd-placeholder-img:hover{
+    transition: filter 0.5s ease;
+    filter: brightness(70%);
+}
+
+.categorias-descubre {
+    margin-left: 30px;
+}
+
+.termino-compra {
+    margin-left: 30px;
+}
+
+.btn-lg {
+
+    background-color: #231F20 !important;
+    color: #ffffff !important;
+    font-family: 'Montserrat'  !important;
+    border-radius: 30px !important;
+    border: 0px !important;
+    text-decoration: none;
+    transform: scale(1.00);
+    transition: transform .5s ease;
+    margin: 40px;
+
+}
+
+
+
+
+.btn-logout {
+    background-color: #FFDD03 !important;
+    border-radius: 30px !important;
+    border: 0px !important;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+    padding: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-family: 'Montserrat'  !important;
+    font-size: larger;
+    
+  
+ }
+ 
+ .btn-logout:hover {
+     background-color:#fbc403 !important;
+     transform: scale(1.05);
+     transition: transform .5s ease;
+   }

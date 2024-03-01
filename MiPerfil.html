@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Perfil</title>
+    <link rel="stylesheet" href="./MiPerfil/MiPerfil.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script async defer src="./Componentes/Navbar/Navbar.js"></script> 
+    <script async defer src="./Componentes/Endpage/Endpage.js"></script>
+    <link rel="stylesheet" href="./BotonElementos/Botones.css"> 
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<body>
+    <div id="navbar-container-dom"></div>
+
+
+<div class="total-container-perfil"> 
+    <div class="contenedor-banner">
+        <img src="Imagenes/kb_banner.jpg" alt="imagen de un banner con una cantante al centro" width="100%" height="350px">
+        </div>
+<div  class="titulo-datos">
+        <h1>Tus Datos</h1>
+      </div>
+    
+        <div class="contenedor-perfil">
+
+                <div class="row">
+
+              
+                <div class="col-sm-4">
+                  <div class="cuadro">
+                  <div class="perfil-foto">
+                  <img src="./Imagenes/perfil_muestra.jpg" class="img-fluid rounded-circle" alt="foto de perfil muestra" >
+                </div>
+                  <form id = "datos-generales-1" action="" method="get">
+                    <div class="col-sm-8"> 
+                        <label for="inputUsuario" class="form-label-1">Usuario</label>
+                        <input type="text" class="form-control rounded-pill" id="inputUsuario" placeholder="Karla">
+                    
+                        <label for="inputContrasena" class="form-label-1">Contraseña</label>
+                        <input type="text" class="form-control rounded-pill" id="inputContrasena" placeholder="******">
+    
+                       <!-- <button type="submit" class="btn btn-primary btn-edicion">Editar</button>
+                        <button type="submit" class="btn btn-danger btn-guardar"><a class="secondnav-btn" href="Artistas.html">Guardar</a></button> -->
+                      </div>
+                  
+                </form>
+              </div> <!-- cierre cuadro-->
+                </div>
+    
+    
+                <div class="col-sm-8">
+                  
+                    
+                    <form id = "datos-generales" action="" method="get">
+                    <div class="col-sm-8"> 
+                      <label for="inputNombre" class="form-label">Nombre</label>
+                      <input type="text" class="form-control rounded-pill" id="inputNombre" value="Karla">
+  
+                  
+                   
+                      <label for="inputApellidoMaterno" class="form-label">Apellido Materno</label>
+                      <input type="text" class="form-control rounded-pill" id="inputApellidoMaterno" value="Díaz">
+  
+                  
+                
+                    <label for="inputApellidoPaterno" class="form-label">Apellido Paterno</label>
+                    <input type="text" class="form-control rounded-pill" id="inputApellidoPaterno" value="Díaz">
+
+                
+                   
+                      <label for="inputFechaDeNacimiento" class="form-label">Fecha de Nacimiento</label>
+                      <input type="text" class="form-control rounded-pill" id="inputFechaDeNacimiento" value="03/07/1920">
+    
+                  
+                   
+                    
+                        <label for="inputTelefono" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control rounded-pill" id="inputTelefono" value="34566094">
+                 
+    
+                     
+                        <label for="inputCorreo" class="form-label">Correo electrónico</label>
+                        <input type="text" class="form-control rounded-pill" id="inputCorreo" value="karladiaz@gmail.com ">
+                    
+                     
+                    
+                        <label for="inputDireccion" class="form-label">Dirección</label>
+                        <input type="text" class="form-control rounded-pill" id="inputDireccion" value="1234 Main St">
+                      </div>
+
+
+                     <div class ="col-sm-4">
+                     
+                      <label for="inputMetodos" class="form-label">Metodos de Pago</label>
+                        <div class="icons">
+                        <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
+                          </svg>
+                        </div>
+
+                        <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-credit-card-fill" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1"/>
+                          </svg>
+                        </div>
+                      </div>
+                       </div>
+
+                    <div class ="col-sm-4">
+                     <!--  <button type="submit" class="btn btn-primary  btn-edicion">Editar</button>
+                     <button type="submit" class=" btn btn-danger btn-guardar"><a class="secondnav-btn" href="Artistas.html">Guardar</a></button>-->
+                    </div>
+                  </form>
+                </div>
+                
+              
+
+         </div> 
+                
+        </div>  
+    
+      </div> 
+        
+
+        <div class = "separador"></div>
+
+        <div class="separador-carrito">
+         <div class ="btn btn-danger btn-titulo"> Recomendaciones</div>
+        </div>
+        <!-- 
+         <div class ="termino-compra">
+         
+          <button type="button" class="btn btn-primary btn-lg">Artículos destacados</button>
+      
+          
+
+      </div>
+  
+       
+         
+          
+          <div class="margen-tarjetas">     
+          <div class="row row-cols-1 row-cols-md-3 g-3">
+          
+          <div class="col-lg-3 col-md-5 mb-3">
+          
+            <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+              <a href="PaginaDeProducto.html">
+                <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+              </a>
+                <div class="card-body">
+                <a href="PaginaDeArtistas.html">
+                  <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+                </a>
+                <div class="Info-artist-card">
+                  <a class="link-card" href="PaginaDeArtistas.html">
+                    <h3 class="card-text">Nombre</h3>
+                    <p class="card-text">Profesion</p>
+                </a>
+                </div> 
+              </div>
+            </div>
+          
+          </div> /.col-lg-4 
+          <div class="col-lg-3 col-md-5 mb-3">
+          
+            <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+              <a href="PaginaDeProducto.html">
+                <img class="card-img-top" src="./Media/Assets/TarjetasWeb_02.jpg" alt="Card image cap">
+              </a>
+                <div class="card-body">
+                <a href="PaginaDeArtistas.html">
+                  <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+                </a>
+                <div class="Info-artist-card">
+                  <a class="link-card" href="PaginaDeArtistas.html">
+                    <h3 class="card-text">Nombre</h3>
+                    <p class="card-text">Profesion</p>
+                </a>
+                </div> 
+              </div>
+            
+          </div>
+          </div>/.col-lg-4 
+          <div class="col-lg-3 col-md-5 mb-3">
+          
+            <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+              <a href="PaginaDeProducto.html">
+                <img class="card-img-top" src="./Media/Assets/TarjetasWeb_01.jpg" alt="Card image cap">
+              </a>
+                <div class="card-body">
+                <a href="PaginaDeArtistas.html">
+                  <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+                </a>
+                <div class="Info-artist-card">
+                  <a class="link-card" href="PaginaDeArtistas.html">
+                    <h3 class="card-text">Nombre</h3>
+                    <p class="card-text">Profesion</p>
+                </a>
+                </div> 
+              </div>
+            
+          </div>
+          </div> /.col-lg-4 
+          <div class="col-lg-3 col-md-5 mb-3">
+          
+            <div class="card h-100" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+              <a href="PaginaDeProducto.html">
+                <img class="card-img-top" src="./Media/Assets/TarjetasWeb_03.jpg" alt="Card image cap">
+              </a>
+                <div class="card-body">
+                <a href="PaginaDeArtistas.html">
+                  <img class="bd-placeholder-img rounded-circle" src="./Media/Assets/Artista_Web_01.jpg" alt="Artista01" width="70" height="70">           
+                </a> 
+                <div class="Info-artist-card">
+                  <a class="link-card" href="PaginaDeArtistas.html">
+                    <h3 class="card-text">Escultura</h3>
+                    <p class="card-text">$300</p>
+                </a>
+                </div> 
+              </div>
+            </div>
+          
+          </div> /.col-lg-4 
+          </div> /.row 
+          </div> 
+          </div> 
+          
+        -->
+  
+
+
+
+
+
+         <div>
+          <div class="termino">
+
+            <button type="submit" class=" btn btn-terminar-compra"> <a class="second-btn" href="carritoprototipo.html">Compralos aquí</a></button>
+          </div>
+        </div>
+    
+      
+      
+      
+      
+        <div class ="categorias-descubre">
+         
+            <button type="button" class="btn btn-primary btn-lg"> Descubre más</button>
+        
+            
+
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="carouselExample" class="carousel carousel-dark slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+  
+  
+              <div class="row row-cols-1 row-cols-md-3 g-3">
+                  <div class="col-sm-3 mb-4 mb-sm-0">
+                    <div class="card" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                      <img src="./Media/Logos/tarjetascarrito/discometal.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <a class="link-card" href="ListaProductos.html">
+                        <h5 class="card-title">Música</h5>
+                       </a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                      <img src="./Media/Logos/tarjetascarrito/pinturanatural.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <a  class="link-card" href="ListaProductos.html">
+                        <h5 class="card-title">Pintura</h5>
+                      </a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                      <div class="card" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                        <img src="./Media/Logos/tarjetascarrito/esculturamoderna.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a  class="link-card" href="ListaProductos.html">
+                          <h5 class="card-title"> Escultura</h5>
+                        </a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                </div>
+               
+  
+  
+  
+              
+            </div>
+            <div class="carousel-item">
+  
+              <div class="row row-cols-1 row-cols-md-3 g-3">
+                  <div class="col-sm-3 mb-4 mb-sm-0">
+                 
+                      <div class="card" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                        <a href="ListadoDeProductos.html">
+                        <img src="./Media/Logos/tarjetascarrito/librohead.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                          <a  class="link-card" href="ListaProductos.html">
+                          <h5 class="card-title">Libros</h5>
+                          </a>
+                         
+                        </div>
+                      </div>
+                    
+                </div>
+                <div class="col-sm-3" >
+                  <div class="card" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                    <img src="./Media/Logos/tarjetascarrito/pinturanatural.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a class="link-card" href="ListaProductos.html">
+                      <h5 class="card-title">Fotografía</h5>
+                    </a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card" style="width: 18rem;border-top-width: 0px;border-top-style: solid;border-right-width: 0px;border-right-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-left-width: 0px;border-left-style: solid;">
+                    <img src="./Media/Logos/tarjetascarrito/discometal.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a class="link-card" href="ListaProductos.html">
+                      <h5 class="card-title">Mercancía</h5>
+                      </a>
+                     
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+  
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+
+
+
+        
+        <div class="termino">
+
+          <button class="btn-logout" onclick="logout()">Cerrar Sesión</button>
+        </div>
+      </div>
+
+
+   
+</div> <!--divcontainertotal-->
+
+    <div id="end-container-dom"></div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./MiPerfil/Miperfil.js"></script>
+</body>
+</html>

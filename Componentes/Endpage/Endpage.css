@@ -1,0 +1,23 @@
+#endpage-style{
+    background-color: gold;
+    width: 100vw;
+    align-items: end;
+   
+    bottom: 0px;
+    padding-bottom: 50px;
+}
+
+#footer-estilo{
+    margin-top: 2vw;
+    background-color: #FFDD03;
+    width: 100vw !important;
+    padding-bottom: 1vw;
+    font-family:'Rubik' !important;
+    position: absolute;
+    
+}
+
+#image-container-f {
+    width: 10vw; /* Ancho de la imagen en 5% del ancho de la ventana */
+    height: auto; /* Altura automática para mantener la proporción de la imagen */
+  }

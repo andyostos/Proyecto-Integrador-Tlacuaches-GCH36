@@ -1,0 +1,21 @@
+#NavBar-style{
+background-color: #ffffff;
+position:fixed;
+z-index: 2;
+width: 100vw;
+
+
+}
+
+#input-src{
+    width: 600px;
+    border-radius: 30px;
+}
+
+.btn-outline-secondary {
+    border-radius: 30px !important;
+}
+
+.bg-gray {
+    background-color: #D9D9D9 !important;
+}

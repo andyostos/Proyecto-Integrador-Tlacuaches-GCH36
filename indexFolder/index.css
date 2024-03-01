@@ -1,0 +1,226 @@
+.class{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-1 {
+  
+   
+    /* background-color: #231F20; */
+}
+
+.container-2 {
+
+    /* background-color:aquamarine */
+}
+
+.container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color:brown; */
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin-bottom: 0 !important;
+}
+
+.container-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.container-4 {
+
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color:brown; */
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 5em;
+}
+
+.container-5 {
+
+    /* background-color: darkgreen; */
+}
+
+.container-6 {
+/* 
+    background-color:coral; */
+}
+
+.container-7 {
+
+    margin-bottom: 40px;
+}
+
+.container-8 {
+
+    /* background-color: crimson; */
+}
+
+.btn-container{
+align-self:start;
+   margin-left: 100px;
+   margin-right: 1000px;
+}
+
+.container-bottoms{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: row;
+}
+
+.Info-artist-card{
+    margin-left: 20px;
+}
+
+.card{
+    border-radius: 30px;
+    background-color: #FFDD03;
+    width: 50%; /* Porcentaje */
+    max-width: 500px; /* Máximo ancho */
+}
+
+.card-body{
+    
+    background-color: #FFDD03; 
+}
+
+.container-tarjetas{
+    flex-wrap: wrap;
+}
+
+.margen-tarjetas{
+   margin-left: 10vw;
+    margin-right: 5vw;
+}
+
+.responsive-img {
+    max-width: 100%; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.btn-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10vw;
+    align-items: center !important;
+   
+}
+
+.btn-black{
+    background-color: #231F20;
+    color: #FFDD03;
+    
+}
+
+.content{
+    font-family: 'Montserrat';
+    
+
+}
+
+.navbar-inverse{
+    background-color: #231F20;
+    padding-top: 20px;
+    padding-bottom: 1px;
+
+}
+.container-bottoms{
+    margin-left: 100px;
+    
+}
+
+.card-body{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 10px !important;
+    
+}
+
+.card-img-top{
+    border-top-left-radius: 30px !important;
+    border-top-right-radius: 30px !important;
+    border: 10px !important;
+}
+
+.link-card{
+    text-decoration: none !important;
+    color: #231F20;
+    transform: scale(1.00) !important;
+  
+}
+
+.link-card:hover{
+    text-decoration:underline !important;
+    color: #000000;
+    
+}
+
+.card-img-top:hover{
+    transition: filter 0.5s ease;
+    filter: brightness(70%);
+}
+.bd-placeholder-img:hover{
+    transition: filter 0.5s ease;
+    filter: brightness(70%);
+}
+
+.col-sm-3{
+    display:flex ;
+    flex-wrap: nowrap;
+    justify-content: space-between !important;
+}
+
+.cards-carrusel{
+ margin-left: 100px;
+ align-items: center;
+ justify-content: center !important;
+}
+
+.carousel-inner{
+    align-items: center;
+    justify-content: center;
+}
+.row-2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title{
+    font-family:'Rubik' !important;
+   
+
+}
+
+.container-fluid{
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.cards-carrusel{
+    margin-left: 0px !important;
+}
+.col-sm-3{
+    margin-top: 2vw;
+    justify-content: center !important;
+}
+
+.btn-dark{
+    margin-bottom: 1vw;
+}
