@@ -92,6 +92,49 @@ document.addEventListener('DOMContentLoaded', () => {
     
     ]
 
+    // URL de la API que deseas conectar
+// URL de la API que deseas conectar
+const apiUrl = 'https://api-indieteca.onrender.com/';
+
+// Elemento del DOM donde deseas mostrar la información
+const listaArtistas = document.getElementById('Array-Api');
+
+// Opciones de la solicitud fetch para manejar CORS
+const fetchOptions = {
+  method: 'GET',
+  mode: 'cors', // Esto indica al navegador que la solicitud es CORS
+  headers: {
+    'Content-Type': 'application/json',
+    // Si necesitas enviar algún encabezado adicional, agrégalo aquí
+  }
+};
+
+// Llamada a la API usando fetch con las opciones definidas
+fetch(apiUrl, fetchOptions)
+  .then(response => {
+    // Verifica si la respuesta es exitosa (código de estado 200)
+    if (!response.ok) {
+      throw new Error('Ocurrió un error al obtener los datos.');
+    }
+    // Convierte la respuesta a formato JSON
+    return response.json();
+  })
+  .then(data => {
+    // Manipula los datos obtenidos de la API
+    // Supongamos que la API devuelve un arreglo de objetos con información sobre artistas
+    data.forEach(artist => {
+      // Crea un elemento de lista <li> para cada artista y agrega su nombre
+      const listItem = document.createElement('li');
+      listItem.textContent = artist.name;
+      // Agrega el elemento de lista al elemento <ul> en el DOM
+      listaArtistas.appendChild(listItem);
+    });
+  })
+  .catch(error => {
+    // Captura cualquier error ocurrido durante la llamada a la API
+    console.error('Error:', error);
+  }); 
+
 const DOMitems = document.querySelector('#items');
 
 function renderizarProductos() {

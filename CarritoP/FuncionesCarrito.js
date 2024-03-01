@@ -101,22 +101,22 @@ const baseDeDatos = [
         id: 9,
         nombreDeProducto: 'El Beso',
         precio: 2000,
-        imagenDeProducto:'https://cbsnews3.cbsistatic.com/hub/i/r/2016/05/03/9ab74164-e9ab-43d1-a245-def44dbe33be/thumbnail/1240x1472/0b84765f598f135b8cd5b379aabde832/alfred-eisentstaedt-vj-day-in-times-square.jpg',
         existencia: 1,
         categoria: 'Fotografía',
         tipo:'Realismo',
-        descripcion: 'En la imagen, un marinero desconocido agarra y besa apasionadamente a una joven mujer vestida de blanco, mientras la multitud que los rodea irradia una energía palpable de júbilo y liberación.' 
+        descripcion: 'En la imagen, un marinero desconocido agarra y besa apasionadamente a una joven mujer vestida de blanco, mientras la multitud que los rodea irradia una energía palpable de júbilo y liberación.', 
+        imagenProducto:'https://cbsnews3.cbsistatic.com/hub/i/r/2016/05/03/9ab74164-e9ab-43d1-a245-def44dbe33be/thumbnail/1240x1472/0b84765f598f135b8cd5b379aabde832/alfred-eisentstaedt-vj-day-in-times-square.jpg',
     },
     
     {
         id: 10,
         nombreDeProducto: 'Sticker de El Beso',
         precio: 1200,
-        imagenDeProducto:'https://i.pinimg.com/736x/81/75/71/81757110d49ef76fcf50136af7605dbf.jpg',
         existencia: 1,
         categoria: 'Mercancia',
         tipo:'urbano',
         descripcion: 'Este sticker captura el icónico momento de la fotografía "El Beso" tomada por Alfred Eisenstaedt',
+        imagenProducto:'https://i.pinimg.com/736x/81/75/71/81757110d49ef76fcf50136af7605dbf.jpg',
     }
     
     ]
@@ -198,7 +198,7 @@ const baseDeDatos = [
         //Imagen del producto
         const miNodoProducImg = document.createElement('img');
         miNodoProducImg.classList.add('card-img-top');
-        miNodoProducImg.setAttribute('src', `${info.imagenPerfil}`);
+        miNodoProducImg.setAttribute('src', `${info.imagenProducto}`);
         miNodoProducImg.setAttribute('width','50');
         miNodoProducImg.setAttribute('height','50');
         // Container card
